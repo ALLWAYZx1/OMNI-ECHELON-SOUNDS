@@ -1,3 +1,4 @@
+import "./globals.css";
 export const metadata = {
   title: "Omni Echelon Sounds",
   description: "Cinematic Pressure",
