@@ -44,6 +44,21 @@ export default function OmniEchelonSoundsWebsite() {
               
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight">
+                <div className="mt-8 w-full max-w-xl">
+            <p className="text-xs uppercase tracking-[0.3em] text-yellow-400 mb-3">
+              NOW PLAYING
+            </p>
+
+          <iframe
+          width="100%"
+          height="166"
+          scrolling="no"
+          frameBorder="no"
+          allow="autoplay"
+          className="rounded-xl"
+          src="https://w.soundcloud.com/player/?url=https://soundcloud.com/allwayzinthemixx/bigger-than-life&auto_play=false&show_artwork=false&show_comments=false&show_user=true&show_playcount=false&sharing=false"
+          ></iframe>
+        </div>
                 <span className="text-yellow-400 normal-case">ALL LEVELS of SOUND</span>
               </h1>
 
