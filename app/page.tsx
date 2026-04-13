@@ -43,76 +43,93 @@ export default function OmniEchelonSoundsWebsite() {
 
               
 
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight">
-                <div className="mt-8 w-full max-w-xl">
-            <p className="text-xs uppercase tracking-[0.3em] text-yellow-400 mb-3">
-              NOW PLAYING
-            </p>
+              <section className="relative overflow-hidden border-b border-white/10">
+  <div className="pointer-events-none absolute inset-0 opacity-80">
+    <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.9)_0%,_rgba(250,204,21,0.6)_20%,_rgba(168,85,247,0.4)_40%,_rgba(59,130,246,0.2)_60%,_transparent_80%)] blur-[40px] animate-pulse" />
+    <div className="absolute left-1/2 top-1/2 h-[900px] w-[900px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10 blur-[2px]" />
+    <div className="absolute left-1/2 top-1/2 h-[1200px] w-[1200px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/5 blur-[2px]" />
+    <div className="absolute inset-0 bg-[radial-gradient(1px_80px_at_50%_0%,rgba(255,255,255,0.2),transparent),radial-gradient(1px_100px_at_20%_100%,rgba(255,255,255,0.15),transparent),radial-gradient(1px_90px_at_80%_100%,rgba(255,255,255,0.15),transparent)] opacity-40" />
+    <div className="absolute inset-0 bg-[radial-gradient(2px_2px_at_20%_30%,rgba(255,255,255,0.7),transparent),radial-gradient(1px_1px_at_70%_60%,rgba(255,255,255,0.5),transparent),radial-gradient(1.5px_1.5px_at_40%_80%,rgba(255,255,255,0.6),transparent),radial-gradient(1px_1px_at_80%_20%,rgba(255,255,255,0.4),transparent)]" />
+    <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.65))]" />
+  </div>
+
+  <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[1fr_520px]">
+      
+      {/* LEFT SIDE: TEXT */}
+      <div className="max-w-2xl">
+        <div className="mb-6 inline-flex rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.32em] text-white/70">
+          Entry point
+        </div>
+
+        <h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
+          <span className="text-yellow-400 normal-case">ALL LEVELS of SOUND</span>
+        </h1>
+
+        <div className="mt-8 space-y-3">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-transparent bg-gradient-to-r from-white via-indigo-300 to-purple-300 bg-clip-text drop-shadow-[0_0_10px_rgba(168,85,247,0.35)] sm:text-sm lg:text-base">
+            CINEMATIC PRESSURE
+          </p>
+
+          <p className="max-w-xl text-sm italic tracking-[0.25em] text-white/60 sm:text-base">
+            ENTER TO EXPERIENCE WHAT THIS ATMOSPHERE HAS IN VISION, SOUND AND MOTION ACROSS ALL SPECTRUMS
+          </p>
+        </div>
+
+        <div className="mt-10 flex flex-wrap gap-4">
+          <a
+            href="#about"
+            className="rounded-2xl border border-white/30 bg-gradient-to-r from-indigo-400/20 to-purple-400/20 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white backdrop-blur transition hover:scale-105 hover:opacity-95 active:scale-95"
+          >
+            Enter
+          </a>
+          <a
+            href="#contact"
+            className="rounded-2xl border border-white/20 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
+          >
+            Connect
+          </a>
+        </div>
+      </div>
+
+      {/* RIGHT SIDE: VIDEO ON TOP, SOUNDCLOUD UNDER */}
+      <div className="w-full max-w-[520px] justify-self-end">
+        <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+          NOW PLAYING
+        </p>
+
+        <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_30px_rgba(250,204,21,0.08)]">
+          <div className="relative w-full overflow-hidden rounded-2xl" style={{ paddingBottom: "177.77%" }}>
+            <iframe
+              src="https://www.youtube.com/embed/HiryTilLQaI"
+              title="Bigger Than Life"
+              className="absolute left-0 top-0 h-full w-full"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
+
+        <div className="mt-5">
+          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+            SOUND
+          </p>
 
           <iframe
-          width="100%"
-          height="166"
-          scrolling="no"
-          frameBorder="no"
-          allow="autoplay"
-          className="rounded-xl"
-          src="https://w.soundcloud.com/player/?url=https://soundcloud.com/allwayzinthemixx/bigger-than-life&auto_play=false&show_artwork=false&show_comments=false&show_user=true&show_playcount=false&sharing=false"
-          ></iframe>
+            width="100%"
+            height="166"
+            scrolling="no"
+            frameBorder="no"
+            allow="autoplay"
+            className="rounded-2xl"
+            src="https://w.soundcloud.com/player/?url=https://soundcloud.com/allwayzinthemixx/bigger-than-life&auto_play=false&show_artwork=false&show_comments=false&show_user=true&show_playcount=false&sharing=false"
+          />
         </div>
-           <div className="mt-8 w-full max-w-xl">
-        <p className="text-xs uppercase tracking-[0.3em] text-yellow-400 mb-3">
-      NOW PLAYING
-    </p>
-
-  <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
-    <iframe
-      src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-      title="Bigger Than Life"
-      style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-      }}
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowFullScreen
-      className="rounded-xl"
-    />
+      </div>
+    </div>
   </div>
-</div>
-                <span className="text-yellow-400 normal-case">ALL LEVELS of SOUND</span>
-              </h1>
-
-              <div className="mt-8 space-y-3">
-                
-                <p className="mt-2 text-xs sm:text-sm lg:text-base font-semibold uppercase tracking-[0.22em] translate-y-4 bg-gradient-to-r from-white via-indigo-300 to-purple-300 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(168,85,247,0.35)]">CINEMATIC PRESSURE</p>
-                <p className="mt-6 text-sm sm:text-base tracking-[0.25em] text-white/60 max-w-xl italic">
-                  ENTER TO EXPERIENCE WHAT THIS ATMOSPHERE HAS IN VISION, SOUND AND MOTION ACROSS ALL SPECTRUMS
-                </p>
-              </div>
-
-              
-
-              <div className="mt-10 flex flex-wrap gap-4">
-                <a
-                  href="#about"
-                  className="rounded-2xl border border-white/30 bg-gradient-to-r from-indigo-400/20 to-purple-400/20 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white backdrop-blur transition hover:opacity-95 hover:scale-105 active:scale-95"
-                >
-                  Enter
-                </a>
-                <a
-                  href="#contact"
-                  className="rounded-2xl border border-white/20 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
-                >
-                  Connect
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
+</section>
         <section id="about" className="border-b border-white/10">
           <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
             <div>
