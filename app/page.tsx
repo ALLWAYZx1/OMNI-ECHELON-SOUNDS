@@ -69,7 +69,7 @@ export default function OmniEchelonSoundsWebsite() {
         </p>
 
         <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_30px_rgba(250,204,21,0.08)]">
-          <div className="relative w-full overflow-hidden rounded-2xl" style={{ paddingBottom: "177.77%" }}>
+          <div className="relative w-full overflow-hidden rounded-2xl" style={{ paddingBottom: "120%" }}
             <iframe
               src="https://www.youtube.com/embed/HiryTilLQaI?rel=0"
               title="Bigger Than Life"
