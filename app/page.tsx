@@ -179,8 +179,7 @@ export default function OmniEchelonSoundsWebsite() {
     src="https://w.soundcloud.com/player/?url=https://soundcloud.com/allwayzinthemixx/bigger-than-life&auto_play=false&show_artwork=false&show_comments=false&show_user=true&show_playcount=false&sharing=false"
   />
 </div>
-  
-          <iframe
+
               <p className="mt-5 text-base leading-7 text-white/70">
                 This space can hold visuals, embedded audio, a statement, selected drops, behind-the-scenes ideas, or whatever best represents the OMNI ECHELON SOUNDS universe without turning it into a storefront.
               </p>
