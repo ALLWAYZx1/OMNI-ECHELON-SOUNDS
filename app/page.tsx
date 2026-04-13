@@ -16,7 +16,7 @@ export default function OmniEchelonSoundsWebsite() {
       </header>
 
       <main>
-        <section className="relative overflow-hidden border-b border-white/10">
+       <section className="relative overflow-hidden border-b border-white/10">
   <div className="pointer-events-none absolute inset-0 opacity-80">
     <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.9)_0%,_rgba(250,204,21,0.6)_20%,_rgba(168,85,247,0.4)_40%,_rgba(59,130,246,0.2)_60%,_transparent_80%)] blur-[40px] animate-pulse" />
     <div className="absolute left-1/2 top-1/2 h-[900px] w-[900px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10 blur-[2px]" />
@@ -28,8 +28,6 @@ export default function OmniEchelonSoundsWebsite() {
 
   <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
     <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[1fr_520px]">
-      
-      {/* LEFT SIDE: TEXT */}
       <div className="max-w-2xl">
         <div className="mb-6 inline-flex rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.32em] text-white/70">
           Entry point
@@ -65,7 +63,6 @@ export default function OmniEchelonSoundsWebsite() {
         </div>
       </div>
 
-      {/* RIGHT SIDE: VIDEO ON TOP, SOUNDCLOUD UNDER */}
       <div className="w-full max-w-[520px] justify-self-end">
         <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
           NOW PLAYING
@@ -74,7 +71,7 @@ export default function OmniEchelonSoundsWebsite() {
         <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_30px_rgba(250,204,21,0.08)]">
           <div className="relative w-full overflow-hidden rounded-2xl" style={{ paddingBottom: "177.77%" }}>
             <iframe
-              src="https://www.youtube.com/embed/HiryTilLQaI"
+              src="https://www.youtube.com/embed/HiryTilLQaI?rel=0"
               title="Bigger Than Life"
               className="absolute left-0 top-0 h-full w-full"
               frameBorder="0"
