@@ -76,15 +76,15 @@ export default function OmniEchelonSoundsWebsite() {
   </p>
 
   <div className="max-h-[500px] overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_30px_rgba(250,204,21,0.08)]">
-    <div className="relative w-full" style={{ paddingBottom: "177%" }}>
-      <iframe
-        className="absolute top-0 left-0 w-full h-full"
-        src="https://www.youtube.com/embed/5Bb81O1u2o0"
-        title="Bigger Than Life"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+    <div className="relative w-full" style={{ paddingBottom: "177.78%" }}
+     <iframe
+  className="absolute top-0 left-0 w-full h-full"
+  src="https://www.youtube.com/embed/5Bb81O1u2o0"
+  title="Bigger Than Life"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
     </div>
   </div>
 
