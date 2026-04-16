@@ -71,53 +71,59 @@ export default function OmniEchelonSoundsWebsite() {
               </div>
 
               <div className="w-full max-w-[520px] justify-self-end">
-                <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
-                  NOW PLAYING
-                </p>
+  <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+    NOW PLAYING
+  </p>
 
-                <div className="max-h-[500px] overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_30px_rgba(250,204,21,0.08)]">
-                  <div className="relative w-full" style={{ paddingBottom: "120%" }}>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5Bb81O1u2o0?si=jCEZMy2fRHtrzDt6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    />
-                  </div>
-                </div>
+  <div className="max-h-[500px] overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_30px_rgba(250,204,21,0.08)]">
+    <div className="relative w-full" style={{ paddingBottom: "177%" }}>
+      <iframe
+        className="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/5Bb81O1u2o0"
+        title="Bigger Than Life"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
 
-                <div className="mt-3 flex gap-4 text-xs uppercase tracking-widest text-white/60">
-                  <a
-                    href="https://youtube.com/shorts/HiryTilLQaI"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white"
-                  >
-                    Watch →
-                  </a>
+  <div className="mt-3 flex gap-4 text-xs uppercase tracking-widest text-white/60">
+    <a
+      href="https://youtube.com/shorts/5Bb81O1u2o0"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-white"
+    >
+      Watch →
+    </a>
 
-                  <a
-                    href="https://www.youtube.com/@ALLWAYZWORLD"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white"
-                  >
-                    Channel →
-                  </a>
-                </div>
+    <a
+      href="https://www.youtube.com/@ALLWAYZWORLD"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-white"
+    >
+      Channel →
+    </a>
+  </div>
 
-                <div className="mt-5">
-                  <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
-                    SOUND
-                  </p>
+  <div className="mt-5">
+    <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+      SOUND
+    </p>
 
-                  <iframe
-                    width="100%"
-                    height="166"
-                    scrolling="no"
-                    frameBorder="no"
-                    allow="autoplay"
-                    className="rounded-2xl"
-                    src="https://w.soundcloud.com/player/?url=https://soundcloud.com/allwayzinthemixx/bigger-than-life&auto_play=false&show_artwork=false&show_comments=false&show_user=true&show_playcount=false&sharing=false"
-                  />
-                </div>
-              </div>
+    <iframe
+      width="100%"
+      height="166"
+      scrolling="no"
+      frameBorder="no"
+      allow="autoplay"
+      className="rounded-2xl"
+      src="https://w.soundcloud.com/player/?url=https://soundcloud.com/allwayzinthemixx/toxic_city_freestyle&auto_play=false&show_artwork=false&show_comments=false&show_user=true&show_playcount=false&sharing=false"
+    ></iframe>
+  </div>
+</div>
             </div>
           </div>
         </section>
