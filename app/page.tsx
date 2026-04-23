@@ -73,11 +73,11 @@ export default function OmniEchelonSoundsWebsite() {
     SPOTIFY
   </p>
 
-  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_30px_rgba(34,197,94,0.08)]">
+  className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_30px_rgba(34,197,94,0.08)] hover:shadow-[0_0_50px_rgba(34,197,94,0.2)] transition"
     <iframe
       src="https://open.spotify.com/embed/album/4BakOY0bxMN1r9ucDRSV9k"
       width="100%"
-      height="152"
+      height="232"
       style={{ borderRadius: "12px" }}
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       loading="lazy"
