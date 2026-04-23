@@ -67,6 +67,32 @@ export default function OmniEchelonSoundsWebsite() {
                   >
                     Instagram
                   </a>
+
+                  <div className="mt-6 max-w-md">
+  <p className="mb-3 text-xs uppercase tracking-[0.3em] text-green-400">
+    SPOTIFY
+  </p>
+
+  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_30px_rgba(34,197,94,0.08)]">
+    <iframe
+      src="https://open.spotify.com/embed/album/4BakOY0bxMN1r9ucDRSV9k"
+      width="100%"
+      height="152"
+      style={{ borderRadius: "12px" }}
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+    ></iframe>
+  </div>
+
+  <a
+    href="https://open.spotify.com/album/4BakOY0bxMN1r9ucDRSV9k"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-2 block text-xs uppercase tracking-widest text-green-400 hover:text-white transition"
+  >
+    Open in Spotify →
+  </a>
+</div>
                 </div>
               </div>
 
@@ -112,34 +138,7 @@ export default function OmniEchelonSoundsWebsite() {
     <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
       SOUND
     </p>
-
-  <div className="mt-5">
-  <p className="mb-3 text-xs uppercase tracking-[0.3em] text-green-400">
-    SPOTIFY
-  </p>
-
-  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_30px_rgba(34,197,94,0.08)]">
-    <iframe
-      src="https://open.spotify.com/embed/album/4BakOY0bxMN1r9ucDRSV9k"
-      width="100%"
-      height="152"
-      style={{ borderRadius: "12px" }}
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-    ></iframe>
-    <a
-  href="https://open.spotify.com/album/4BakOY0bxMN1r9ucDRSV9k"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="block mt-2 text-xs text-green-400 hover:text-white"
-    >
-    Open in Spotify →
-    </a>
-  </div>
-</div>
-
     
-
     <iframe
       width="100%"
       height="166"
