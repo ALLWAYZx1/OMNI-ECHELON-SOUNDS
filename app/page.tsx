@@ -67,17 +67,16 @@ export default function OmniEchelonSoundsWebsite() {
                   >
                     Instagram
                   </a>
-
-                  <div className="mt-6 max-w-md">
+<div className="mt-6 w-full">
   <p className="mb-3 text-xs uppercase tracking-[0.3em] text-green-400">
     SPOTIFY
   </p>
 
-  className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_30px_rgba(34,197,94,0.08)] hover:shadow-[0_0_50px_rgba(34,197,94,0.2)] transition"
+  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_30px_rgba(34,197,94,0.08)] hover:shadow-[0_0_50px_rgba(34,197,94,0.2)] transition">
     <iframe
       src="https://open.spotify.com/embed/album/4BakOY0bxMN1r9ucDRSV9k"
       width="100%"
-      height="232"
+      height="200"
       style={{ borderRadius: "12px" }}
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       loading="lazy"
@@ -88,11 +87,11 @@ export default function OmniEchelonSoundsWebsite() {
     href="https://open.spotify.com/album/4BakOY0bxMN1r9ucDRSV9k"
     target="_blank"
     rel="noopener noreferrer"
-    className="mt-2 block text-xs uppercase tracking-widest text-green-400 hover:text-white transition"
+    className="mt-3 block text-xs uppercase tracking-widest text-green-400 hover:text-white transition"
   >
     Open in Spotify →
   </a>
-                </div>
+</div>
               </div>
 
               <div className="w-full max-w-[520px] justify-self-end">
