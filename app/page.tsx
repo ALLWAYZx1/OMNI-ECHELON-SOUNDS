@@ -148,10 +148,11 @@ export default function OmniEchelonSoundsWebsite() {
     ></iframe>
   </div>
 </div>
-            </div>
-        </section>
+             </div>
+      </div>
+    </section>
 
-        <section id="about" className="border-b border-white/10">
+    <section id="about" className="border-b border-white/10">
           <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
             <div>
               <div className="text-xs uppercase tracking-[0.35em] text-white/45">About</div>
