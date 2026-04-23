@@ -92,7 +92,6 @@ export default function OmniEchelonSoundsWebsite() {
   >
     Open in Spotify →
   </a>
-</div>
                 </div>
               </div>
 
