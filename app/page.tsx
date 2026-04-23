@@ -149,7 +149,6 @@ export default function OmniEchelonSoundsWebsite() {
   </div>
 </div>
             </div>
-          </div>
         </section>
 
         <section id="about" className="border-b border-white/10">
