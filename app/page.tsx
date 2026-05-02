@@ -132,12 +132,6 @@ export default function OmniEchelonSoundsWebsite() {
 
     
 
-<div className="mt-6">
-  <p className="mb-3 text-xs uppercase tracking-[0.3em] text-orange-400">
-    SOUNDCLOUD
-  </p>
-
-  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_30px_rgba(255,85,0,0.12)]">
     <iframe
       width="100%"
       height="166"
@@ -145,8 +139,8 @@ export default function OmniEchelonSoundsWebsite() {
       frameBorder="no"
       allow="autoplay"
       className="rounded-2xl"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2313545609&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-    />
+      src="https://w.soundcloud.com/player/?url=https://soundcloud.com/allwayzinthemixx/toxic_city_freestyle&auto_play=false&show_artwork=false&show_comments=false&show_user=true&show_playcount=false&sharing=false"
+    ></iframe>
   </div>
 </div>
             </div>
