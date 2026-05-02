@@ -143,7 +143,6 @@ export default function OmniEchelonSoundsWebsite() {
     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2313545609&color=%23ff5500"
   />
 </div>
-            </div>
           </div>
         </section>
 
