@@ -132,7 +132,7 @@ export default function OmniEchelonSoundsWebsite() {
 
     
 
-    <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+   <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
   <iframe
     width="100%"
     height="166"
@@ -140,7 +140,7 @@ export default function OmniEchelonSoundsWebsite() {
     frameBorder="no"
     allow="autoplay"
     className="rounded-2xl"
-    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2313545609&color=%23ff5500"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2313545609&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
   />
 </div>
           </div>
