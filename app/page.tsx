@@ -113,7 +113,7 @@ export default function OmniEchelonSoundsWebsite() {
       SOUND
     </p>
 
-  <div className="mt-5">
+ <div className="mt-5">
   <p className="mb-3 text-xs uppercase tracking-[0.3em] text-green-400">
     SPOTIFY
   </p>
@@ -130,21 +130,23 @@ export default function OmniEchelonSoundsWebsite() {
   </div>
 </div>
 
-    
+<div className="mt-6">
+  <p className="mb-3 text-xs uppercase tracking-[0.3em] text-orange-400">
+    SOUNDCLOUD
+  </p>
 
-   <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-  <iframe
-    width="100%"
-    height="166"
-    scrolling="no"
-    frameBorder="no"
-    allow="autoplay"
-    className="rounded-2xl"
-    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2313545609&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-  />
+  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+    <iframe
+      width="100%"
+      height="166"
+      scrolling="no"
+      frameBorder="no"
+      allow="autoplay"
+      className="rounded-2xl"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2313545609&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+    />
+  </div>
 </div>
-    </div>
-          </div>
         </section>
 
         <section id="about" className="border-b border-white/10">
