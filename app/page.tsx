@@ -27,7 +27,7 @@ export default function OmniEchelonSoundsWebsite() {
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(168,85,247,0.15),transparent_50%),radial-gradient(circle_at_bottom,rgba(59,130,246,0.12),transparent_50%)]" />
     <div className="absolute inset-0 bg-[radial-gradient(1px_1px_at_20%_30%,rgba(255,255,255,0.6),transparent),radial-gradient(1px_1px_at_70%_60%,rgba(255,255,255,0.5),transparent),radial-gradient(1px_1px_at_40%_80%,rgba(255,255,255,0.4),transparent)] opacity-40" />
   </div>
-          </div>
+
 
           <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
             <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[1fr_520px]">
