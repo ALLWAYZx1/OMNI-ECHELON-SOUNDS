@@ -137,15 +137,15 @@ export default function OmniEchelonSoundsWebsite() {
           </div>
 
           {/* SOUNDCLOUD */}
-          <iframe
-            width="100%"
-            height="166"
-            frameBorder="no"
-            allow="autoplay"
-            className="rounded-2xl"
-            src="https://w.soundcloud.com/player/?url=https://soundcloud.com/allwayzinthemixx/toxic_city_freestyle"
-          ></iframe>
-
+<iframe
+  width="100%"
+  height="166"
+  scrolling="no"
+  frameBorder="no"
+  allow="autoplay"
+  className="rounded-2xl"
+  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2313545609&color=%231f1213&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+></iframe>
         </div>
 
       </div>
