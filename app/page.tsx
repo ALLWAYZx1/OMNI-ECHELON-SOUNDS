@@ -21,14 +21,14 @@ export default function OmniEchelonSoundsWebsite() {
       </header>
 
       <main>
-        <section className="relative overflow-hidden border-b border-white/10">
-          <div className="pointer-events-none absolute inset-0 opacity-80">
-            <div className="absolute left-[20%] top-[55%] h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.9)_0%,_rgba(250,204,21,0.7)_25%,_rgba(168,85,247,0.5)_45%,_rgba(59,130,246,0.25)_65%,_transparent_80%)] blur-[35px] animate-pulse" />
-            <div className="absolute left-1/2 top-1/2 h-[1200px] w-[1200px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/5 blur-[2px]" />
-            <div className="absolute inset-0 bg-[radial-gradient(1px_80px_at_50%_0%,rgba(255,255,255,0.2),transparent),radial-gradient(1px_100px_at_20%_100%,rgba(255,255,255,0.15),transparent),radial-gradient(1px_90px_at_80%_100%,rgba(255,255,255,0.15),transparent)] opacity-40" />
-            <div className="absolute inset-0 bg-[radial-gradient(2px_2px_at_20%_30%,rgba(255,255,255,0.7),transparent),radial-gradient(1px_1px_at_70%_60%,rgba(255,255,255,0.5),transparent),radial-gradient(1.5px_1.5px_at_40%_80%,rgba(255,255,255,0.6),transparent),radial-gradient(1px_1px_at_80%_20%,rgba(255,255,255,0.4),transparent)]" />
-            <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.65))]" />
-          </div>
+<section className="relative overflow-hidden border-b border-white/10">
+
+  {/* COSMIC BACKGROUND */}
+  <div className="pointer-events-none absolute inset-0 opacity-80">
+    <div className="absolute left-[20%] top-[55%] h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.9)_0%,_rgba(250,204,21,0.7)_25%,_rgba(168,85,247,0.5)_45%,_rgba(59,130,246,0.25)_65%,_transparent_80%)] blur-[35px] animate-pulse" />
+    <div className="absolute inset-0 bg-[radial-gradient(1px_1px_at_20%_30%,rgba(255,255,255,0.6),transparent),radial-gradient(1px_1px_at_70%_60%,rgba(255,255,255,0.4),transparent)]" />
+    <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.7))]" />
+  </div>
 
   <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
     <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[1fr_520px]">
@@ -97,8 +97,8 @@ export default function OmniEchelonSoundsWebsite() {
         </p>
 
         {/* YOUTUBE */}
-        <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-          <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
+        <div className="w-full max-w-[320px] overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+         <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
             <iframe
               className="absolute left-0 top-0 h-full w-full"
               src="https://www.youtube.com/embed/5Bb81O1u2o0"
@@ -147,7 +147,6 @@ export default function OmniEchelonSoundsWebsite() {
     </div>
   </div>
 </section>
-
         <section id="about" className="border-b border-white/10">
           <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
             <div>
