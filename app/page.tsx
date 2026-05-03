@@ -97,16 +97,22 @@ export default function OmniEchelonSoundsWebsite() {
         </p>
 
         {/* YOUTUBE */}
-        <div className="w-full max-w-[320px] overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-         <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-            <iframe
-              className="absolute left-0 top-0 h-full w-full"
-              src="https://www.youtube.com/embed/5Bb81O1u2o0"
-              title="Bigger Than Life"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
+       <div className="w-full max-w-[520px] justify-self-end">
+  <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+    NOW PLAYING
+  </p>
+
+  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+      <iframe
+        className="absolute left-0 top-0 h-full w-full"
+        src="https://www.youtube.com/embed/5Bb81O1u2o0"
+        title="Bigger Than Life"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+</div>
 
         {/* LINKS */}
         <div className="mt-3 flex gap-4 text-xs uppercase text-white/60">
