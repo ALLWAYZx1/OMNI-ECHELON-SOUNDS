@@ -22,128 +22,131 @@ export default function OmniEchelonSoundsWebsite() {
 
       <main>
       <section className="relative overflow-hidden border-b border-white/10">
-  {/* cosmic background */}
-  <div className="pointer-events-none absolute inset-0 -z-10">
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(168,85,247,0.15),transparent_50%),radial-gradient(circle_at_bottom,rgba(59,130,246,0.12),transparent_50%)]" />
-    <div className="absolute inset-0 bg-[radial-gradient(1px_1px_at_20%_30%,rgba(255,255,255,0.6),transparent),radial-gradient(1px_1px_at_70%_60%,rgba(255,255,255,0.5),transparent),radial-gradient(1px_1px_at_40%_80%,rgba(255,255,255,0.4),transparent)] opacity-40" />
+
+  {/* COSMIC BACKGROUND */}
+  <div className="pointer-events-none absolute inset-0 opacity-80">
+    <div className="absolute left-[20%] top-[55%] h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.9)_0%,_rgba(250,204,21,0.7)_25%,_rgba(168,85,247,0.5)_45%,_rgba(59,130,246,0.25)_65%,_transparent_80%)] blur-[35px] animate-pulse" />
+    <div className="absolute inset-0 bg-[radial-gradient(1px_1px_at_20%_30%,rgba(255,255,255,0.6),transparent),radial-gradient(1px_1px_at_70%_60%,rgba(255,255,255,0.4),transparent)]" />
+    <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.7))]" />
   </div>
 
+  <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[1fr_520px]">
 
-          <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-            <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[1fr_520px]">
-              <div className="max-w-2xl">
-                <div className="mb-6 inline-flex rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.32em] text-white/70">
-                  Entry point
-                </div>
+      {/* LEFT SIDE */}
+      <div className="max-w-2xl">
 
-                <h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
-                  <span className="text-yellow-400 normal-case">ALL LEVELS of SOUND</span>
-                </h1>
+        <div className="mb-6 inline-flex rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.32em] text-white/70">
+          Entry point
+        </div>
 
-                <div className="mt-8 space-y-3">
-                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-transparent bg-gradient-to-r from-white via-indigo-300 to-purple-300 bg-clip-text drop-shadow-[0_0_10px_rgba(168,85,247,0.35)] sm:text-sm lg:text-base">
-                    CINEMATIC PRESSURE
-                  </p>
+        <h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
+          <span className="text-yellow-400 normal-case">ALL LEVELS of SOUND</span>
+        </h1>
 
-                  <p className="max-w-xl text-sm italic tracking-[0.25em] text-white/60 sm:text-base">
-                    ENTER TO EXPERIENCE WHAT THIS ATMOSPHERE HAS IN VISION, SOUND AND MOTION ACROSS ALL SPECTRUMS
-                  </p>
-                </div>
+        <div className="mt-8 space-y-3">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-transparent bg-gradient-to-r from-white via-indigo-300 to-purple-300 bg-clip-text">
+            CINEMATIC PRESSURE
+          </p>
 
-                <div className="mt-10 flex flex-wrap gap-4">
-                  <a
-                    href="#about"
-                    className="rounded-2xl border border-white/30 bg-gradient-to-r from-indigo-400/20 to-purple-400/20 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white backdrop-blur transition hover:scale-105 hover:opacity-95 active:scale-95"
-                  >
-                    Enter
-                  </a>
+          <p className="max-w-xl text-sm italic tracking-[0.25em] text-white/60 sm:text-base">
+            ENTER TO EXPERIENCE WHAT THIS ATMOSPHERE HAS IN VISION, SOUND AND MOTION ACROSS ALL SPECTRUMS
+          </p>
+        </div>
 
-                  <a
-                    href="https://www.instagram.com/allwayzinthemixx"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded-2xl border border-white/20 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
-                  >
-                    Instagram
-                  </a>
-                </div>
-              </div>
+        <div className="mt-10 flex flex-wrap gap-4">
+          <a href="#about" className="rounded-2xl border border-white/30 px-6 py-3 text-sm uppercase tracking-[0.22em]">
+            Enter
+          </a>
 
-              <div className="w-full max-w-[520px] justify-self-end">
-                <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
-                  NOW PLAYING
-                </p>
+          <a
+            href="https://www.instagram.com/allwayzinthemixx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-2xl border border-white/20 px-6 py-3 text-sm uppercase tracking-[0.22em]"
+          >
+            Instagram
+          </a>
+        </div>
 
-                <div className="max-h-[500px] overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_30px_rgba(250,204,21,0.08)]">
-                  <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
-                    <iframe
-                      className="absolute left-0 top-0 h-full w-full"
-                      src="https://www.youtube.com/embed/5Bb81O1u2o0"
-                      title="Bigger Than Life"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-                </div>
+        {/* 🍎 APPLE MUSIC (LEFT SIDE) */}
+        <div className="mt-10">
+          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-pink-400">
+            APPLE MUSIC
+          </p>
 
-                <div className="mt-3 flex gap-4 text-xs uppercase tracking-widest text-white/60">
-                  <a
-                    href="https://youtube.com/shorts/5Bb81O1u2o0"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white"
-                  >
-                    Watch →
-                  </a>
-
-                  <a
-                    href="https://www.youtube.com/@ALLWAYZWORLD"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white"
-                  >
-                    Channel →
-                  </a>
-                </div>
-
-                <div className="mt-5">
-                  <p className="mb-3 text-xs uppercase tracking-[0.3em] text-green-400">
-                    SPOTIFY
-                  </p>
-
-                  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-[0_0_30px_rgba(34,197,94,0.08)]">
-                    <iframe
-                      src="https://open.spotify.com/embed/album/4BakOY0bxMN1r9ucDRSV9k"
-                      width="100%"
-                      height="152"
-                      style={{ borderRadius: "12px" }}
-                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                      loading="lazy"
-                    ></iframe>
-                  </div>
-                </div>
-
-                <div className="mt-5">
-                  <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
-                    SOUND
-                  </p>
-
-                  <iframe
-                    width="100%"
-                    height="166"
-                    scrolling="no"
-                    frameBorder="no"
-                    allow="autoplay"
-                    className="rounded-2xl"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2313545609&color=%231f1213&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-                  ></iframe>
-                </div>
-              </div>
-              
-            </div>
+          <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <iframe
+              src="https://embed.music.apple.com/us/album/emotions-in-motion/1895465650"
+              width="100%"
+              height="300"
+              style={{ borderRadius: "12px" }}
+              allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+            ></iframe>
           </div>
-        </section>
+        </div>
+
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="w-full max-w-[520px] justify-self-end">
+
+        <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+          NOW PLAYING
+        </p>
+
+        {/* YOUTUBE */}
+        <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+          <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
+            <iframe
+              className="absolute left-0 top-0 h-full w-full"
+              src="https://www.youtube.com/embed/5Bb81O1u2o0"
+              title="Bigger Than Life"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+
+        {/* LINKS */}
+        <div className="mt-3 flex gap-4 text-xs uppercase text-white/60">
+          <a href="https://youtube.com/shorts/5Bb81O1u2o0" target="_blank">Watch →</a>
+          <a href="https://www.youtube.com/@ALLWAYZWORLD" target="_blank">Channel →</a>
+        </div>
+
+        {/* SOUND */}
+        <div className="mt-6">
+          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+            SOUND
+          </p>
+
+          {/* SPOTIFY */}
+          <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <iframe
+              src="https://open.spotify.com/embed/album/4BakOY0bxMN1r9ucDRSV9k"
+              width="100%"
+              height="152"
+              allow="autoplay; clipboard-write; encrypted-media"
+            ></iframe>
+          </div>
+
+          {/* SOUNDCLOUD */}
+          <iframe
+            width="100%"
+            height="166"
+            frameBorder="no"
+            allow="autoplay"
+            className="rounded-2xl"
+            src="https://w.soundcloud.com/player/?url=https://soundcloud.com/allwayzinthemixx/toxic_city_freestyle"
+          ></iframe>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
 
         <section id="about" className="border-b border-white/10">
           <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
