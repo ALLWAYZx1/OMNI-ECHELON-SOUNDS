@@ -21,13 +21,12 @@ export default function OmniEchelonSoundsWebsite() {
       </header>
 
       <main>
-        <section className="relative overflow-hidden border-b border-white/10">
-          <div className="pointer-events-none absolute inset-0 opacity-80">
-            <div className="absolute left-[20%] top-[55%] h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.9)_0%,_rgba(250,204,21,0.7)_25%,_rgba(168,85,247,0.5)_45%,_rgba(59,130,246,0.25)_65%,_transparent_80%)] blur-[35px] animate-pulse" />
-            <div className="absolute left-1/2 top-1/2 h-[1200px] w-[1200px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/5 blur-[2px]" />
-            <div className="absolute inset-0 bg-[radial-gradient(1px_80px_at_50%_0%,rgba(255,255,255,0.2),transparent),radial-gradient(1px_100px_at_20%_100%,rgba(255,255,255,0.15),transparent),radial-gradient(1px_90px_at_80%_100%,rgba(255,255,255,0.15),transparent)] opacity-40" />
-            <div className="absolute inset-0 bg-[radial-gradient(2px_2px_at_20%_30%,rgba(255,255,255,0.7),transparent),radial-gradient(1px_1px_at_70%_60%,rgba(255,255,255,0.5),transparent),radial-gradient(1.5px_1.5px_at_40%_80%,rgba(255,255,255,0.6),transparent),radial-gradient(1px_1px_at_80%_20%,rgba(255,255,255,0.4),transparent)]" />
-            <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.65))]" />
+      <section className="relative overflow-hidden border-b border-white/10">
+  {/* cosmic background */}
+  <div className="pointer-events-none absolute inset-0 -z-10">
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(168,85,247,0.15),transparent_50%),radial-gradient(circle_at_bottom,rgba(59,130,246,0.12),transparent_50%)]" />
+    <div className="absolute inset-0 bg-[radial-gradient(1px_1px_at_20%_30%,rgba(255,255,255,0.6),transparent),radial-gradient(1px_1px_at_70%_60%,rgba(255,255,255,0.5),transparent),radial-gradient(1px_1px_at_40%_80%,rgba(255,255,255,0.4),transparent)] opacity-40" />
+  </div>
           </div>
 
           <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
