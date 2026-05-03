@@ -22,6 +22,11 @@ export default function OmniEchelonSoundsWebsite() {
 
       <main>
 <section className="relative overflow-hidden border-b border-white/10">
+  <div className="pointer-events-none absolute inset-0">
+  <div className="absolute left-[18%] top-[48%] h-[420px] w-[420px] rounded-full bg-yellow-400/20 blur-[120px]" />
+  <div className="absolute right-[18%] top-[35%] h-[380px] w-[380px] rounded-full bg-blue-500/15 blur-[120px]" />
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.75)_75%)]" />
+</div>
 
   {/* COSMIC BACKGROUND */}
   <div className="pointer-events-none absolute inset-0 opacity-80">
@@ -41,7 +46,8 @@ export default function OmniEchelonSoundsWebsite() {
         </div>
 
         <h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
-          <span className="text-yellow-400 normal-case">ALL LEVELS of SOUND</span>
+<span className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-500 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(250,204,21,0.35)] normal-case">
+  ALL LEVELS of SOUNDS</span>       
         </h1>
 
         <div className="mt-8 space-y-3">
