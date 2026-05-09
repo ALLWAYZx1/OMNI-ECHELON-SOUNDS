@@ -131,12 +131,7 @@ export default function OmniEchelonSoundsWebsite() {
 
           {/* SPOTIFY */}
           <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-            <iframe
-              src="https://open.spotify.com/embed/album/4BakOY0bxMN1r9ucDRSV9k"
-              width="100%"
-              height="152"
-              allow="autoplay; clipboard-write; encrypted-media"
-            ></iframe>
+           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7AKc4hD4Z57wgl24hSOKzQ?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
 
           {/* SOUNDCLOUD */}
