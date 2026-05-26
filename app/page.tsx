@@ -132,7 +132,7 @@ export default function OmniEchelonSoundsWebsite() {
           {/* SPOTIFY */}
           <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
             <iframe
-              src="https://open.spotify.com/embed/album/7AKc4hD4Z57wgl24hSOKzQ?utm_source=generator&theme=0"
+              src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb?utm_source=generator"0"
               width="100%"
               height="152"
               allow="autoplay; clipboard-write; encrypted-media"
