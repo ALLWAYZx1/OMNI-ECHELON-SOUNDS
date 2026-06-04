@@ -29,11 +29,11 @@ export default function OmniEchelonSoundsWebsite() {
         OMNI ECHELON SOUNDS
       </h1>
 
-      <p className="text-[9px] sm:text-xs uppercase tracking-[0.3em] text-white/80">
+      <p className="text-[8px] sm:text-xs uppercase tracking-[0.3em] text-white/80">
         SIGNAL FROM ALLWAYZintheMIXX
       </p>
 
-      <p className="text-[11px] sm:text-[10px] uppercase tracking-[0.25em] text-white/60">
+      <p className="text-[15px] sm:text-[10px] uppercase tracking-[0.25em] text-white/60">
         INDEPENDENT LABEL UNIVERSE
       </p>
     </div>
