@@ -139,7 +139,7 @@ export default function OmniEchelonSoundsWebsite() {
             ></iframe>
           </div>
 
-{/* SOUNDCLOUD */}
+{/* SOUND CLOUD */}
 <iframe
   width="100%"
   height="166"
@@ -150,39 +150,32 @@ export default function OmniEchelonSoundsWebsite() {
   src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true"
 />
 
-{/* CLOSE RIGHT COLUMN */}
-</div>
+{/* TRANSMISSION STRIP */}
+<section className="relative w-full border-y border-white/10 bg-black mt-6">
+  <div className="pointer-events-none absolute inset-0">
+    <div className="absolute left-1/2 top-1/2 h-[500px] w-[900px] -translate-x-1/2 -translate-y-1/2 bg-blue-500/10 blur-[120px]" />
+    <div className="absolute left-1/2 top-1/2 h-[400px] w-[800px] -translate-x-1/2 -translate-y-1/2 bg-yellow-400/10 blur-[100px]" />
+  </div>
 
-{/* TRANSMISSION STRIP (RIGHT AFTER IT) */}
-  <section className="relative w-full border-y border-white/10 bg-black mt-6">
-    {/* glow haze */}
-    <div className="pointer-events-none absolute inset-0">
-      <div className="absolute left-1/2 top-1/2 h-[500px] w-[900px] -translate-x-1/2 -translate-y-1/2 bg-blue-500/10 blur-[120px]" />
-      <div className="absolute left-1/2 top-1/2 h-[400px] w-[800px] -translate-x-1/2 -translate-y-1/2 bg-yellow-400/10 blur-[100px]" />
+  <div className="relative z-10 mx-auto max-w-6xl px-4 py-6">
+    <p className="text-xs uppercase tracking-[0.4em] text-white/60">
+      TRANSMISSION SIGNAL
+    </p>
+  </div>
+
+  <div className="relative w-full">
+    <div className="relative w-full" style={{ paddingBottom: "42%" }}>
+      <iframe
+        className="absolute left-0 top-0 h-full w-full"
+        src="https://www.youtube.com/embed/rfip6Ix-SgA"
+        title="Transmission"
+        allowFullScreen
+      />
     </div>
+  </div>
 
-    {/* label */}
-    <div className="relative z-10 mx-auto max-w-6xl px-4 py-6">
-      <p className="text-xs uppercase tracking-[0.4em] text-white/60">
-        TRANSMISSION SIGNAL
-      </p>
-    </div>
-
-    {/* VIDEO */}
-    <div className="relative w-full">
-      <div className="relative w-full" style={{ paddingBottom: "42%" }}>
-        <iframe
-          className="absolute left-0 top-0 h-full w-full"
-          src="https://www.youtube.com/embed/rfip6Ix-SgA"
-          title="Transmission"
-          allowFullScreen
-        />
-      </div>
-    </div>
-
-    {/* pulse line */}
-    <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
-  </section>
+  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
+</section>
 
 </div>
 {/* ABOUT SECTION STARTS CLEAN */}
