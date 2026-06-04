@@ -1,4 +1,7 @@
-<header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur">
+export default function OmniEchelonSoundsWebsite() {
+  return (
+    <div className="min-h-screen bg-black text-white">
+      <<header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur">
   <div className="relative mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
 
     {/* LEFT: LOGO */}
@@ -25,6 +28,7 @@
 
   </div>
 </header>
+  
       <main>
 <section className="relative overflow-hidden border-b border-white/10">
   <div className="pointer-events-none absolute inset-0">
