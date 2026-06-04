@@ -227,94 +227,125 @@ export default function OmniEchelonSoundsWebsite() {
           </div>
         </section>
 
-       <section id="sound" className="border-b border-white/10 bg-white/[0.02]">
-  <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-    <div className="max-w-3xl">
-      <div className="text-xs uppercase tracking-[0.35em] text-white/45">Sound</div>
-      <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
-        What lives in the world.
-      </h2>
-    </div>
-
-    <div className="mt-10 grid gap-6 md:grid-cols-2">
-      {[
-        ["Cinematic", "Heavy emotion, movement, scale, and impact."],
-        ["Dark", "Shadow, pressure, tension, and weight."],
-        ["Post-Time", "Not retro. Not futuristic. Somewhere beyond both."],
-        ["Personal", "A signature sound world, not filler for the shelf."],
-      ].map(([title, body]) => (
-        <div key={title} className="rounded-[2rem] border border-white/10 p-6">
-          <div className="text-lg font-semibold uppercase tracking-wide">
-            {title}
-          </div>
-          <p className="mt-3 max-w-md text-sm leading-6 text-white/68">
-            {body}
-          </p>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>   {/* ✅ THIS WAS MISSING */}
-
-{/* WORLD */}
-        <section id="world" className="border-b border-white/10">
+        <section id="sound" className="border-b border-white/10 bg-white/[0.02]">
           <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-
             <div className="max-w-3xl">
-              <div className="text-xs uppercase tracking-[0.35em] text-white/45">
-                World
-              </div>
-
-              <h2 className="mt-4 text-3xl font-bold uppercase">
-                A page with presence.
+              <div className="text-xs uppercase tracking-[0.35em] text-white/45">Sound</div>
+              <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
+                What lives in the world.
               </h2>
             </div>
 
-            <div className="mt-10">
-              <p className="text-base leading-7 text-white/70">
-                This space represents the Omni Echelon universe.
-              </p>
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              {[
+                ["Cinematic", "Heavy emotion, movement, scale, and impact."],
+                ["Dark", "Shadow, pressure, tension, and weight."],
+                ["Post-Time", "Not retro. Not futuristic. Somewhere beyond both."],
+                ["Personal", "A signature sound world, not filler for the shelf."],
+              ].map(([title, body]) => (
+                <div key={title} className="rounded-[2rem] border border-white/10 p-6">
+                  <div className="text-lg font-semibold uppercase tracking-wide">{title}</div>
+                  <p className="mt-3 max-w-md text-sm leading-6 text-white/68">{body}</p>
+                </div>
+              ))}
             </div>
-
           </div>
         </section>
 
-        {/* CONTACT */}
-        <section id="contact" className="bg-white/[0.02]">
+        <section id="world" className="border-b border-white/10">
           <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 sm:p-10 lg:p-12">
-
-              <div className="text-xs uppercase tracking-[0.35em] text-white/45">
-                Contact
-              </div>
-
-              <h2 className="mt-4 text-3xl font-bold uppercase">
-                Connect to the vision.
+            <div className="max-w-3xl">
+              <div className="text-xs uppercase tracking-[0.35em] text-white/45">World</div>
+              <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
+                A page with presence.
               </h2>
 
+              <div className="mt-10">
+                <p className="text-base leading-7 text-white/70">
+                  This space can hold visuals, embedded audio, a statement, selected drops, behind-the-scenes ideas, or whatever best represents the OMNI ECHELON SOUNDS universe without turning it into a storefront.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-10 grid gap-6 lg:grid-cols-3">
+              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6">
+                <div className="text-xs uppercase tracking-[0.3em] text-yellow-400">01</div>
+                <h3 className="mt-4 text-xl font-semibold uppercase">Statement</h3>
+                <p className="mt-3 text-sm leading-6 text-white/68">
+                  A raw message about what the brand means and where it’s headed.
+                </p>
+              </div>
+
+              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6">
+                <div className="text-xs uppercase tracking-[0.3em] text-yellow-400">02</div>
+                <h3 className="mt-4 text-xl font-semibold uppercase">Audio</h3>
+                <p className="mt-3 text-sm leading-6 text-white/68">
+                  A featured player for one sound piece, reel, or sonic trailer.
+                </p>
+              </div>
+
+              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6">
+                <div className="text-xs uppercase tracking-[0.3em] text-yellow-400">03</div>
+                <h3 className="mt-4 text-xl font-semibold uppercase">Presence</h3>
+                <p className="mt-3 text-sm leading-6 text-white/68">
+                  Visual identity, mood imagery, and a clean contact point for serious work.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" className="bg-white/[0.02]">
+          <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 sm:p-10 lg:p-12">
+              <div className="max-w-3xl">
+                <div className="text-xs uppercase tracking-[0.35em] text-white/45">Contact</div>
+                <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
+                  Connect to the vision.
+                </h2>
+                <p className="mt-5 text-base leading-7 text-white/70">
+                  Add your email, Instagram, artist links, or one clean contact form here. Keep it direct. Keep it personal.
+                </p>
+              </div>
+
               <div className="mt-8 flex flex-wrap gap-4">
-                <a href="mailto:Omniechelonsounds@gmail.com" className="rounded-2xl bg-white px-6 py-3 text-black">
+                <a
+                  href="mailto:Omniechelonsounds@gmail.com?subject=OMNI%20ECHELON%20INQUIRY&body=Name:%0AProject:%0ABudget:%0AMessage:"
+                  className="rounded-2xl border border-white bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-black transition hover:scale-105 active:scale-95"
+                >
                   Email
                 </a>
 
-                <a href="https://instagram.com/allwayzinthemixx" className="rounded-2xl border px-6 py-3">
+                <a
+                  href="https://www.instagram.com/allwayzinthemixx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
+                >
                   Instagram
                 </a>
 
-                <a href="https://soundcloud.com/allwayzinthemixx" className="rounded-2xl border px-6 py-3">
+                <a
+                  href="https://soundcloud.com/allwayzinthemixx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
+                >
                   SoundCloud
                 </a>
 
-                <a href="https://youtube.com/@ALLWAYZWORLD" className="rounded-2xl border px-6 py-3">
+                <a
+                  href="https://www.youtube.com/@ALLWAYZWORLD"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
+                >
                   YouTube
                 </a>
               </div>
-
             </div>
           </div>
         </section>
-
       </main>
     </div>
   );
