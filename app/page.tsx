@@ -95,10 +95,7 @@ export default function OmniEchelonSoundsWebsite() {
 
       </div>
 
-      {/* RIGHT SIDE */}
-      <div className="w-full max-w-[520px] justify-self-end">
-
-
+ 
         {/* YOUTUBE */}
        <div className="w-full max-w-[520px] justify-self-end">
   <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
