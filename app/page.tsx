@@ -254,7 +254,7 @@ export default function OmniEchelonSoundsWebsite() {
            ))}
 </div>
 
-<section id="world" className="border-b border-white/10">
+ <section id="world" className="border-b border-white/10">
           <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
             <div className="max-w-3xl">
               <div className="text-xs uppercase tracking-[0.35em] text-white/45">World</div>
