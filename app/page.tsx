@@ -150,14 +150,43 @@ export default function OmniEchelonSoundsWebsite() {
   src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
 ></iframe>
           
-       </div>
-{/* YOUTUBE TRANSMISSION */}
-<div className="mt-6">
-  <p className="mb-3 text-xs uppercase tracking-[0.3em] text-blue-400">
-    YouTube Transmission
-  </p>
+{/* SOUND GRID */}
+<div className="mt-10 grid gap-6 md:grid-cols-3">
 
-  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+  {/* APPLE MUSIC */}
+  <div className="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
+    <p className="p-3 text-xs uppercase tracking-[0.3em] text-pink-400">
+      Apple Music
+    </p>
+    <iframe
+      src="https://embed.music.apple.com/us/album/emotions-in-motion/1895465650"
+      width="100%"
+      height="300"
+      allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+    ></iframe>
+  </div>
+
+  {/* SOUNDCLOUD */}
+  <div className="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
+    <p className="p-3 text-xs uppercase tracking-[0.3em] text-orange-400">
+      SoundCloud
+    </p>
+    <iframe
+      width="100%"
+      height="300"
+      scrolling="no"
+      frameBorder="no"
+      allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=false"
+    ></iframe>
+  </div>
+
+  {/* YOUTUBE */}
+  <div className="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
+    <p className="p-3 text-xs uppercase tracking-[0.3em] text-blue-400">
+      YouTube Transmission
+    </p>
+
     <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
       <iframe
         className="absolute left-0 top-0 h-full w-full"
@@ -168,16 +197,6 @@ export default function OmniEchelonSoundsWebsite() {
     </div>
   </div>
 
-  <div className="mt-3 flex gap-4 text-xs uppercase text-white/60">
-    <a href="https://www.youtube.com/watch?v=rfip6Ix-SgA" target="_blank">
-      Watch →
-    </a>
-    <a href="https://www.youtube.com/@ALLWAYZWORLD" target="_blank">
-      Channel →
-    </a>
-  </div>
-</div>
-      </div>
 
     </div>
   </div>
