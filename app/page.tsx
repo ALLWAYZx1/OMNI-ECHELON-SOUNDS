@@ -177,7 +177,7 @@ export default function OmniEchelonSoundsWebsite() {
   {/* label */}
   <div className="relative z-10 mx-auto max-w-6xl px-4 pt-8">
     <p className="text-xs uppercase tracking-[0.5em] text-white/60">
-      ARTIST DEVELOPMENT SIGNAL
+      Bigger Than Life
     </p>
   </div>
 
