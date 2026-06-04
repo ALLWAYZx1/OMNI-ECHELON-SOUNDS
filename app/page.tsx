@@ -212,22 +212,20 @@ export default function OmniEchelonSoundsWebsite() {
     ></iframe>
   </div>
 
-  {/* YOUTUBE */}
-  <div className="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
-    <p className="p-3 text-xs uppercase tracking-[0.3em] text-blue-400">
-      YouTube Transmission
-    </p>
+{/* YOUTUBE */}
+<div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+  <p className="p-3 text-xs uppercase tracking-[0.3em] text-blue-400">
+    YouTube Transmission
+  </p>
 
-    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-      <iframe
-        className="absolute left-0 top-0 h-full w-full"
-        src="https://www.youtube.com/embed/rfip6Ix-SgA"
-        title="Omni Echelon Sounds Transmission"
-        allowFullScreen
-      ></iframe>
-    </div>
+  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+    <iframe
+      className="absolute left-0 top-0 h-full w-full"
+      src="https://www.youtube.com/embed/rfip6Ix-SgA"
+      title="Omni Echelon Sounds Transmission"
+      allowFullScreen
+    ></iframe>
   </div>
-
 </div>
 
 
