@@ -46,7 +46,7 @@ export default function OmniEchelonSoundsWebsite() {
         </div>
         
 {/* 🔥 TRANSMISSION STRIP (FULL WIDTH) */}
-<section className="relative w-full border-y border-white/10 bg-black">
+<section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] border-y border-white/10 bg-black">
   <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
     <iframe
       className="absolute inset-0 h-full w-full"
@@ -57,7 +57,7 @@ export default function OmniEchelonSoundsWebsite() {
   </div>
 
   {/* pulse line */}
-  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
+ <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
 </section>
         {/* ARTIST DEVELOPMENT PROMO (SMALLER SIGNAL) */}
 <section className="relative w-full border-b border-white/10 bg-black overflow-hidden">
