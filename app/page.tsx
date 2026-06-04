@@ -62,7 +62,7 @@ export default function OmniEchelonSoundsWebsite() {
       <div className="max-w-2xl">
 
         <div className="mb-6 inline-flex rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.32em] text-white/70">
-          Entry point
+          Emotions in Motion
         </div>
 
         <h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
