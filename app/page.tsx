@@ -44,17 +44,24 @@ export default function OmniEchelonSoundsWebsite() {
       {/* LEFT SIDE */}
       <div className="max-w-2xl">
 
-        <div className="mb-6 inline-flex rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.32em] text-white/70">
-          Entry point
-        </div>
+  <h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
+    <span className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-500 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(250,204,21,0.35)]">
+      ALL LEVELS of SOUNDS
+    </span>
+  </h1>
 
-        <h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
-          <span className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-500 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(250,204,21,0.35)]">
-            ALL LEVELS of SOUNDS
-          </span>
-        </h1>
+  {/* ✅ THIS BELONGS HERE */}
+  <div className="mt-8 space-y-3">
+    <p className="text-xs font-semibold uppercase tracking-[0.22em] text-transparent bg-gradient-to-r from-white via-indigo-300 to-purple-300 bg-clip-text">
+      CINEMATIC PRESSURE
+    </p>
 
-      </div>
+    <p className="max-w-xl text-sm italic tracking-[0.25em] text-white/60 sm:text-base">
+      ENTER TO EXPERIENCE WHAT THIS ATMOSPHERE HAS IN VISION, SOUND AND MOTION ACROSS ALL SPECTRUMS
+    </p>
+  </div>
+
+</div>
 
       {/* RIGHT SIDE (placeholder so layout stays stable) */}
       <div className="hidden lg:block" />
@@ -65,15 +72,6 @@ export default function OmniEchelonSoundsWebsite() {
 
 </section>
 
-        <div className="mt-8 space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-transparent bg-gradient-to-r from-white via-indigo-300 to-purple-300 bg-clip-text">
-            CINEMATIC PRESSURE
-          </p>
-
-          <p className="max-w-xl text-sm italic tracking-[0.25em] text-white/60 sm:text-base">
-            ENTER TO EXPERIENCE WHAT THIS ATMOSPHERE HAS IN VISION, SOUND AND MOTION ACROSS ALL SPECTRUMS
-          </p>
-        </div>
 
         <div className="mt-10 flex flex-wrap gap-4">
           <a href="#about" className="rounded-2xl border border-white/30 px-6 py-3 text-sm uppercase tracking-[0.22em]">
