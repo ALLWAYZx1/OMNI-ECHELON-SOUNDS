@@ -98,23 +98,16 @@ export default function OmniEchelonSoundsWebsite() {
       {/* RIGHT SIDE */}
       <div className="w-full max-w-[520px] justify-self-end">
 
-
-        {/* YOUTUBE */}
-     <iframe
-  className="absolute left-0 top-0 h-full w-full"
-  src="https://www.youtube.com/watch?v=MLIAyB5Efq8"
-  title="ARTIST DEVELOPMENT SIGNAL"
-  allowFullScreen
-/>
-  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-      <iframe
-        className="absolute left-0 top-0 h-full w-full"
-        src="https://www.youtube.com/watch?v=MLIAyB5Efq8"
-        title=“ARTIST DELEPMENT SIGNAL”
-        allowFullScreen
-      ></iframe>
-    </div>
+        
+ {/* YOUTUBE */}
+<div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+    <iframe
+      className="absolute left-0 top-0 h-full w-full"
+      src="https://www.youtube.com/embed/MLIAyB5Efq8"
+      title="ARTIST DEVELOPMENT SIGNAL"
+      allowFullScreen
+    />
   </div>
 </div>
 
