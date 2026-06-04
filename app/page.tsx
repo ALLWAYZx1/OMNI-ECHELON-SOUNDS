@@ -278,7 +278,14 @@ export default function OmniEchelonSoundsWebsite() {
               <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
                 A page with presence.
               </h2>
-
+{/* PRESENCE IMAGE */}
+<div className="mt-8 overflow-hidden rounded-2xl border border-white/10">
+  <img
+    src="/presence.png"
+    alt="Presence Visual"
+    className="w-full aspect-[21/9] object-cover hover:scale-105 transition duration-500"
+  />
+</div>
               <div className="mt-10">
                 <p className="text-base leading-7 text-white/70">
                   This space can hold visuals, embedded audio, a statement, selected drops, behind-the-scenes ideas, or whatever best represents the OMNI ECHELON SOUNDS universe without turning it into a storefront.
