@@ -1,498 +1,310 @@
 export default function OmniEchelonSoundsWebsite() {
   return (
-    <div className="min-h-screen bg-black text-white overflow-x-hidden">
-
-      {/* HEADER */}
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-          <img
-            src="/logo.png"
-            alt="OMNI ECHELON SOUNDS"
-            className="h-10 w-auto drop-shadow-[0_0_20px_rgba(250,204,21,0.4)]"
-          />
-
-          <nav className="hidden md:flex gap-6 text-xs uppercase tracking-[0.25em] text-white/60">
-            <a href="#about" className="hover:text-white">About</a>
-            <a href="#sound" className="hover:text-white">Sound</a>
-            <a href="#world" className="hover:text-white">World</a>
-            <a href="#contact" className="hover:text-white">Contact</a>
-          </nav>
-        </div>
-      </header>
-
-      {/* HERO */}
-      <section className="relative overflow-hidden border-b border-white/10">
-
-        {/* cinematic glow field */}
-        <div className="pointer-events-none absolute inset-0">
-          <div className="absolute left-1/4 top-1/3 h-[500px] w-[500px] rounded-full bg-yellow-400/20 blur-[140px]" />
-          <div className="absolute right-1/4 top-1/2 h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-[160px]" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/60 to-black" />
-        </div>
-
-        <div className="relative mx-auto max-w-6xl px-4 py-28">
-
-          <p className="text-xs uppercase tracking-[0.4em] text-white/50">
-            CINEMATIC PRESSURE SYSTEM
-          </p>
-
-          <h1 className="mt-6 text-4xl sm:text-6xl font-black uppercase leading-tight">
-            ALL LEVELS OF
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-orange-400 to-purple-500">
-              SOUND DESIGN
-            </span>
-          </h1>
-
-          <p className="mt-6 max-w-xl text-white/60 leading-relaxed">
-            A controlled collapse of emotion, rhythm, and atmosphere built into motion.
-          </p>
-
-          <div className="mt-10 flex gap-4">
-            <a className="px-6 py-3 rounded-2xl bg-white text-black text-xs uppercase tracking-[0.2em]">
-              Enter
-            </a>
-            <a className="px-6 py-3 rounded-2xl border border-white/20 text-xs uppercase tracking-[0.2em]">
-              Instagram
-            </a>
+    <div className="min-h-screen bg-black text-white">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+          <div className="flex items-center gap-3">
+            <img
+              src="/logo.png"
+              alt="OMNI ECHELON SOUNDS"
+              className="h-12 w-auto opacity-95 drop-shadow-[0_0_12px_rgba(250,204,21,0.6)]"
+            />
           </div>
 
-        </div>
-      </section>
-
-      {/* ABOUT */}
-      <section id="about" className="border-b border-white/10">
-        <div className="mx-auto max-w-6xl px-4 py-20">
-          <h2 className="text-3xl font-bold uppercase">Identity Layer</h2>
-          <p className="mt-6 text-white/70 max-w-2xl">
-            OMNI ECHELON SOUNDS is not content. It is structure. Sound becomes identity, and identity becomes motion.
-          </p>
-        </div>
-      </section>
-
-      {/* SOUND GRID */}
-      <section id="sound" className="border-b border-white/10 bg-white/[0.02]">
-        <div className="mx-auto max-w-6xl px-4 py-20">
-
-          <h2 className="text-3xl font-bold uppercase">Sound Architecture</h2>
-
-          <div className="mt-10 grid md:grid-cols-2 gap-6">
-            {[
-              ["Cinematic", "Scale, emotion, impact"],
-              ["Dark", "Pressure, shadow, weight"],
-              ["Post-Time", "Beyond eras and labels"],
-              ["Personal", "Signature sonic fingerprint"],
-            ].map(([t, d]) => (
-              <div key={t} className="p-6 rounded-2xl border border-white/10 bg-black/30">
-                <p className="uppercase tracking-[0.25em] text-white/80">{t}</p>
-                <p className="mt-3 text-white/60">{d}</p>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-      {/* WORLD */}
-      <section id="world" className="border-b border-white/10">
-        <div className="mx-auto max-w-6xl px-4 py-20">
-          <h2 className="text-3xl font-bold uppercase">World Layer</h2>
-          <p className="mt-6 text-white/70 max-w-2xl">
-            A living environment for sound, visuals, and narrative fragments.
-          </p>
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section id="contact" className="bg-white/[0.02]">
-        <div className="mx-auto max-w-6xl px-4 py-20">
-
-          <h2 className="text-3xl font-bold uppercase">Contact Signal</h2>
-
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a className="px-6 py-3 bg-white text-black rounded-xl uppercase text-xs tracking-[0.2em]">
-              Email
-            </a>
-            <a className="px-6 py-3 border border-white/20 rounded-xl uppercase text-xs tracking-[0.2em]">
-              Instagram
-            </a>
-            <a className="px-6 py-3 border border-white/20 rounded-xl uppercase text-xs tracking-[0.2em]">
-              SoundCloud
-            </a>
-          </div>
-
-        </div>
-      </section>
-
-    </div>
-  );
-}"use client";
-
-import { useEffect, useRef, useState } from "react";
-
-/* ----------------------------
-   SCENE REVEAL HOOK
----------------------------- */
-function useScene() {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const [inView, setInView] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-
-    const obs = new IntersectionObserver(
-      ([entry]) => {
-        setInView(entry.isIntersecting);
-      },
-      { threshold: 0.2 }
-    );
-
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-
-  return { ref, inView };
-}
-
-/* ----------------------------
-   SCENE WRAPPER (FILM FRAME)
----------------------------- */
-function Scene({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const { ref, inView } = useScene();
-
-  return (
-    <div
-      ref={ref}
-      className={`transition-all duration-[1200ms] ease-out transform ${
-        inView
-          ? "opacity-100 translate-y-0 blur-0"
-          : "opacity-0 translate-y-16 blur-sm"
-      }`}
-    >
-      {children}
-    </div>
-  );
-}
-
-/* ----------------------------
-   MAIN FILM
----------------------------- */
-export default function OmniEchelonSoundsWebsite() {
-  return (
-    <div className="min-h-screen bg-black text-white overflow-x-hidden">
-
-      {/* 🌌 GLOBAL CINEMATIC FIELD */}
-      <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute left-[-15%] top-[10%] h-[700px] w-[700px] bg-purple-500/10 blur-[180px] animate-pulse" />
-        <div className="absolute right-[-20%] top-[30%] h-[900px] w-[900px] bg-blue-500/10 blur-[200px]" />
-        <div className="absolute left-[20%] bottom-[-25%] h-[900px] w-[900px] bg-yellow-400/10 blur-[220px]" />
-
-        {/* STAR FIELD */}
-        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(1px_1px_at_25%_30%,white,transparent),radial-gradient(1px_1px_at_70%_60%,white,transparent)]" />
-      </div>
-
-      {/* 🎥 HEADER */}
-      <header className="sticky top-0 z-50 backdrop-blur-xl bg-black/60 border-b border-white/10">
-        <div className="mx-auto max-w-6xl flex justify-between items-center px-4 py-4">
-          <img src="/logo.png" className="h-12" />
-
-          <nav className="hidden md:flex gap-8 text-xs uppercase tracking-[0.35em] text-white/60">
-            <a href="#about">About</a>
-            <a href="#sound">Sound</a>
-            <a href="#world">World</a>
-            <a href="#contact">Contact</a>
+          <nav className="hidden gap-6 text-sm text-white/75 md:flex">
+            <a href="#about" className="transition hover:text-white">About</a>
+            <a href="#sound" className="transition hover:text-white">Sound</a>
+            <a href="#world" className="transition hover:text-white">World</a>
+            <a href="#contact" className="transition hover:text-white">Contact</a>
           </nav>
         </div>
       </header>
 
       <main>
+<section className="relative overflow-hidden border-b border-white/10">
+  <div className="pointer-events-none absolute inset-0">
+  <div className="absolute left-[18%] top-[48%] h-[420px] w-[420px] rounded-full bg-yellow-400/20 blur-[120px]" />
+  <div className="absolute right-[18%] top-[35%] h-[380px] w-[380px] rounded-full bg-blue-500/15 blur-[120px]" />
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.75)_75%)]" />
+</div>
 
-        {/* 🎬 HERO SCENE (OPENING SHOT) */}
-        <section className="relative h-[95vh] flex items-center justify-center text-center overflow-hidden border-b border-white/10">
+  {/* COSMIC BACKGROUND */}
+  <div className="pointer-events-none absolute inset-0 opacity-80">
+    <div className="absolute left-[20%] top-[55%] h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.9)_0%,_rgba(250,204,21,0.7)_25%,_rgba(168,85,247,0.5)_45%,_rgba(59,130,246,0.25)_65%,_transparent_80%)] blur-[35px] animate-pulse" />
+    <div className="absolute inset-0 bg-[radial-gradient(1px_1px_at_20%_30%,rgba(255,255,255,0.6),transparent),radial-gradient(1px_1px_at_70%_60%,rgba(255,255,255,0.4),transparent)]" />
+    <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.7))]" />
+  </div>
 
-          {/* camera glow */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08),transparent_60%)]" />
+  <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[1fr_520px]">
 
-          {/* drift layer */}
-          <div className="absolute inset-0 translate-y-6 scale-110 opacity-70 bg-gradient-to-b from-white/5 to-transparent" />
+      {/* LEFT SIDE */}
+      <div className="max-w-2xl">
 
-          <div className="relative z-10">
-            <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tight">
-              ALL LEVELS<br />OF SOUND
-            </h1>
+        <div className="mb-6 inline-flex rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.32em] text-white/70">
+          Entry point
+        </div>
 
-            <p className="mt-6 text-white/60 tracking-[0.4em] uppercase text-xs md:text-sm">
-              cinematic pressure • motion identity • sonic architecture
-            </p>
+        <h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
+<span className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-500 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(250,204,21,0.35)] normal-case">
+  ALL LEVELS of SOUNDS</span>       
+        </h1>
 
-            <div className="mt-12 flex justify-center gap-4">
-              <button className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white hover:text-black transition">
-                Enter
-              </button>
-              <button className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white/10 transition">
-                Explore
-              </button>
-            </div>
+        <div className="mt-8 space-y-3">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-transparent bg-gradient-to-r from-white via-indigo-300 to-purple-300 bg-clip-text">
+            CINEMATIC PRESSURE
+          </p>
+
+          <p className="max-w-xl text-sm italic tracking-[0.25em] text-white/60 sm:text-base">
+            ENTER TO EXPERIENCE WHAT THIS ATMOSPHERE HAS IN VISION, SOUND AND MOTION ACROSS ALL SPECTRUMS
+          </p>
+        </div>
+
+        <div className="mt-10 flex flex-wrap gap-4">
+          <a href="#about" className="rounded-2xl border border-white/30 px-6 py-3 text-sm uppercase tracking-[0.22em]">
+            Enter
+          </a>
+
+          <a
+            href="https://www.instagram.com/allwayzinthemixx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-2xl border border-white/20 px-6 py-3 text-sm uppercase tracking-[0.22em]"
+          >
+            Instagram
+          </a>
+        </div>
+
+        {/* 🍎 APPLE MUSIC (LEFT SIDE) */}
+        <div className="mt-10">
+          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-pink-400">
+            APPLE MUSIC
+          </p>
+
+          <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <iframe
+              src="https://embed.music.apple.com/us/album/emotions-in-motion/1895465650"
+              width="100%"
+              height="300"
+              style={{ borderRadius: "12px" }}
+              allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+            ></iframe>
           </div>
-        </section>
+        </div>
 
-        {/* 🎞️ ABOUT SCENE */}
-        <section id="about" className="py-32 border-b border-white/10">
-          <div className="mx-auto max-w-5xl px-6">
-            <Scene>
-              <h2 className="text-4xl font-bold uppercase">FILL THE VOID</h2>
-
-              <p className="mt-8 text-white/70 leading-8">
-                OMNI ECHELON SOUNDS exists as a cinematic identity system.
-                Sound becomes structure. Emotion becomes architecture.
-              </p>
-            </Scene>
-          </div>
-        </section>
-
-        {/* 🎞️ SOUND SCENE */}
-        <section id="sound" className="py-32 bg-white/[0.02] border-b border-white/10">
-          <div className="mx-auto max-w-5xl px-6">
-            <Scene>
-              <h2 className="text-4xl font-bold uppercase">SOUND FIELD</h2>
-
-              <div className="mt-12 grid md:grid-cols-2 gap-6">
-                {[
-                  ["Cinematic", "Scale • gravity • emotion"],
-                  ["Dark", "Pressure • tension • shadow"],
-                  ["Post-Time", "Beyond eras"],
-                  ["Personal", "Signature identity"],
-                ].map(([t, d]) => (
-                  <div
-                    key={t}
-                    className="p-6 rounded-2xl border border-white/10 bg-white/5 hover:scale-[1.02] transition"
-                  >
-                    <div className="text-xs uppercase tracking-[0.35em] text-white/60">
-                      {t}
-                    </div>
-                    <p className="mt-3 text-white/80">{d}</p>
-                  </div>
-                ))}
-              </div>
-            </Scene>
-          </div>
-        </section>
-
-        {/* 🌌 WORLD SCENE (DEPTH SHIFT) */}
-        <section id="world" className="py-32 border-b border-white/10">
-          <div className="mx-auto max-w-5xl px-6">
-            <Scene>
-              <h2 className="text-4xl font-bold uppercase">WORLD LAYER</h2>
-
-              <div className="mt-10 h-72 rounded-3xl border border-white/10 bg-gradient-to-r from-purple-500/10 via-blue-500/10 to-yellow-400/10" />
-
-              <p className="mt-8 text-white/70">
-                A visual echo chamber for sound, identity, and motion.
-              </p>
-            </Scene>
-          </div>
-        </section>
-
-        {/* 🎬 CONTACT SCENE (FINAL FRAME) */}
-        <section id="contact" className="py-32 bg-white/[0.02]">
-          <div className="mx-auto max-w-5xl px-6">
-            <Scene>
-              <h2 className="text-4xl font-bold uppercase">CONTACT SIGNAL</h2>
-
-              <div className="mt-10 flex flex-wrap gap-4">
-                {["Email", "Instagram", "SoundCloud", "YouTube"].map((b) => (
-                  <button
-                    key={b}
-                    className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white hover:text-black transition"
-                  >
-                    {b}
-                  </button>
-                ))}
-              </div>
-            </Scene>
-          </div>
-        </section>
-
-      </main>
-    </div>
-  );
-}"use client";
-
-import { useEffect, useRef, useState } from "react";
-
-function useInView<T extends HTMLElement>() {
-  const ref = useRef<T | null>(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-
-    const obs = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) setVisible(true);
-    }, { threshold: 0.15 });
-
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-
-  return { ref, visible };
-}
-
-function Section({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const { ref, visible } = useInView<HTMLDivElement>();
-
-  return (
-    <div
-      ref={ref}
-      className={`transition-all duration-1000 ease-out transform ${
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
-    >
-      {children}
-    </div>
-  );
-}
-
-export default function OmniEchelonSoundsWebsite() {
-  return (
-    <div className="min-h-screen bg-black text-white overflow-x-hidden">
-
-      {/* 🌌 AMBIENT FIELD */}
-      <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute left-[-10%] top-[10%] h-[600px] w-[600px] bg-purple-500/10 blur-[160px] animate-pulse" />
-        <div className="absolute right-[-10%] top-[30%] h-[700px] w-[700px] bg-blue-500/10 blur-[180px]" />
-        <div className="absolute left-[20%] bottom-[-20%] h-[800px] w-[800px] bg-yellow-400/10 blur-[200px]" />
-
-        {/* subtle star field */}
-        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(1px_1px_at_20%_30%,white,transparent),radial-gradient(1px_1px_at_60%_70%,white,transparent)]" />
       </div>
 
-      {/* HEADER */}
-      <header className="sticky top-0 z-50 backdrop-blur-xl bg-black/60 border-b border-white/10">
-        <div className="mx-auto max-w-6xl flex justify-between items-center px-4 py-4">
-          <img src="/logo.png" className="h-12" />
+      {/* RIGHT SIDE */}
+      <div className="w-full max-w-[520px] justify-self-end">
 
-          <nav className="hidden md:flex gap-8 text-xs tracking-[0.3em] uppercase text-white/60">
-            <a href="#about">About</a>
-            <a href="#sound">Sound</a>
-            <a href="#world">World</a>
-            <a href="#contact">Contact</a>
-          </nav>
+
+        {/* YOUTUBE */}
+       <div className="w-full max-w-[520px] justify-self-end">
+  <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+    NOW PLAYING
+  </p>
+
+  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+      <iframe
+        className="absolute left-0 top-0 h-full w-full"
+        src="https://www.youtube.com/embed/5Bb81O1u2o0"
+        title="Bigger Than Life"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+        {/* LINKS */}
+        <div className="mt-3 flex gap-4 text-xs uppercase text-white/60">
+          <a href="https://youtube.com/shorts/5Bb81O1u2o0" target="_blank">Watch →</a>
+          <a href="https://www.youtube.com/@ALLWAYZWORLD" target="_blank">Channel →</a>
         </div>
-      </header>
-
-      <main>
-
-        {/* HERO */}
-        <section className="relative h-[92vh] flex items-center justify-center text-center overflow-hidden border-b border-white/10">
-
-          {/* parallax glow core */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08),transparent_60%)]" />
-
-          <div className="relative z-10">
-            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tight">
-              ALL LEVELS<br />OF SOUND
-            </h1>
-
-            <p className="mt-6 text-white/60 tracking-[0.35em] uppercase text-xs">
-              cinematic pressure • motion identity • sonic architecture
-            </p>
-
-            <div className="mt-10 flex justify-center gap-4">
-              <button className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white hover:text-black transition">
-                Enter
-              </button>
-              <button className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white/10 transition">
-                Explore
-              </button>
-            </div>
-          </div>
-        </section>
-
-        {/* ABOUT */}
-        <section id="about" className="py-28 border-b border-white/10">
-          <div className="mx-auto max-w-5xl px-6">
-            <Section>
-              <h2 className="text-3xl font-bold uppercase">FILL THE VOID</h2>
-              <p className="mt-6 text-white/70 leading-7">
-                OMNI ECHELON SOUNDS is a cinematic identity system built from motion, emotion, and sonic architecture.
-              </p>
-            </Section>
-          </div>
-        </section>
 
         {/* SOUND */}
-        <section id="sound" className="py-28 bg-white/[0.02] border-b border-white/10">
-          <div className="mx-auto max-w-5xl px-6">
-            <Section>
-              <h2 className="text-3xl font-bold uppercase">Sound Field</h2>
+        <div className="mt-6">
+          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+            SOUND
+          </p>
 
-              <div className="mt-12 grid md:grid-cols-2 gap-6">
-                {[
-                  ["Cinematic", "Scale, emotion, gravity"],
-                  ["Dark", "Pressure, tension, shadow"],
-                  ["Post-Time", "Beyond eras"],
-                  ["Personal", "Signature sonic DNA"],
-                ].map(([t, d]) => (
-                  <div
-                    key={t}
-                    className="p-6 rounded-2xl border border-white/10 bg-white/5 hover:scale-[1.02] transition"
-                  >
-                    <div className="text-xs uppercase tracking-[0.3em] text-white/60">
-                      {t}
-                    </div>
-                    <p className="mt-3 text-white/80">{d}</p>
-                  </div>
-                ))}
+          {/* SPOTIFY */}
+          <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <iframe
+              src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              allow="autoplay; clipboard-write; encrypted-media"
+            ></iframe>
+          </div>
+
+          {/* SOUNDCLOUD */}
+<iframe
+  width="100%"
+  height="166"
+  scrolling="no"
+  frameBorder="no"
+  allow="autoplay"
+  className="rounded-2xl"
+  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+></iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+        <section id="about" className="border-b border-white/10">
+          <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
+            <div>
+              <div className="text-xs uppercase tracking-[0.35em] text-white/45">About</div>
+              <h2 className="mt-4 text-4xl font-bold uppercase tracking-tight sm:text-5xl">
+                FILL THE VOID
+              </h2>
+
+              <div className="mt-6 max-w-2xl space-y-5 text-white/80">
+                <p className="text-base leading-7 sm:text-lg">
+                  OMNI ECHELON SOUNDS is where sound turns into identity. The goal is not just to make something you hear. The goal is to make something you feel moving through you.
+                </p>
+                <p className="text-base leading-7 sm:text-lg">
+                  Dark edges. Cinematic weight. Motion. Tension. Release. This page is a personal space for the vision behind the sound and the energy driving it.
+                </p>
               </div>
-            </Section>
-          </div>
-        </section>
+            </div>
 
-        {/* WORLD */}
-        <section id="world" className="py-28 border-b border-white/10">
-          <div className="mx-auto max-w-5xl px-6">
-            <Section>
-              <h2 className="text-3xl font-bold uppercase">World Layer</h2>
-
-              <div className="mt-10 h-64 rounded-3xl border border-white/10 bg-gradient-to-r from-purple-500/10 via-blue-500/10 to-yellow-400/10" />
-
-              <p className="mt-8 text-white/70">
-                A living space where sound becomes visual identity.
-              </p>
-            </Section>
-          </div>
-        </section>
-
-        {/* CONTACT */}
-        <section id="contact" className="py-28 bg-white/[0.02]">
-          <div className="mx-auto max-w-5xl px-6">
-            <Section>
-              <h2 className="text-3xl font-bold uppercase">Contact Signal</h2>
-
-              <div className="mt-10 flex flex-wrap gap-4">
-                {["Email", "Instagram", "SoundCloud", "YouTube"].map((b) => (
-                  <button
-                    key={b}
-                    className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white hover:text-black transition"
-                  >
-                    {b}
-                  </button>
-                ))}
+            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+              <div className="text-xs uppercase tracking-[0.3em] text-yellow-400">Core signal</div>
+              <div className="mt-6 space-y-4 text-base text-white/85 sm:text-lg">
+                <p>Emotion in motion.</p>
+                <p>Cinematic pressure.</p>
+                <p>Sound with presence.</p>
+                <p>Built from instinct, vision, and atmosphere.</p>
               </div>
-            </Section>
+            </div>
           </div>
         </section>
 
+        <section id="sound" className="border-b border-white/10 bg-white/[0.02]">
+          <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+            <div className="max-w-3xl">
+              <div className="text-xs uppercase tracking-[0.35em] text-white/45">Sound</div>
+              <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
+                What lives in the world.
+              </h2>
+            </div>
+
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              {[
+                ["Cinematic", "Heavy emotion, movement, scale, and impact."],
+                ["Dark", "Shadow, pressure, tension, and weight."],
+                ["Post-Time", "Not retro. Not futuristic. Somewhere beyond both."],
+                ["Personal", "A signature sound world, not filler for the shelf."],
+              ].map(([title, body]) => (
+                <div key={title} className="rounded-[2rem] border border-white/10 p-6">
+                  <div className="text-lg font-semibold uppercase tracking-wide">{title}</div>
+                  <p className="mt-3 max-w-md text-sm leading-6 text-white/68">{body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="world" className="border-b border-white/10">
+          <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+            <div className="max-w-3xl">
+              <div className="text-xs uppercase tracking-[0.35em] text-white/45">World</div>
+              <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
+                A page with presence.
+              </h2>
+
+              <div className="mt-10">
+                <p className="text-base leading-7 text-white/70">
+                  This space can hold visuals, embedded audio, a statement, selected drops, behind-the-scenes ideas, or whatever best represents the OMNI ECHELON SOUNDS universe without turning it into a storefront.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-10 grid gap-6 lg:grid-cols-3">
+              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6">
+                <div className="text-xs uppercase tracking-[0.3em] text-yellow-400">01</div>
+                <h3 className="mt-4 text-xl font-semibold uppercase">Statement</h3>
+                <p className="mt-3 text-sm leading-6 text-white/68">
+                  A raw message about what the brand means and where it’s headed.
+                </p>
+              </div>
+
+              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6">
+                <div className="text-xs uppercase tracking-[0.3em] text-yellow-400">02</div>
+                <h3 className="mt-4 text-xl font-semibold uppercase">Audio</h3>
+                <p className="mt-3 text-sm leading-6 text-white/68">
+                  A featured player for one sound piece, reel, or sonic trailer.
+                </p>
+              </div>
+
+              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6">
+                <div className="text-xs uppercase tracking-[0.3em] text-yellow-400">03</div>
+                <h3 className="mt-4 text-xl font-semibold uppercase">Presence</h3>
+                <p className="mt-3 text-sm leading-6 text-white/68">
+                  Visual identity, mood imagery, and a clean contact point for serious work.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" className="bg-white/[0.02]">
+          <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 sm:p-10 lg:p-12">
+              <div className="max-w-3xl">
+                <div className="text-xs uppercase tracking-[0.35em] text-white/45">Contact</div>
+                <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
+                  Connect to the vision.
+                </h2>
+                <p className="mt-5 text-base leading-7 text-white/70">
+                  Add your email, Instagram, artist links, or one clean contact form here. Keep it direct. Keep it personal.
+                </p>
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href="mailto:Omniechelonsounds@gmail.com?subject=OMNI%20ECHELON%20INQUIRY&body=Name:%0AProject:%0ABudget:%0AMessage:"
+                  className="rounded-2xl border border-white bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-black transition hover:scale-105 active:scale-95"
+                >
+                  Email
+                </a>
+
+                <a
+                  href="https://www.instagram.com/allwayzinthemixx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
+                >
+                  Instagram
+                </a>
+
+                <a
+                  href="https://soundcloud.com/allwayzinthemixx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
+                >
+                  SoundCloud
+                </a>
+
+                <a
+                  href="https://www.youtube.com/@ALLWAYZWORLD"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
+                >
+                  YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
