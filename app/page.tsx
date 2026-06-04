@@ -1,31 +1,30 @@
-export default function OmniEchelonSoundsWebsite() {
-  return (
-    <div className="min-h-screen bg-black text-white">
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+<header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur">
+  <div className="relative mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
 
-          {/* BIG BRAND TEXT */}
-          <div className="flex items-center gap-4">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-[0.35em] text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-purple-400 drop-shadow-[0_0_18px_rgba(250,204,21,0.25)]">
-              ALLWAYZintheMIXX
-            </h1>
+    {/* LEFT: LOGO */}
+    <div className="flex items-center gap-3">
+      <img
+        src="/logo.png"
+        alt="OMNI ECHELON SOUNDS"
+        className="h-12 w-auto opacity-95 drop-shadow-[0_0_12px_rgba(250,204,21,0.6)]"
+      />
+    </div>
 
-            <img
-              src="/logo.png"
-              alt="OMNI ECHELON SOUNDS"
-              className="h-10 w-auto opacity-90"
-            />
-          </div>
+    {/* CENTER: NAME */}
+    <div className="absolute left-1/2 -translate-x-1/2 text-center pointer-events-none">
+      <h1 className="text-sm sm:text-base md:text-lg font-black tracking-[0.35em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500 animate-pulse drop-shadow-[0_0_25px_rgba(255,255,255,0.25)]">
+        ALLWAYZINTHEMIXX
+      </h1>
 
-          <nav className="hidden gap-6 text-sm text-white/75 md:flex">
-            <a href="#about" className="transition hover:text-white">About</a>
-            <a href="#sound" className="transition hover:text-white">Sound</a>
-            <a href="#world" className="transition hover:text-white">World</a>
-            <a href="#contact" className="transition hover:text-white">Contact</a>
-          </nav>
-        </div>
-      </header>
+      {/* spectrum glow aura */}
+      <div className="absolute -inset-6 -z-10 blur-2xl opacity-60 bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500 animate-pulse" />
+    </div>
 
+    {/* RIGHT: spacer (keeps balance) */}
+    <div className="w-12" />
+
+  </div>
+</header>
       <main>
 <section className="relative overflow-hidden border-b border-white/10">
   <div className="pointer-events-none absolute inset-0">
