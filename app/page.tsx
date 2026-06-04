@@ -181,7 +181,7 @@ export default function OmniEchelonSoundsWebsite() {
     ></iframe>
   </div>
 
-  {{/* SOUND GRID (CLEAN) */}
+{/* SOUND GRID (CLEAN) */}
 <div className="mt-10 grid gap-6 md:grid-cols-3">
 
   {/* APPLE MUSIC */}
