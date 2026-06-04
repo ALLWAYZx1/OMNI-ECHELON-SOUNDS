@@ -20,23 +20,26 @@ export default function OmniEchelonSoundsWebsite() {
         </div>
       </header>
 
-      <main>
-<section className="relative overflow-hidden border-b border-white/10">
-  <div className="pointer-events-none absolute inset-0">
-  <div className="absolute left-[18%] top-[48%] h-[420px] w-[420px] rounded-full bg-yellow-400/20 blur-[120px]" />
-  <div className="absolute right-[18%] top-[35%] h-[380px] w-[380px] rounded-full bg-blue-500/15 blur-[120px]" />
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.75)_75%)]" />
-</div>
+   <section className="relative overflow-hidden border-b border-white/10">
 
-  {/* COSMIC BACKGROUND */}
+  {/* BACKGROUND */}
+  <div className="pointer-events-none absolute inset-0">
+    <div className="absolute left-[18%] top-[48%] h-[420px] w-[420px] rounded-full bg-yellow-400/20 blur-[120px]" />
+    <div className="absolute right-[18%] top-[35%] h-[380px] w-[380px] rounded-full bg-blue-500/15 blur-[120px]" />
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.75)_75%)]" />
+  </div>
+
+  {/* COSMIC LAYER */}
   <div className="pointer-events-none absolute inset-0 opacity-80">
     <div className="absolute left-[20%] top-[55%] h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.9)_0%,_rgba(250,204,21,0.7)_25%,_rgba(168,85,247,0.5)_45%,_rgba(59,130,246,0.25)_65%,_transparent_80%)] blur-[35px] animate-pulse" />
     <div className="absolute inset-0 bg-[radial-gradient(1px_1px_at_20%_30%,rgba(255,255,255,0.6),transparent),radial-gradient(1px_1px_at_70%_60%,rgba(255,255,255,0.4),transparent)]" />
     <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.7))]" />
   </div>
 
-  <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-    <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[1fr_520px]">
+  {/* CONTENT WRAPPER */}
+  <div className="relative mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+
+    <div className="grid items-center gap-12 lg:grid-cols-[1fr_520px]">
 
       {/* LEFT SIDE */}
       <div className="max-w-2xl">
@@ -46,9 +49,21 @@ export default function OmniEchelonSoundsWebsite() {
         </div>
 
         <h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
-<span className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-500 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(250,204,21,0.35)] normal-case">
-  ALL LEVELS of SOUNDS</span>       
+          <span className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-500 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(250,204,21,0.35)]">
+            ALL LEVELS of SOUNDS
+          </span>
         </h1>
+
+      </div>
+
+      {/* RIGHT SIDE (placeholder so layout stays stable) */}
+      <div className="hidden lg:block" />
+
+    </div>
+
+  </div>
+
+</section>
 
         <div className="mt-8 space-y-3">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-transparent bg-gradient-to-r from-white via-indigo-300 to-purple-300 bg-clip-text">
