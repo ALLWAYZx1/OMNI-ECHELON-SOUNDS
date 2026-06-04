@@ -149,8 +149,34 @@ export default function OmniEchelonSoundsWebsite() {
   className="rounded-2xl"
   src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
 ></iframe>
-        </div>
+          
+       </div>
+{/* YOUTUBE TRANSMISSION */}
+<div className="mt-6">
+  <p className="mb-3 text-xs uppercase tracking-[0.3em] text-blue-400">
+    YouTube Transmission
+  </p>
 
+  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+      <iframe
+        className="absolute left-0 top-0 h-full w-full"
+        src="https://www.youtube.com/embed/rfip6Ix-SgA"
+        title="Omni Echelon Sounds Transmission"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+
+  <div className="mt-3 flex gap-4 text-xs uppercase text-white/60">
+    <a href="https://www.youtube.com/watch?v=rfip6Ix-SgA" target="_blank">
+      Watch →
+    </a>
+    <a href="https://www.youtube.com/@ALLWAYZWORLD" target="_blank">
+      Channel →
+    </a>
+  </div>
+</div>
       </div>
 
     </div>
