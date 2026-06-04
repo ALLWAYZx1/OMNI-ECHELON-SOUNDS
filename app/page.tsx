@@ -214,6 +214,9 @@ export default function OmniEchelonSoundsWebsite() {
                 <p className="text-base leading-7 sm:text-lg">
                   OMNI ECHELON SOUNDS is where sound turns into identity. The goal is not just to make something you hear. The goal is to make something you feel moving through you.
                 </p>
+                <p className="text-white/60 text-sm mt-6">
+  Building Dreams is a long-term vision focused on community, creativity, and real-world impact beyond music.
+</p>
                 <p className="text-base leading-7 sm:text-lg">
                   Dark edges. Cinematic weight. Motion. Tension. Release. This page is a personal space for the vision behind the sound and the energy driving it.
                 </p>
