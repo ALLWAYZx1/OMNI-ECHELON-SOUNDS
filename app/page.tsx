@@ -2,6 +2,201 @@
 
 import { useEffect, useRef, useState } from "react";
 
+/* ----------------------------
+   SCENE REVEAL HOOK
+---------------------------- */
+function useScene() {
+  const ref = useRef<HTMLDivElement | null>(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        setInView(entry.isIntersecting);
+      },
+      { threshold: 0.2 }
+    );
+
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  return { ref, inView };
+}
+
+/* ----------------------------
+   SCENE WRAPPER (FILM FRAME)
+---------------------------- */
+function Scene({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const { ref, inView } = useScene();
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-[1200ms] ease-out transform ${
+        inView
+          ? "opacity-100 translate-y-0 blur-0"
+          : "opacity-0 translate-y-16 blur-sm"
+      }`}
+    >
+      {children}
+    </div>
+  );
+}
+
+/* ----------------------------
+   MAIN FILM
+---------------------------- */
+export default function OmniEchelonSoundsWebsite() {
+  return (
+    <div className="min-h-screen bg-black text-white overflow-x-hidden">
+
+      {/* 🌌 GLOBAL CINEMATIC FIELD */}
+      <div className="fixed inset-0 pointer-events-none">
+        <div className="absolute left-[-15%] top-[10%] h-[700px] w-[700px] bg-purple-500/10 blur-[180px] animate-pulse" />
+        <div className="absolute right-[-20%] top-[30%] h-[900px] w-[900px] bg-blue-500/10 blur-[200px]" />
+        <div className="absolute left-[20%] bottom-[-25%] h-[900px] w-[900px] bg-yellow-400/10 blur-[220px]" />
+
+        {/* STAR FIELD */}
+        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(1px_1px_at_25%_30%,white,transparent),radial-gradient(1px_1px_at_70%_60%,white,transparent)]" />
+      </div>
+
+      {/* 🎥 HEADER */}
+      <header className="sticky top-0 z-50 backdrop-blur-xl bg-black/60 border-b border-white/10">
+        <div className="mx-auto max-w-6xl flex justify-between items-center px-4 py-4">
+          <img src="/logo.png" className="h-12" />
+
+          <nav className="hidden md:flex gap-8 text-xs uppercase tracking-[0.35em] text-white/60">
+            <a href="#about">About</a>
+            <a href="#sound">Sound</a>
+            <a href="#world">World</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+
+        {/* 🎬 HERO SCENE (OPENING SHOT) */}
+        <section className="relative h-[95vh] flex items-center justify-center text-center overflow-hidden border-b border-white/10">
+
+          {/* camera glow */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08),transparent_60%)]" />
+
+          {/* drift layer */}
+          <div className="absolute inset-0 translate-y-6 scale-110 opacity-70 bg-gradient-to-b from-white/5 to-transparent" />
+
+          <div className="relative z-10">
+            <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tight">
+              ALL LEVELS<br />OF SOUND
+            </h1>
+
+            <p className="mt-6 text-white/60 tracking-[0.4em] uppercase text-xs md:text-sm">
+              cinematic pressure • motion identity • sonic architecture
+            </p>
+
+            <div className="mt-12 flex justify-center gap-4">
+              <button className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white hover:text-black transition">
+                Enter
+              </button>
+              <button className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white/10 transition">
+                Explore
+              </button>
+            </div>
+          </div>
+        </section>
+
+        {/* 🎞️ ABOUT SCENE */}
+        <section id="about" className="py-32 border-b border-white/10">
+          <div className="mx-auto max-w-5xl px-6">
+            <Scene>
+              <h2 className="text-4xl font-bold uppercase">FILL THE VOID</h2>
+
+              <p className="mt-8 text-white/70 leading-8">
+                OMNI ECHELON SOUNDS exists as a cinematic identity system.
+                Sound becomes structure. Emotion becomes architecture.
+              </p>
+            </Scene>
+          </div>
+        </section>
+
+        {/* 🎞️ SOUND SCENE */}
+        <section id="sound" className="py-32 bg-white/[0.02] border-b border-white/10">
+          <div className="mx-auto max-w-5xl px-6">
+            <Scene>
+              <h2 className="text-4xl font-bold uppercase">SOUND FIELD</h2>
+
+              <div className="mt-12 grid md:grid-cols-2 gap-6">
+                {[
+                  ["Cinematic", "Scale • gravity • emotion"],
+                  ["Dark", "Pressure • tension • shadow"],
+                  ["Post-Time", "Beyond eras"],
+                  ["Personal", "Signature identity"],
+                ].map(([t, d]) => (
+                  <div
+                    key={t}
+                    className="p-6 rounded-2xl border border-white/10 bg-white/5 hover:scale-[1.02] transition"
+                  >
+                    <div className="text-xs uppercase tracking-[0.35em] text-white/60">
+                      {t}
+                    </div>
+                    <p className="mt-3 text-white/80">{d}</p>
+                  </div>
+                ))}
+              </div>
+            </Scene>
+          </div>
+        </section>
+
+        {/* 🌌 WORLD SCENE (DEPTH SHIFT) */}
+        <section id="world" className="py-32 border-b border-white/10">
+          <div className="mx-auto max-w-5xl px-6">
+            <Scene>
+              <h2 className="text-4xl font-bold uppercase">WORLD LAYER</h2>
+
+              <div className="mt-10 h-72 rounded-3xl border border-white/10 bg-gradient-to-r from-purple-500/10 via-blue-500/10 to-yellow-400/10" />
+
+              <p className="mt-8 text-white/70">
+                A visual echo chamber for sound, identity, and motion.
+              </p>
+            </Scene>
+          </div>
+        </section>
+
+        {/* 🎬 CONTACT SCENE (FINAL FRAME) */}
+        <section id="contact" className="py-32 bg-white/[0.02]">
+          <div className="mx-auto max-w-5xl px-6">
+            <Scene>
+              <h2 className="text-4xl font-bold uppercase">CONTACT SIGNAL</h2>
+
+              <div className="mt-10 flex flex-wrap gap-4">
+                {["Email", "Instagram", "SoundCloud", "YouTube"].map((b) => (
+                  <button
+                    key={b}
+                    className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white hover:text-black transition"
+                  >
+                    {b}
+                  </button>
+                ))}
+              </div>
+            </Scene>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  );
+}"use client";
+
+import { useEffect, useRef, useState } from "react";
+
 function useInView<T extends HTMLElement>() {
   const ref = useRef<T | null>(null);
   const [visible, setVisible] = useState(false);
