@@ -2,40 +2,41 @@ export default function OmniEchelonSoundsWebsite() {
   return (
     <div className="min-h-screen bg-black text-white">
 <header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur">
-  <div className="relative mx-auto flex w-full max-w-6xl items-center px-4 py-4 sm:px-6 lg:px-8">
+  <div className="mx-auto w-full max-w-6xl px-4 py-3 sm:px-6 lg:px-8">
 
-    {/* LEFT: LOGO */}
-    <div className="flex items-center">
+    {/* TOP ROW (mobile + desktop logo/nav) */}
+    <div className="flex items-center justify-between">
+
+      {/* LOGO */}
       <img
         src="/logo.png"
         alt="OMNI ECHELON SOUNDS"
-        className="h-12 w-auto opacity-95"
+        className="h-10 sm:h-12 w-auto"
       />
+
+      {/* NAV */}
+      <nav className="flex items-center gap-4 sm:gap-6 text-xs sm:text-sm text-white/75">
+        <a href="#about" className="hover:text-white">About</a>
+        <a href="#sound" className="hover:text-white">Sound</a>
+        <a href="#world" className="hover:text-white">World</a>
+        <a href="#contact" className="hover:text-white">Contact</a>
+      </nav>
     </div>
 
-    {/* CENTER: TITLE (does NOT block clicks) */}
-   <div className="absolute left-1/2 -translate-x-1/2 text-center pointer-events-none">
-  <h1 className="text-lg md:text-xl font-black tracking-[0.35em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500">
-    OMNI ECHELON SOUNDS
-  </h1>
+    {/* CENTER TITLE (STACKED BELOW ON MOBILE) */}
+    <div className="mt-3 text-center">
+      <h1 className="text-sm sm:text-lg font-black tracking-[0.35em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500">
+        OMNI ECHELON SOUNDS
+      </h1>
 
-  <p className="mt-1 text-xs uppercase tracking-[0.3em] text-white/80">
-    INDEPENDENT LABEL UNIVERSE
-  </p>
+      <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-white/80">
+        INDEPENDENT LABEL UNIVERSE
+      </p>
 
-  <p className="mt-1 text-[10px] uppercase tracking-[0.25em] text-white/60">
-    SIGNAL FROM ALLWAYZintheMIXX
-  </p>
-
-  <div className="absolute -inset-8 -z-10 blur-3xl opacity-60 bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500 animate-pulse" />
-</div>
-    {/* RIGHT: NAV BUTTONS (RESTORED) */}
-    <nav className="ml-auto flex items-center gap-6 text-sm text-white/75">
-      <a href="#about" className="hover:text-white transition">About</a>
-      <a href="#sound" className="hover:text-white transition">Sound</a>
-      <a href="#world" className="hover:text-white transition">World</a>
-      <a href="#contact" className="hover:text-white transition">Contact</a>
-    </nav>
+      <p className="text-[9px] sm:text-[10px] uppercase tracking-[0.25em] text-white/60">
+        SIGNAL FROM ALLWAYZintheMIXX
+      </p>
+    </div>
 
   </div>
 </header>
