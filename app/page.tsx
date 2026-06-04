@@ -153,36 +153,38 @@ export default function OmniEchelonSoundsWebsite() {
 {/* CLOSE RIGHT COLUMN */}
 </div>
 
-{/* TRANSMISSION STRIP (SIBLING SECTION - NOT INSIDE ANY DIV) */}
-<section className="relative w-full border-y border-white/10 bg-black">
-  <div className="pointer-events-none absolute inset-0">
-    <div className="absolute left-1/2 top-1/2 h-[500px] w-[900px] -translate-x-1/2 -translate-y-1/2 bg-blue-500/10 blur-[120px]" />
-    <div className="absolute left-1/2 top-1/2 h-[400px] w-[800px] -translate-x-1/2 -translate-y-1/2 bg-yellow-400/10 blur-[100px]" />
-  </div>
+{/* TRANSMISSION STRIP (RIGHT AFTER IT) */}
+  <section className="relative w-full border-y border-white/10 bg-black mt-6">
+    {/* glow haze */}
+    <div className="pointer-events-none absolute inset-0">
+      <div className="absolute left-1/2 top-1/2 h-[500px] w-[900px] -translate-x-1/2 -translate-y-1/2 bg-blue-500/10 blur-[120px]" />
+      <div className="absolute left-1/2 top-1/2 h-[400px] w-[800px] -translate-x-1/2 -translate-y-1/2 bg-yellow-400/10 blur-[100px]" />
+    </div>
 
-  <div className="relative z-10 mx-auto max-w-6xl px-4 py-6">
-    <p className="text-xs uppercase tracking-[0.4em] text-white/60">
-      TRANSMISSION SIGNAL
-    </p>
-  </div>
+    {/* label */}
+    <div className="relative z-10 mx-auto max-w-6xl px-4 py-6">
+      <p className="text-xs uppercase tracking-[0.4em] text-white/60">
+        TRANSMISSION SIGNAL
+      </p>
+    </div>
 
-  <div className="relative w-full" style={{ paddingBottom: "42%" }}>
-    <iframe
-      className="absolute left-0 top-0 h-full w-full"
-      src="https://www.youtube.com/embed/rfip6Ix-SgA"
-      title="Transmission"
-      allowFullScreen
-    />
-  </div>
+    {/* VIDEO */}
+    <div className="relative w-full">
+      <div className="relative w-full" style={{ paddingBottom: "42%" }}>
+        <iframe
+          className="absolute left-0 top-0 h-full w-full"
+          src="https://www.youtube.com/embed/rfip6Ix-SgA"
+          title="Transmission"
+          allowFullScreen
+        />
+      </div>
+    </div>
 
-  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
-</section>
+    {/* pulse line */}
+    <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
+  </section>
 
-{/* CLOSE HERO WRAPPER (ONLY ONCE, CLEANLY) */}
 </div>
-</div>
-</div>
-
 {/* ABOUT SECTION STARTS CLEAN */}
 <section id="about" className="border-b border-white/10">
   <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
