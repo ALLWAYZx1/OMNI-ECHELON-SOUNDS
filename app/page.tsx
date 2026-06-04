@@ -21,74 +21,81 @@ export default function OmniEchelonSoundsWebsite() {
       </header>
 
       <main>
-<section className="relative overflow-hidden border-b border-white/10">
-  <div className="pointer-events-none absolute inset-0">
-  <div className="absolute left-[18%] top-[48%] h-[420px] w-[420px] rounded-full bg-yellow-400/20 blur-[120px]" />
-  <div className="absolute right-[18%] top-[35%] h-[380px] w-[380px] rounded-full bg-blue-500/15 blur-[120px]" />
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.75)_75%)]" />
-</div>
 
-  {/* COSMIC BACKGROUND */}
-  <div className="pointer-events-none absolute inset-0 opacity-80">
-    <div className="absolute left-[20%] top-[55%] h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.9)_0%,_rgba(250,204,21,0.7)_25%,_rgba(168,85,247,0.5)_45%,_rgba(59,130,246,0.25)_65%,_transparent_80%)] blur-[35px] animate-pulse" />
-    <div className="absolute inset-0 bg-[radial-gradient(1px_1px_at_20%_30%,rgba(255,255,255,0.6),transparent),radial-gradient(1px_1px_at_70%_60%,rgba(255,255,255,0.4),transparent)]" />
-    <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.7))]" />
+<section className="relative overflow-hidden border-b border-white/10">
+
+  {/* background layers */}
+  <div className="pointer-events-none absolute inset-0">
+    <div className="absolute left-[18%] top-[48%] h-[420px] w-[420px] rounded-full bg-yellow-400/20 blur-[120px]" />
+    <div className="absolute right-[18%] top-[35%] h-[380px] w-[380px] rounded-full bg-blue-500/15 blur-[120px]" />
   </div>
 
-  <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-    <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[1fr_520px]">
+  <div className="mx-auto w-full max-w-6xl px-4 py-16 lg:py-24">
+    <div className="grid items-center gap-12 lg:grid-cols-[1fr_520px]">
 
-      {/* LEFT SIDE */}
+      {/* LEFT */}
       <div className="max-w-2xl">
 
-        <div className="mb-6 inline-flex rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.32em] text-white/70">
-          ENERGY in MOTION
+        <div className="mb-6 text-xs uppercase tracking-[0.32em] text-white/70">
+          ENERGY IN MOTION
         </div>
-        
-{/* 🔥 TRANSMISSION STRIP (FULL WIDTH) */}
-<section className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] border-y border-white/10 bg-black">
-  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-    <iframe
-      className="absolute inset-0 h-full w-full"
-      src="https://www.youtube.com/embed/rfip6Ix-SgA"
-      title="Transmission"
-      allowFullScreen
-    />
-  </div>
 
-  {/* pulse line */}
- <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
-</section>
-        {/* ARTIST DEVELOPMENT PROMO (SMALLER SIGNAL) */}
-<section className="relative w-full border-b border-white/10 bg-black overflow-hidden">
+        <h1 className="text-3xl font-black uppercase sm:text-5xl">
+          ALL LEVELS of SOUNDS
+        </h1>
 
-  {/* subtle glow */}
-  <div className="pointer-events-none absolute inset-0">
-    <div className="absolute left-1/2 top-1/2 h-[300px] w-[600px] -translate-x-1/2 -translate-y-1/2 bg-purple-500/10 blur-[100px]" />
-    <div className="absolute left-1/2 top-1/2 h-[300px] w-[600px] -translate-x-1/2 -translate-y-1/2 bg-blue-500/10 blur-[100px]" />
-  </div>
+        <p className="mt-6 text-white/60 uppercase tracking-[0.25em]">
+          CINEMATIC PRESSURE
+        </p>
 
-  {/* label */}
-  <div className="relative z-10 mx-auto max-w-6xl px-4 pt-8">
-    <p className="text-xs uppercase tracking-[0.5em] text-white/60">
-      ARTIST DEVELOPMENT SIGNAL
-    </p>
-  </div>
+        <p className="mt-4 text-sm italic text-white/50">
+          ENTER TO EXPERIENCE WHAT THIS ATMOSPHERE HAS IN VISION, SOUND AND MOTION ACROSS ALL SPECTRUMS
+        </p>
 
-  {/* smaller video frame */}
-  <div className="relative mx-auto max-w-4xl px-4 py-8">
-    <div className="relative w-full" style={{ paddingBottom: "42%" }}>
-      <iframe
-        className="absolute inset-0 h-full w-full rounded-xl"
-        src="https://www.youtube.com/embed/MLIAyB5Efq8"
-        title="Artist Development Promo"
-        allowFullScreen
-      />
+        {/* ENTER BUTTON */}
+        <div className="mt-10">
+          <a
+            href="#transmission"
+            className="rounded-2xl border border-white/30 px-6 py-3 text-sm uppercase tracking-[0.22em]"
+          >
+            Enter
+          </a>
+        </div>
+
+        {/* Apple Music stays here */}
+        <div className="mt-10">
+          <iframe
+            src="https://embed.music.apple.com/us/album/emotions-in-motion/1895465650"
+            width="100%"
+            height="300"
+            className="rounded-2xl"
+          />
+        </div>
+
+      </div>
+
+      {/* RIGHT */}
+      <div className="space-y-6">
+
+        <iframe
+          className="w-full rounded-2xl"
+          src="https://www.youtube.com/embed/5Bb81O1u2o0"
+        />
+
+        <iframe
+          className="w-full rounded-2xl"
+          src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb"
+        />
+
+        <iframe
+          className="w-full rounded-2xl"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2329824383"
+        />
+
+      </div>
+
     </div>
   </div>
-
-  {/* subtle pulse line */}
-  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse" />
 </section>
         
         <h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
