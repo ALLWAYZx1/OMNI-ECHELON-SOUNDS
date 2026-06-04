@@ -256,52 +256,33 @@ export default function OmniEchelonSoundsWebsite() {
   </div>
 </section>   {/* ✅ THIS WAS MISSING */}
 
-<section id="world" className="border-b border-white/10">
+{/* WORLD */}
+        <section id="world" className="border-b border-white/10">
           <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+
             <div className="max-w-3xl">
-              <div className="text-xs uppercase tracking-[0.35em] text-white/45">World</div>
-              <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
+              <div className="text-xs uppercase tracking-[0.35em] text-white/45">
+                World
+              </div>
+
+              <h2 className="mt-4 text-3xl font-bold uppercase">
                 A page with presence.
               </h2>
-
-              <div className="mt-10">
-                <p className="text-base leading-7 text-white/70">
-                  This space can hold visuals, embedded audio, a statement, selected drops, behind-the-scenes ideas, or whatever best represents the OMNI ECHELON SOUNDS universe without turning it into a storefront.
-                </p>
-              </div>
             </div>
 
-            <div className="mt-10 grid gap-6 lg:grid-cols-3">
-              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6">
-                <div className="text-xs uppercase tracking-[0.3em] text-yellow-400">01</div>
-                <h3 className="mt-4 text-xl font-semibold uppercase">Statement</h3>
-                <p className="mt-3 text-sm leading-6 text-white/68">
-                  A raw message about what the brand means and where it’s headed.
-                </p>
-              </div>
-
-              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6">
-                <div className="text-xs uppercase tracking-[0.3em] text-yellow-400">02</div>
-                <h3 className="mt-4 text-xl font-semibold uppercase">Audio</h3>
-                <p className="mt-3 text-sm leading-6 text-white/68">
-                  A featured player for one sound piece, reel, or sonic trailer.
-                </p>
-              </div>
-
-              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6">
-                <div className="text-xs uppercase tracking-[0.3em] text-yellow-400">03</div>
-                <h3 className="mt-4 text-xl font-semibold uppercase">Presence</h3>
-                <p className="mt-3 text-sm leading-6 text-white/68">
-                  Visual identity, mood imagery, and a clean contact point for serious work.
-                </p>
-              </div>
+            <div className="mt-10">
+              <p className="text-base leading-7 text-white/70">
+                This space represents the Omni Echelon universe.
+              </p>
             </div>
+
           </div>
         </section>
 
         {/* CONTACT */}
         <section id="contact" className="bg-white/[0.02]">
           <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 sm:p-10 lg:p-12">
 
               <div className="text-xs uppercase tracking-[0.35em] text-white/45">
