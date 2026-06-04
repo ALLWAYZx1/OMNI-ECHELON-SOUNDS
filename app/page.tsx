@@ -14,14 +14,17 @@ export default function OmniEchelonSoundsWebsite() {
     </div>
 
     {/* CENTER: TITLE (does NOT block clicks) */}
-    <div className="absolute left-1/2 -translate-x-1/2 pointer-events-none text-center">
-      <h1 className="text-sm sm:text-base md:text-lg font-black tracking-[0.35em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500">
-        ALLWAYZINTHEMIXX
-      </h1>
+   <div className="absolute left-1/2 -translate-x-1/2 pointer-events-none text-center">
+  <h1 className="text-xs sm:text-sm md:text-base font-black tracking-[0.35em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500">
+    A LABEL UNIVERSE.
+  </h1>
 
-      <div className="absolute -inset-6 -z-10 blur-3xl opacity-50 bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500 animate-pulse" />
-    </div>
+  <p className="mt-1 text-[10px] sm:text-xs tracking-[0.25em] text-white/80 uppercase">
+    A SIGNAL FROM ALLWAYZintheMIXX
+  </p>
 
+  <div className="absolute -inset-8 -z-10 blur-3xl opacity-60 bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500 animate-pulse" />
+</div>
     {/* RIGHT: NAV BUTTONS (RESTORED) */}
     <nav className="ml-auto flex items-center gap-6 text-sm text-white/75">
       <a href="#about" className="hover:text-white transition">About</a>
