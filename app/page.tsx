@@ -33,7 +33,7 @@ export default function OmniEchelonSoundsWebsite() {
         SIGNAL FROM ALLWAYZintheMIXX
       </p>
 
-      <p className="text-[10px] sm:text-[10px] uppercase tracking-[0.25em] text-white/60">
+      <p className="text-[11px] sm:text-[10px] uppercase tracking-[0.25em] text-white/60">
         INDEPENDENT LABEL UNIVERSE
       </p>
     </div>
