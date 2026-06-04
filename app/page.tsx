@@ -181,6 +181,37 @@ export default function OmniEchelonSoundsWebsite() {
     ></iframe>
   </div>
 
+  {/* SOUND GRID */}
+<div className="mt-10 grid gap-6 md:grid-cols-3">
+
+  {/* APPLE MUSIC */}
+  <div className="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
+    <p className="p-3 text-xs uppercase tracking-[0.3em] text-pink-400">
+      Apple Music
+    </p>
+    <iframe
+      src="https://embed.music.apple.com/us/album/emotions-in-motion/1895465650"
+      width="100%"
+      height="300"
+      allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+    ></iframe>
+  </div>
+
+  {/* SOUNDCLOUD */}
+  <div className="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
+    <p className="p-3 text-xs uppercase tracking-[0.3em] text-orange-400">
+      SoundCloud
+    </p>
+    <iframe
+      width="100%"
+      height="300"
+      scrolling="no"
+      frameBorder="no"
+      allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=false"
+    ></iframe>
+  </div>
+
   {/* YOUTUBE */}
   <div className="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
     <p className="p-3 text-xs uppercase tracking-[0.3em] text-blue-400">
@@ -196,6 +227,8 @@ export default function OmniEchelonSoundsWebsite() {
       ></iframe>
     </div>
   </div>
+
+</div>
 
 
     </div>
