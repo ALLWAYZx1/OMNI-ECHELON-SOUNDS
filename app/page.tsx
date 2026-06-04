@@ -151,6 +151,7 @@ export default function OmniEchelonSoundsWebsite() {
   </div>
 
 </div>
+  </section>
 <section id="transmission" className="relative w-full border-y border-white/10 bg-black mt-10">
   <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
     <iframe
