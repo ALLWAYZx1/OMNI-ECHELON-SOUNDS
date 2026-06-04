@@ -156,6 +156,22 @@ export default function OmniEchelonSoundsWebsite() {
     </div>
   </div>
 </section>
+        
+{/* 🔥 TRANSMISSION STRIP (FULL WIDTH) */}
+<section className="relative w-full border-y border-white/10 bg-black">
+  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+    <iframe
+      className="absolute inset-0 h-full w-full"
+      src="https://www.youtube.com/embed/rfip6Ix-SgA"
+      title="Transmission"
+      allowFullScreen
+    />
+  </div>
+
+  {/* pulse line */}
+  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
+</section>
+        
         <section id="about" className="border-b border-white/10">
           <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
             <div>
