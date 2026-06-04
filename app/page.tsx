@@ -1,4 +1,131 @@
-"use client";
+export default function OmniEchelonSoundsWebsite() {
+  return (
+    <div className="min-h-screen bg-black text-white overflow-x-hidden">
+
+      {/* HEADER */}
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+          <img
+            src="/logo.png"
+            alt="OMNI ECHELON SOUNDS"
+            className="h-10 w-auto drop-shadow-[0_0_20px_rgba(250,204,21,0.4)]"
+          />
+
+          <nav className="hidden md:flex gap-6 text-xs uppercase tracking-[0.25em] text-white/60">
+            <a href="#about" className="hover:text-white">About</a>
+            <a href="#sound" className="hover:text-white">Sound</a>
+            <a href="#world" className="hover:text-white">World</a>
+            <a href="#contact" className="hover:text-white">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* HERO */}
+      <section className="relative overflow-hidden border-b border-white/10">
+
+        {/* cinematic glow field */}
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute left-1/4 top-1/3 h-[500px] w-[500px] rounded-full bg-yellow-400/20 blur-[140px]" />
+          <div className="absolute right-1/4 top-1/2 h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-[160px]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/60 to-black" />
+        </div>
+
+        <div className="relative mx-auto max-w-6xl px-4 py-28">
+
+          <p className="text-xs uppercase tracking-[0.4em] text-white/50">
+            CINEMATIC PRESSURE SYSTEM
+          </p>
+
+          <h1 className="mt-6 text-4xl sm:text-6xl font-black uppercase leading-tight">
+            ALL LEVELS OF
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-orange-400 to-purple-500">
+              SOUND DESIGN
+            </span>
+          </h1>
+
+          <p className="mt-6 max-w-xl text-white/60 leading-relaxed">
+            A controlled collapse of emotion, rhythm, and atmosphere built into motion.
+          </p>
+
+          <div className="mt-10 flex gap-4">
+            <a className="px-6 py-3 rounded-2xl bg-white text-black text-xs uppercase tracking-[0.2em]">
+              Enter
+            </a>
+            <a className="px-6 py-3 rounded-2xl border border-white/20 text-xs uppercase tracking-[0.2em]">
+              Instagram
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ABOUT */}
+      <section id="about" className="border-b border-white/10">
+        <div className="mx-auto max-w-6xl px-4 py-20">
+          <h2 className="text-3xl font-bold uppercase">Identity Layer</h2>
+          <p className="mt-6 text-white/70 max-w-2xl">
+            OMNI ECHELON SOUNDS is not content. It is structure. Sound becomes identity, and identity becomes motion.
+          </p>
+        </div>
+      </section>
+
+      {/* SOUND GRID */}
+      <section id="sound" className="border-b border-white/10 bg-white/[0.02]">
+        <div className="mx-auto max-w-6xl px-4 py-20">
+
+          <h2 className="text-3xl font-bold uppercase">Sound Architecture</h2>
+
+          <div className="mt-10 grid md:grid-cols-2 gap-6">
+            {[
+              ["Cinematic", "Scale, emotion, impact"],
+              ["Dark", "Pressure, shadow, weight"],
+              ["Post-Time", "Beyond eras and labels"],
+              ["Personal", "Signature sonic fingerprint"],
+            ].map(([t, d]) => (
+              <div key={t} className="p-6 rounded-2xl border border-white/10 bg-black/30">
+                <p className="uppercase tracking-[0.25em] text-white/80">{t}</p>
+                <p className="mt-3 text-white/60">{d}</p>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* WORLD */}
+      <section id="world" className="border-b border-white/10">
+        <div className="mx-auto max-w-6xl px-4 py-20">
+          <h2 className="text-3xl font-bold uppercase">World Layer</h2>
+          <p className="mt-6 text-white/70 max-w-2xl">
+            A living environment for sound, visuals, and narrative fragments.
+          </p>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section id="contact" className="bg-white/[0.02]">
+        <div className="mx-auto max-w-6xl px-4 py-20">
+
+          <h2 className="text-3xl font-bold uppercase">Contact Signal</h2>
+
+          <div className="mt-8 flex flex-wrap gap-4">
+            <a className="px-6 py-3 bg-white text-black rounded-xl uppercase text-xs tracking-[0.2em]">
+              Email
+            </a>
+            <a className="px-6 py-3 border border-white/20 rounded-xl uppercase text-xs tracking-[0.2em]">
+              Instagram
+            </a>
+            <a className="px-6 py-3 border border-white/20 rounded-xl uppercase text-xs tracking-[0.2em]">
+              SoundCloud
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  );
+}"use client";
 
 import { useEffect, useRef, useState } from "react";
 
