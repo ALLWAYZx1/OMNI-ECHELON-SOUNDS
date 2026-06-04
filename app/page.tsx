@@ -1,3 +1,5 @@
+MAIN MAIN CODE switch
+
 export default function OmniEchelonSoundsWebsite() {
   return (
     <div className="min-h-screen bg-black text-white">
@@ -102,15 +104,15 @@ export default function OmniEchelonSoundsWebsite() {
         {/* YOUTUBE */}
        <div className="w-full max-w-[520px] justify-self-end">
   <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
-    NOW PLAYING
+    ARTIST DEVELOPMENT
   </p>
 
   <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
     <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
       <iframe
         className="absolute left-0 top-0 h-full w-full"
-        src="https://www.youtube.com/embed/5Bb81O1u2o0"
-        title="Bigger Than Life"
+        src="https://www.youtube.com/watch?v=MLIAyB5Efq8"
+        title=“ARTIST DELEPMENT SIGNAL”
         allowFullScreen
       ></iframe>
     </div>
@@ -171,7 +173,7 @@ export default function OmniEchelonSoundsWebsite() {
   {/* pulse line */}
   <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
 </section>
-        {/* ARTIST DEVELOPMENT PROMO (SMALLER SIGNAL) */}
+        {/* Bigger Than Life */}
 <section className="relative w-full border-b border-white/10 bg-black overflow-hidden">
 
   {/* subtle glow */}
@@ -192,8 +194,8 @@ export default function OmniEchelonSoundsWebsite() {
     <div className="relative w-full" style={{ paddingBottom: "42%" }}>
       <iframe
         className="absolute inset-0 h-full w-full rounded-xl"
-        src="https://www.youtube.com/embed/MLIAyB5Efq8"
-        title="Artist Development Promo"
+        src="https://www.youtube.com/embed/5Bb81O1u2o0"
+        title=“Bigger Than Life”
         allowFullScreen
       />
     </div>
@@ -214,9 +216,6 @@ export default function OmniEchelonSoundsWebsite() {
                 <p className="text-base leading-7 sm:text-lg">
                   OMNI ECHELON SOUNDS is where sound turns into identity. The goal is not just to make something you hear. The goal is to make something you feel moving through you.
                 </p>
-                <p className="text-white/60 text-sm mt-6">
-  Building Dreams is a long-term vision focused on community, creativity, and real-world impact beyond music.
-</p>
                 <p className="text-base leading-7 sm:text-lg">
                   Dark edges. Cinematic weight. Motion. Tension. Release. This page is a personal space for the vision behind the sound and the energy driving it.
                 </p>
