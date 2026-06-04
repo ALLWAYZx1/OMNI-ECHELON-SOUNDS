@@ -123,88 +123,27 @@ export default function OmniEchelonSoundsWebsite() {
           <a href="https://www.youtube.com/@ALLWAYZWORLD" target="_blank">Channel →</a>
         </div>
 
-        {/* SOUND */}
-        <div className="mt-6">
-          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
-            SOUND
-          </p>
+       {/* SOUND */}
+<div className="mt-6">
+  <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+    SOUND
+  </p>
 
-          {/* SPOTIFY */}
-          <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-            <iframe
-              src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb?utm_source=generator&theme=0"
-              width="100%"
-              height="152"
-              allow="autoplay; clipboard-write; encrypted-media"
-            ></iframe>
-          </div>
-
-          {/* SOUNDCLOUD */}
-<iframe
-  width="100%"
-  height="166"
-  scrolling="no"
-  frameBorder="no"
-  allow="autoplay"
-  className="rounded-2xl"
-  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-></iframe>
-          
-{/* SOUND GRID */}
-<div className="mt-10 grid gap-6 md:grid-cols-3">
-
-  {/* APPLE MUSIC */}
-  <div className="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
-    <p className="p-3 text-xs uppercase tracking-[0.3em] text-pink-400">
-      Apple Music
-    </p>
+  {/* SPOTIFY */}
+  <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
     <iframe
-      src="https://embed.music.apple.com/us/album/emotions-in-motion/1895465650"
+      src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb?utm_source=generator&theme=0"
       width="100%"
-      height="300"
-      allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+      height="152"
+      allow="autoplay; clipboard-write; encrypted-media"
     ></iframe>
   </div>
 
   {/* SOUNDCLOUD */}
-  <div className="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
-    <p className="p-3 text-xs uppercase tracking-[0.3em] text-orange-400">
-      SoundCloud
-    </p>
+  <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
     <iframe
       width="100%"
-      height="300"
-      scrolling="no"
-      frameBorder="no"
-      allow="autoplay"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=false"
-    ></iframe>
-  </div>
-
-{/* SOUND GRID (CLEAN) */}
-<div className="mt-10 grid gap-6 md:grid-cols-3">
-
-  {/* APPLE MUSIC */}
-  <div className="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
-    <p className="p-3 text-xs uppercase tracking-[0.3em] text-pink-400">
-      Apple Music
-    </p>
-    <iframe
-      src="https://embed.music.apple.com/us/album/emotions-in-motion/1895465650"
-      width="100%"
-      height="300"
-      allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
-    ></iframe>
-  </div>
-
-  {/* SOUNDCLOUD */}
-  <div className="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
-    <p className="p-3 text-xs uppercase tracking-[0.3em] text-orange-400">
-      SoundCloud
-    </p>
-    <iframe
-      width="100%"
-      height="300"
+      height="166"
       scrolling="no"
       frameBorder="no"
       allow="autoplay"
@@ -213,7 +152,7 @@ export default function OmniEchelonSoundsWebsite() {
   </div>
 
   {/* YOUTUBE */}
-  <div className="rounded-2xl border border-white/10 bg-white/5 overflow-hidden">
+  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
     <p className="p-3 text-xs uppercase tracking-[0.3em] text-blue-400">
       YouTube Transmission
     </p>
@@ -225,11 +164,9 @@ export default function OmniEchelonSoundsWebsite() {
         title="Omni Echelon Sounds Transmission"
         allowFullScreen
       ></iframe>
-  </div>
-
-</div>
-
     </div>
+  </div>
+</div>
   </div>
 </section>
         <section id="about" className="border-b border-white/10">
