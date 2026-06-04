@@ -1,49 +1,97 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+
+function useInView<T extends HTMLElement>() {
+  const ref = useRef<T | null>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const obs = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) setVisible(true);
+    }, { threshold: 0.15 });
+
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  return { ref, visible };
+}
+
+function Section({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const { ref, visible } = useInView<HTMLDivElement>();
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-1000 ease-out transform ${
+        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      {children}
+    </div>
+  );
+}
+
 export default function OmniEchelonSoundsWebsite() {
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
-      {/* FLOATING ATMOSPHERE LAYERS */}
-      <div className="pointer-events-none fixed inset-0">
-        <div className="absolute left-[-10%] top-[10%] h-[500px] w-[500px] rounded-full bg-purple-500/10 blur-[140px] animate-pulse" />
-        <div className="absolute right-[-10%] top-[30%] h-[600px] w-[600px] rounded-full bg-blue-500/10 blur-[160px]" />
-        <div className="absolute left-[20%] bottom-[-20%] h-[700px] w-[700px] rounded-full bg-yellow-400/10 blur-[180px]" />
+
+      {/* 🌌 AMBIENT FIELD */}
+      <div className="fixed inset-0 pointer-events-none">
+        <div className="absolute left-[-10%] top-[10%] h-[600px] w-[600px] bg-purple-500/10 blur-[160px] animate-pulse" />
+        <div className="absolute right-[-10%] top-[30%] h-[700px] w-[700px] bg-blue-500/10 blur-[180px]" />
+        <div className="absolute left-[20%] bottom-[-20%] h-[800px] w-[800px] bg-yellow-400/10 blur-[200px]" />
+
+        {/* subtle star field */}
+        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(1px_1px_at_20%_30%,white,transparent),radial-gradient(1px_1px_at_60%_70%,white,transparent)]" />
       </div>
 
       {/* HEADER */}
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/60 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-          <img src="/logo.png" className="h-12 w-auto" />
+      <header className="sticky top-0 z-50 backdrop-blur-xl bg-black/60 border-b border-white/10">
+        <div className="mx-auto max-w-6xl flex justify-between items-center px-4 py-4">
+          <img src="/logo.png" className="h-12" />
 
-          <nav className="hidden gap-8 text-xs uppercase tracking-[0.25em] text-white/60 md:flex">
-            <a href="#about" className="hover:text-white transition">About</a>
-            <a href="#sound" className="hover:text-white transition">Sound</a>
-            <a href="#world" className="hover:text-white transition">World</a>
-            <a href="#contact" className="hover:text-white transition">Contact</a>
+          <nav className="hidden md:flex gap-8 text-xs tracking-[0.3em] uppercase text-white/60">
+            <a href="#about">About</a>
+            <a href="#sound">Sound</a>
+            <a href="#world">World</a>
+            <a href="#contact">Contact</a>
           </nav>
         </div>
       </header>
 
-      <main className="relative">
+      <main>
 
         {/* HERO */}
-        <section className="relative h-[90vh] flex items-center justify-center text-center border-b border-white/10">
+        <section className="relative h-[92vh] flex items-center justify-center text-center overflow-hidden border-b border-white/10">
+
+          {/* parallax glow core */}
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08),transparent_60%)]" />
 
-          <div className="relative z-10 px-6">
+          <div className="relative z-10">
             <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tight">
-              ALL LEVELS <br /> OF SOUND
+              ALL LEVELS<br />OF SOUND
             </h1>
 
-            <p className="mt-6 text-white/60 tracking-[0.3em] uppercase text-xs md:text-sm">
+            <p className="mt-6 text-white/60 tracking-[0.35em] uppercase text-xs">
               cinematic pressure • motion identity • sonic architecture
             </p>
 
             <div className="mt-10 flex justify-center gap-4">
-              <a className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white hover:text-black transition">
+              <button className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white hover:text-black transition">
                 Enter
-              </a>
-              <a className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white/10 transition">
+              </button>
+              <button className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white/10 transition">
                 Explore
-              </a>
+              </button>
             </div>
           </div>
         </section>
@@ -51,77 +99,75 @@ export default function OmniEchelonSoundsWebsite() {
         {/* ABOUT */}
         <section id="about" className="py-28 border-b border-white/10">
           <div className="mx-auto max-w-5xl px-6">
-            <h2 className="text-3xl font-bold uppercase tracking-wide">
-              FILL THE VOID
-            </h2>
-
-            <p className="mt-6 text-white/70 leading-7">
-              OMNI ECHELON SOUNDS is a motion-based sound identity system.
-              It exists between cinematic emotion and experimental space.
-            </p>
+            <Section>
+              <h2 className="text-3xl font-bold uppercase">FILL THE VOID</h2>
+              <p className="mt-6 text-white/70 leading-7">
+                OMNI ECHELON SOUNDS is a cinematic identity system built from motion, emotion, and sonic architecture.
+              </p>
+            </Section>
           </div>
         </section>
 
         {/* SOUND */}
-        <section id="sound" className="py-28 border-b border-white/10 bg-white/[0.02]">
+        <section id="sound" className="py-28 bg-white/[0.02] border-b border-white/10">
           <div className="mx-auto max-w-5xl px-6">
-            <h2 className="text-3xl font-bold uppercase">Sound Architecture</h2>
+            <Section>
+              <h2 className="text-3xl font-bold uppercase">Sound Field</h2>
 
-            <div className="mt-12 grid md:grid-cols-2 gap-6">
-              {[
-                ["Cinematic", "Scale, emotion, gravity"],
-                ["Dark", "Pressure, tension, shadow"],
-                ["Post-Time", "Beyond eras"],
-                ["Personal", "Signature sonic DNA"],
-              ].map(([t, d]) => (
-                <div
-                  key={t}
-                  className="p-6 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition"
-                >
-                  <div className="uppercase tracking-[0.25em] text-xs text-white/60">
-                    {t}
+              <div className="mt-12 grid md:grid-cols-2 gap-6">
+                {[
+                  ["Cinematic", "Scale, emotion, gravity"],
+                  ["Dark", "Pressure, tension, shadow"],
+                  ["Post-Time", "Beyond eras"],
+                  ["Personal", "Signature sonic DNA"],
+                ].map(([t, d]) => (
+                  <div
+                    key={t}
+                    className="p-6 rounded-2xl border border-white/10 bg-white/5 hover:scale-[1.02] transition"
+                  >
+                    <div className="text-xs uppercase tracking-[0.3em] text-white/60">
+                      {t}
+                    </div>
+                    <p className="mt-3 text-white/80">{d}</p>
                   </div>
-                  <p className="mt-3 text-white/80">{d}</p>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            </Section>
           </div>
         </section>
 
         {/* WORLD */}
         <section id="world" className="py-28 border-b border-white/10">
           <div className="mx-auto max-w-5xl px-6">
-            <h2 className="text-3xl font-bold uppercase">World Layer</h2>
+            <Section>
+              <h2 className="text-3xl font-bold uppercase">World Layer</h2>
 
-            <div className="mt-10 relative">
-              <div className="h-64 rounded-3xl bg-gradient-to-r from-purple-500/10 via-blue-500/10 to-yellow-400/10 blur-0 border border-white/10" />
-            </div>
+              <div className="mt-10 h-64 rounded-3xl border border-white/10 bg-gradient-to-r from-purple-500/10 via-blue-500/10 to-yellow-400/10" />
 
-            <p className="mt-8 text-white/70">
-              A living visual field for sound, identity, and motion artifacts.
-            </p>
+              <p className="mt-8 text-white/70">
+                A living space where sound becomes visual identity.
+              </p>
+            </Section>
           </div>
         </section>
 
         {/* CONTACT */}
         <section id="contact" className="py-28 bg-white/[0.02]">
           <div className="mx-auto max-w-5xl px-6">
-            <h2 className="text-3xl font-bold uppercase">Contact Signal</h2>
+            <Section>
+              <h2 className="text-3xl font-bold uppercase">Contact Signal</h2>
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a className="px-6 py-3 bg-white text-black rounded-xl">
-                Email
-              </a>
-              <a className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white/10 transition">
-                Instagram
-              </a>
-              <a className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white/10 transition">
-                SoundCloud
-              </a>
-              <a className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white/10 transition">
-                YouTube
-              </a>
-            </div>
+              <div className="mt-10 flex flex-wrap gap-4">
+                {["Email", "Instagram", "SoundCloud", "YouTube"].map((b) => (
+                  <button
+                    key={b}
+                    className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white hover:text-black transition"
+                  >
+                    {b}
+                  </button>
+                ))}
+              </div>
+            </Section>
           </div>
         </section>
 
