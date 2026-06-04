@@ -227,34 +227,36 @@ export default function OmniEchelonSoundsWebsite() {
           </div>
         </section>
 
-        <section id="sound" className="border-b border-white/10 bg-white/[0.02]">
-          <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-            <div className="max-w-3xl">
-              <div className="text-xs uppercase tracking-[0.35em] text-white/45">Sound</div>
-              <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
-                What lives in the world.
-              </h2>
-            </div>
+       <section id="sound" className="border-b border-white/10 bg-white/[0.02]">
+  <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <div className="max-w-3xl">
+      <div className="text-xs uppercase tracking-[0.35em] text-white/45">Sound</div>
+      <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
+        What lives in the world.
+      </h2>
+    </div>
 
-           <div className="mt-10 grid gap-6 md:grid-cols-2">
-            {[
-              ["Cinematic", "Heavy emotion, movement, scale, and impact."],
-              ["Dark", "Shadow, pressure, tension, and weight."],
-              ["Post-Time", "Not retro. Not futuristic. Somewhere beyond both."],
-              ["Personal", "A signature sound world, not filler for the shelf."],
-            ].map(([title, body]) => (
-              <div key={title} className="rounded-[2rem] border border-white/10 p-6">
-                <div className="text-lg font-semibold uppercase tracking-wide">
-                  {title}
-                </div>
-                <p className="mt-3 max-w-md text-sm leading-6 text-white/68">
-                  {body}
-                </p>
-              </div>
-           ))}
-</div>
+    <div className="mt-10 grid gap-6 md:grid-cols-2">
+      {[
+        ["Cinematic", "Heavy emotion, movement, scale, and impact."],
+        ["Dark", "Shadow, pressure, tension, and weight."],
+        ["Post-Time", "Not retro. Not futuristic. Somewhere beyond both."],
+        ["Personal", "A signature sound world, not filler for the shelf."],
+      ].map(([title, body]) => (
+        <div key={title} className="rounded-[2rem] border border-white/10 p-6">
+          <div className="text-lg font-semibold uppercase tracking-wide">
+            {title}
+          </div>
+          <p className="mt-3 max-w-md text-sm leading-6 text-white/68">
+            {body}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>   {/* ✅ THIS WAS MISSING */}
 
- <section id="world" className="border-b border-white/10">
+<section id="world" className="border-b border-white/10">
           <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
             <div className="max-w-3xl">
               <div className="text-xs uppercase tracking-[0.35em] text-white/45">World</div>
