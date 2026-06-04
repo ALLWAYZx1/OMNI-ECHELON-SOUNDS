@@ -40,7 +40,7 @@ export default function OmniEchelonSoundsWebsite() {
   </div>
 </header>
   
-      <main>
+    <main className="pt-28 sm:pt-24">
 <section className="relative overflow-hidden border-b border-white/10">
   <div className="pointer-events-none absolute inset-0">
   <div className="absolute left-[18%] top-[48%] h-[420px] w-[420px] rounded-full bg-yellow-400/20 blur-[120px]" />
