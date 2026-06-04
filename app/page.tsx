@@ -9,22 +9,26 @@ export default function OmniEchelonSoundsWebsite() {
       <img
         src="/logo.png"
         alt="OMNI ECHELON SOUNDS"
-        className="h-12 w-auto opacity-95 drop-shadow-[0_0_12px_rgba(250,204,21,0.6)]"
+        className="h-12 w-auto opacity-95"
       />
     </div>
 
-    {/* CENTER: NAME */}
-    <div className="absolute left-1/2 -translate-x-1/2 text-center pointer-events-none">
+    {/* CENTER: TITLE (does NOT block clicks) */}
+    <div className="absolute left-1/2 -translate-x-1/2 pointer-events-none text-center">
       <h1 className="text-sm sm:text-base md:text-lg font-black tracking-[0.35em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500">
         ALLWAYZINTHEMIXX
       </h1>
 
-      {/* spectrum glow aura */}
-      <div className="absolute -inset-8 -z-10 blur-3xl opacity-60 bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500 animate-pulse" />
+      <div className="absolute -inset-6 -z-10 blur-3xl opacity-50 bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500 animate-pulse" />
     </div>
 
-    {/* RIGHT: spacer (keeps balance so center stays true) */}
-    <div className="ml-auto w-12" />
+    {/* RIGHT: NAV BUTTONS (RESTORED) */}
+    <nav className="ml-auto flex items-center gap-6 text-sm text-white/75">
+      <a href="#about" className="hover:text-white transition">About</a>
+      <a href="#sound" className="hover:text-white transition">Sound</a>
+      <a href="#world" className="hover:text-white transition">World</a>
+      <a href="#contact" className="hover:text-white transition">Contact</a>
+    </nav>
 
   </div>
 </header>
