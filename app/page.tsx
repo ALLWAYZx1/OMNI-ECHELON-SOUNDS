@@ -138,20 +138,21 @@ export default function OmniEchelonSoundsWebsite() {
       />
     </div>
 
-    {/* SOUNDCLOUD */}
-    <iframe
-      width="100%"
-      height="166"
-      scrolling="no"
-      frameBorder="no"
-      allow="autoplay"
-      className="rounded-2xl"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-    />
-  </div>
+  {/* SOUNDCLOUD */}
+<iframe
+  width="100%"
+  height="166"
+  scrolling="no"
+  frameBorder="no"
+  allow="autoplay"
+  className="rounded-2xl"
+  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+/>
 
-</div>
+</div> {/* RIGHT SIDE WRAPPER CLOSE */}
+</div> {/* SECTION WRAPPER CLOSE */}
 
+{/* TRANSMISSION */}
 <section id="transmission" className="relative w-full border-y border-white/10 bg-black mt-10">
   <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
     <iframe
@@ -161,11 +162,8 @@ export default function OmniEchelonSoundsWebsite() {
       allowFullScreen
     />
   </div>
-</section>
-  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
-</section>
 
-  {/* pulse line */}
+  {/* pulse line INSIDE section */}
   <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
 </section>
         {/* ARTIST DEVELOPMENT PROMO (SMALLER SIGNAL) */}
