@@ -81,7 +81,7 @@ export default function OmniEchelonSoundsWebsite() {
             APPLE MUSIC
           </p>
 
-          <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+          <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/5">
             <iframe
               src="https://embed.music.apple.com/us/album/emotions-in-motion/1895465650"
               width="100%"
