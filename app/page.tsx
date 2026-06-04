@@ -95,12 +95,15 @@ export default function OmniEchelonSoundsWebsite() {
 
       </div>
 
- 
-        {/* YOUTUBE */}
-       <div className="w-full max-w-[520px] justify-self-end">
-  <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
-    NOW PLAYING
-  </p>
+ {/* RIGHT SIDE */}
+<div className="w-full max-w-[520px] justify-self-end">
+
+  {/* YOUTUBE */}
+  <div>
+    <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+      NOW PLAYING
+    </p>
+   
 
   <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
     <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
