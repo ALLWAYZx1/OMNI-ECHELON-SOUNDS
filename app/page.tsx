@@ -158,7 +158,7 @@ export default function OmniEchelonSoundsWebsite() {
 </section>
         
 {/* 🔥 TRANSMISSION STRIP (FULL WIDTH) */}
-<section className="relative w-full border-y border-white/10 bg-black">
+<section id="transmission" className="relative w-full border-y border-white/10 bg-black mt-10">
   <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
     <iframe
       className="absolute inset-0 h-full w-full"
