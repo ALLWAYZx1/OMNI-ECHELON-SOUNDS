@@ -95,66 +95,62 @@ export default function OmniEchelonSoundsWebsite() {
 
       </div>
 
- {/* RIGHT SIDE */}
-<div className="w-full max-w-[520px] justify-self-end">
+{/* RIGHT SIDE */}
+<div className="w-full max-w-[520px] justify-self-end space-y-6">
 
   {/* YOUTUBE */}
   <div>
     <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
       NOW PLAYING
     </p>
-   
 
-  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-      <iframe
-        className="absolute left-0 top-0 h-full w-full"
-        src="https://www.youtube.com/embed/5Bb81O1u2o0"
-        title="Bigger Than Life"
-        allowFullScreen
-      ></iframe>
-    </div>
-  </div>
-</div>
-
-        {/* LINKS */}
-        <div className="mt-3 flex gap-4 text-xs uppercase text-white/60">
-          <a href="https://youtube.com/shorts/5Bb81O1u2o0" target="_blank">Watch →</a>
-          <a href="https://www.youtube.com/@ALLWAYZWORLD" target="_blank">Channel →</a>
-        </div>
-
-        {/* SOUND */}
-        <div className="mt-6">
-          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
-            SOUND
-          </p>
-
-          {/* SPOTIFY */}
-          <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-            <iframe
-              src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb?utm_source=generator&theme=0"
-              width="100%"
-              height="152"
-              allow="autoplay; clipboard-write; encrypted-media"
-            ></iframe>
-          </div>
-
-          {/* SOUNDCLOUD */}
-<iframe
-  width="100%"
-  height="166"
-  scrolling="no"
-  frameBorder="no"
-  allow="autoplay"
-  className="rounded-2xl"
-  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-></iframe>
-        </div>
-
+    <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+      <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+        <iframe
+          className="absolute left-0 top-0 h-full w-full"
+          src="https://www.youtube.com/embed/5Bb81O1u2o0"
+          title="Bigger Than Life"
+          allowFullScreen
+        />
       </div>
-
     </div>
   </div>
+
+  {/* LINKS */}
+  <div className="flex gap-4 text-xs uppercase text-white/60">
+    <a href="https://youtube.com/shorts/5Bb81O1u2o0" target="_blank">Watch →</a>
+    <a href="https://www.youtube.com/@ALLWAYZWORLD" target="_blank">Channel →</a>
+  </div>
+
+  {/* SOUND */}
+  <div>
+    <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+      SOUND
+    </p>
+
+    {/* SPOTIFY */}
+    <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+      <iframe
+        src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb?utm_source=generator&theme=0"
+        width="100%"
+        height="152"
+        allow="autoplay; clipboard-write; encrypted-media"
+      />
+    </div>
+
+    {/* SOUNDCLOUD */}
+    <iframe
+      width="100%"
+      height="166"
+      scrolling="no"
+      frameBorder="no"
+      allow="autoplay"
+      className="rounded-2xl"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+    />
+  </div>
+
+</div>
 </section>
         
 {/* 🔥 TRANSMISSION STRIP (FULL WIDTH) */}
