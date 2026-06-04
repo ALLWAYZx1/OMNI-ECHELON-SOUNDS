@@ -3,11 +3,17 @@ export default function OmniEchelonSoundsWebsite() {
     <div className="min-h-screen bg-black text-white">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-3">
+
+          {/* BIG BRAND TEXT */}
+          <div className="flex items-center gap-4">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-[0.35em] text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-white to-purple-400 drop-shadow-[0_0_18px_rgba(250,204,21,0.25)]">
+              ALLWAYZintheMIXX
+            </h1>
+
             <img
               src="/logo.png"
               alt="OMNI ECHELON SOUNDS"
-              className="h-12 w-auto opacity-95 drop-shadow-[0_0_12px_rgba(250,204,21,0.6)]"
+              className="h-10 w-auto opacity-90"
             />
           </div>
 
