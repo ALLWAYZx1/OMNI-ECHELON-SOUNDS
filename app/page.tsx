@@ -236,18 +236,23 @@ export default function OmniEchelonSoundsWebsite() {
               </h2>
             </div>
 
-            <div className="mt-10 grid gap-6 md:grid-cols-2">
-              {[
-                ["Cinematic", "Heavy emotion, movement, scale, and impact."],
-                ["Dark", "Shadow, pressure, tension, and weight."],
-                ["Post-Time", "Not retro. Not futuristic. Somewhere beyond both."],
-                ["Personal", "A signature sound world, not filler for the shelf."],
-              ].map(([title, body]) => (
-                <div key={title} className="rounded-[2rem] border border-white/10 p-6">
-                  <div className="text-lg font-semibold uppercase tracking-wide">{title}</div>
-                  <p className="mt-3 max-w-md text-sm leading-6 text-white/68">{body}</p>
+           <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {[
+              ["Cinematic", "Heavy emotion, movement, scale, and impact."],
+              ["Dark", "Shadow, pressure, tension, and weight."],
+              ["Post-Time", "Not retro. Not futuristic. Somewhere beyond both."],
+              ["Personal", "A signature sound world, not filler for the shelf."],
+            ].map(([title, body]) => (
+              <div key={title} className="rounded-[2rem] border border-white/10 p-6">
+                <div className="text-lg font-semibold uppercase tracking-wide">
+                  {title}
                 </div>
-              ))}
+                <p className="mt-3 max-w-md text-sm leading-6 text-white/68">
+                  {body}
+                </p>
+              </div>
+            ))}
+          </div>
             </div>
           </div>
         </section>
