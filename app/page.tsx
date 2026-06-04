@@ -281,7 +281,7 @@ export default function OmniEchelonSoundsWebsite() {
 {/* PRESENCE IMAGE */}
 <div className="mt-8 overflow-hidden rounded-2xl border border-white/10">
   <img
-    src="/presence.jpg"
+    src="/OES.PNG"
     alt="Presence Visual"
     className="w-full aspect-[21/9] object-cover hover:scale-105 transition duration-500"
   />
