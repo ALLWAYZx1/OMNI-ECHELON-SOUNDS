@@ -165,7 +165,7 @@ export default function OmniEchelonSoundsWebsite() {
   {/* pulse line */}
   <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
 </section>
-        {/* Bigger Than Life */}
+{/* Bigger Than Life */}
 <section className="relative w-full border-b border-white/10 bg-black overflow-hidden">
 
   {/* subtle glow */}
@@ -187,7 +187,7 @@ export default function OmniEchelonSoundsWebsite() {
       <iframe
         className="absolute inset-0 h-full w-full rounded-xl"
         src="https://www.youtube.com/embed/5Bb81O1u2o0"
-        title=“Bigger Than Life”
+        title="Bigger Than Life"
         allowFullScreen
       />
     </div>
