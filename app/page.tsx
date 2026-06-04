@@ -1,5 +1,3 @@
-MAIN CODE
-
 export default function OmniEchelonSoundsWebsite() {
   return (
     <div className="min-h-screen bg-black text-white">
