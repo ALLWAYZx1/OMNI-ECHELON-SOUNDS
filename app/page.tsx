@@ -42,9 +42,55 @@ export default function OmniEchelonSoundsWebsite() {
       <div className="max-w-2xl">
 
         <div className="mb-6 inline-flex rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.32em] text-white/70">
-          Entry point
+          ENERGY in MOTION
         </div>
+        
+{/* 🔥 TRANSMISSION STRIP (FULL WIDTH) */}
+<section className="relative w-full border-y border-white/10 bg-black">
+  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+    <iframe
+      className="absolute inset-0 h-full w-full"
+      src="https://www.youtube.com/embed/rfip6Ix-SgA"
+      title="Transmission"
+      allowFullScreen
+    />
+  </div>
 
+  {/* pulse line */}
+  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
+</section>
+        {/* ARTIST DEVELOPMENT PROMO (SMALLER SIGNAL) */}
+<section className="relative w-full border-b border-white/10 bg-black overflow-hidden">
+
+  {/* subtle glow */}
+  <div className="pointer-events-none absolute inset-0">
+    <div className="absolute left-1/2 top-1/2 h-[300px] w-[600px] -translate-x-1/2 -translate-y-1/2 bg-purple-500/10 blur-[100px]" />
+    <div className="absolute left-1/2 top-1/2 h-[300px] w-[600px] -translate-x-1/2 -translate-y-1/2 bg-blue-500/10 blur-[100px]" />
+  </div>
+
+  {/* label */}
+  <div className="relative z-10 mx-auto max-w-6xl px-4 pt-8">
+    <p className="text-xs uppercase tracking-[0.5em] text-white/60">
+      ARTIST DEVELOPMENT SIGNAL
+    </p>
+  </div>
+
+  {/* smaller video frame */}
+  <div className="relative mx-auto max-w-4xl px-4 py-8">
+    <div className="relative w-full" style={{ paddingBottom: "42%" }}>
+      <iframe
+        className="absolute inset-0 h-full w-full rounded-xl"
+        src="https://www.youtube.com/embed/MLIAyB5Efq8"
+        title="Artist Development Promo"
+        allowFullScreen
+      />
+    </div>
+  </div>
+
+  {/* subtle pulse line */}
+  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse" />
+</section>
+        
         <h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
 <span className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-500 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(250,204,21,0.35)] normal-case">
   ALL LEVELS of SOUNDS</span>       
@@ -157,51 +203,7 @@ export default function OmniEchelonSoundsWebsite() {
   </div>
 </section>
         
-{/* 🔥 TRANSMISSION STRIP (FULL WIDTH) */}
-<section className="relative w-full border-y border-white/10 bg-black">
-  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-    <iframe
-      className="absolute inset-0 h-full w-full"
-      src="https://www.youtube.com/embed/rfip6Ix-SgA"
-      title="Transmission"
-      allowFullScreen
-    />
-  </div>
 
-  {/* pulse line */}
-  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
-</section>
-        {/* ARTIST DEVELOPMENT PROMO (SMALLER SIGNAL) */}
-<section className="relative w-full border-b border-white/10 bg-black overflow-hidden">
-
-  {/* subtle glow */}
-  <div className="pointer-events-none absolute inset-0">
-    <div className="absolute left-1/2 top-1/2 h-[300px] w-[600px] -translate-x-1/2 -translate-y-1/2 bg-purple-500/10 blur-[100px]" />
-    <div className="absolute left-1/2 top-1/2 h-[300px] w-[600px] -translate-x-1/2 -translate-y-1/2 bg-blue-500/10 blur-[100px]" />
-  </div>
-
-  {/* label */}
-  <div className="relative z-10 mx-auto max-w-6xl px-4 pt-8">
-    <p className="text-xs uppercase tracking-[0.5em] text-white/60">
-      ARTIST DEVELOPMENT SIGNAL
-    </p>
-  </div>
-
-  {/* smaller video frame */}
-  <div className="relative mx-auto max-w-4xl px-4 py-8">
-    <div className="relative w-full" style={{ paddingBottom: "42%" }}>
-      <iframe
-        className="absolute inset-0 h-full w-full rounded-xl"
-        src="https://www.youtube.com/embed/MLIAyB5Efq8"
-        title="Artist Development Promo"
-        allowFullScreen
-      />
-    </div>
-  </div>
-
-  {/* subtle pulse line */}
-  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse" />
-</section>
         <section id="about" className="border-b border-white/10">
           <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
             <div>
