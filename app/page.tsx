@@ -225,7 +225,6 @@ export default function OmniEchelonSoundsWebsite() {
         title="Omni Echelon Sounds Transmission"
         allowFullScreen
       ></iframe>
-    </div>
   </div>
 
 </div>
