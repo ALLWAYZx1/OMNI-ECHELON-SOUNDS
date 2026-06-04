@@ -81,7 +81,7 @@ export default function OmniEchelonSoundsWebsite() {
             APPLE MUSIC
           </p>
 
-          <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+          <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/5">
             <iframe
               src="https://embed.music.apple.com/us/album/emotions-in-motion/1895465650"
               width="100%"
@@ -95,51 +95,50 @@ export default function OmniEchelonSoundsWebsite() {
 
       </div>
 
-      {/* RIGHT SIDE */}
-      <div className="w-full max-w-[520px] justify-self-end">
+{/* RIGHT SIDE */}
+<div className="w-full max-w-[520px] justify-self-end space-y-6">
 
+  {/* YOUTUBE */}
+  <div>
+    <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+      NOW PLAYING
+    </p>
 
-        {/* YOUTUBE */}
-       <div className="w-full max-w-[520px] justify-self-end">
-  <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
-    NOW PLAYING
-  </p>
-
-  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-      <iframe
-        className="absolute left-0 top-0 h-full w-full"
-        src="https://www.youtube.com/embed/5Bb81O1u2o0"
-        title="Bigger Than Life"
-        allowFullScreen
-      ></iframe>
+    <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+      <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+        <iframe
+          className="absolute left-0 top-0 h-full w-full"
+          src="https://www.youtube.com/embed/5Bb81O1u2o0"
+          title="Bigger Than Life"
+          allowFullScreen
+        />
+      </div>
     </div>
   </div>
-</div>
 
-        {/* LINKS */}
-        <div className="mt-3 flex gap-4 text-xs uppercase text-white/60">
-          <a href="https://youtube.com/shorts/5Bb81O1u2o0" target="_blank">Watch →</a>
-          <a href="https://www.youtube.com/@ALLWAYZWORLD" target="_blank">Channel →</a>
-        </div>
+  {/* LINKS */}
+  <div className="flex gap-4 text-xs uppercase text-white/60">
+    <a href="https://youtube.com/shorts/5Bb81O1u2o0" target="_blank">Watch →</a>
+    <a href="https://www.youtube.com/@ALLWAYZWORLD" target="_blank">Channel →</a>
+  </div>
 
-        {/* SOUND */}
-        <div className="mt-6">
-          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
-            SOUND
-          </p>
+  {/* SOUND */}
+  <div>
+    <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+      SOUND
+    </p>
 
-          {/* SPOTIFY */}
-          <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-            <iframe
-              src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb?utm_source=generator&theme=0"
-              width="100%"
-              height="152"
-              allow="autoplay; clipboard-write; encrypted-media"
-            ></iframe>
-          </div>
+    {/* SPOTIFY */}
+    <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+      <iframe
+        src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb?utm_source=generator&theme=0"
+        width="100%"
+        height="152"
+        allow="autoplay; clipboard-write; encrypted-media"
+      />
+    </div>
 
-          {/* SOUNDCLOUD */}
+  {/* SOUNDCLOUD */}
 <iframe
   width="100%"
   height="166"
@@ -148,13 +147,55 @@ export default function OmniEchelonSoundsWebsite() {
   allow="autoplay"
   className="rounded-2xl"
   src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-></iframe>
-        </div>
+/>
 
-      </div>
+</div> {/* RIGHT SIDE WRAPPER CLOSE */}
+</div> {/* SECTION WRAPPER CLOSE */}
 
+{/* TRANSMISSION */}
+<section id="transmission" className="relative w-full border-y border-white/10 bg-black mt-10">
+  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+    <iframe
+      className="absolute inset-0 h-full w-full"
+      src="https://www.youtube.com/embed/rfip6Ix-SgA"
+      title="Transmission"
+      allowFullScreen
+    />
+  </div>
+
+  {/* pulse line INSIDE section */}
+  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
+</section>
+        {/* ARTIST DEVELOPMENT PROMO (SMALLER SIGNAL) */}
+<section className="relative w-full border-b border-white/10 bg-black overflow-hidden">
+
+  {/* subtle glow */}
+  <div className="pointer-events-none absolute inset-0">
+    <div className="absolute left-1/2 top-1/2 h-[300px] w-[600px] -translate-x-1/2 -translate-y-1/2 bg-purple-500/10 blur-[100px]" />
+    <div className="absolute left-1/2 top-1/2 h-[300px] w-[600px] -translate-x-1/2 -translate-y-1/2 bg-blue-500/10 blur-[100px]" />
+  </div>
+
+  {/* label */}
+  <div className="relative z-10 mx-auto max-w-6xl px-4 pt-8">
+    <p className="text-xs uppercase tracking-[0.5em] text-white/60">
+      ARTIST DEVELOPMENT SIGNAL
+    </p>
+  </div>
+
+  {/* smaller video frame */}
+  <div className="relative mx-auto max-w-4xl px-4 py-8">
+    <div className="relative w-full" style={{ paddingBottom: "42%" }}>
+      <iframe
+        className="absolute inset-0 h-full w-full rounded-xl"
+        src="https://www.youtube.com/embed/MLIAyB5Efq8"
+        title="Artist Development Promo"
+        allowFullScreen
+      />
     </div>
   </div>
+
+  {/* subtle pulse line */}
+  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse" />
 </section>
         <section id="about" className="border-b border-white/10">
           <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
