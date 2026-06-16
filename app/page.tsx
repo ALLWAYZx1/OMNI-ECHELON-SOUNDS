@@ -315,7 +315,7 @@ export default function OmniEchelonSoundsWebsite() {
           </div>
         </section>
 
-    <section id="merch" className="bg-black">
+ <section id="merch" className="bg-black">
   <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
     <div className="text-xs uppercase tracking-[0.35em] text-yellow-400">Merch</div>
     <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
@@ -324,16 +324,43 @@ export default function OmniEchelonSoundsWebsite() {
     <p className="mt-5 text-base leading-7 text-white/70">
       Wear the movement. Limited pre-order drops — ships July 14th.
     </p>
+    <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
+      {[
+        { name: "Through the Darkest Nights", price: "$60.00", img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/5E40C849-6FF6-46DF-9665-C7ECA8D6C0412.jpg?v=1781590273" },
+        { name: "Rise Light Purpose", price: "$60.00", img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/5F285EFB-CBD2-4956-90B0-3792FD9BDFB4_d0b56f13-76a5-4a34-a9e6-71a01ba1f1b8.jpg?v=1781514725" },
+        { name: "Still Rising", price: "$60.00", img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/5F285EFB-CBD2-4956-90B0-3792FD9BDFB4.jpg?v=1781514360" },
+        { name: "Still Rising Tee", price: "$35.00", img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/154E675D-8BCE-4202-96B0-EB1E4722DB533.jpg?v=1781514802" },
+      ].map((item) => (
+        <a
+          key={item.name}
+          href="https://still-rising-4.myshopify.com/collections/still-rising"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group"
+        >
+          <div className="overflow-hidden rounded-xl border border-white/10">
+            <img
+              src={item.img}
+              alt={item.name}
+              className="w-full object-cover transition group-hover:scale-105"
+            />
+          </div>
+          <p className="mt-2 text-sm text-white/70">{item.name}</p>
+          <p className="text-sm font-semibold text-yellow-400">{item.price}</p>
+        </a>
+      ))}
+    </div>
     <a
       href="https://still-rising-4.myshopify.com/collections/still-rising"
       target="_blank"
       rel="noopener noreferrer"
-      className="mt-8 inline-block rounded-full border border-yellow-400 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
+      className="mt-10 inline-block rounded-full border border-yellow-400 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
     >
       Shop Still Rising →
     </a>
   </div>
 </section>
+
 
 
         <section id="contact" className="bg-white/[0.02]">
