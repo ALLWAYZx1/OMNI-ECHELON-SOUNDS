@@ -315,6 +315,27 @@ export default function OmniEchelonSoundsWebsite() {
           </div>
         </section>
 
+    <section id="merch" className="bg-black">
+  <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <div className="text-xs uppercase tracking-[0.35em] text-yellow-400">Merch</div>
+    <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
+      Still Rising Collection
+    </h2>
+    <p className="mt-5 text-base leading-7 text-white/70">
+      Wear the movement. Limited pre-order drops — ships July 14th.
+    </p>
+    <a
+      href="https://still-rising-4.myshopify.com/collections/still-rising"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mt-8 inline-block rounded-full border border-yellow-400 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
+    >
+      Shop Still Rising →
+    </a>
+  </div>
+</section>
+
+
         <section id="contact" className="bg-white/[0.02]">
           <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 sm:p-10 lg:p-12">
