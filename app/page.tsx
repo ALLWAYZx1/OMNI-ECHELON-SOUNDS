@@ -1,10 +1,11 @@
 export default function OmniEchelonSoundsWebsite() {
   return (
     <div className="min-h-screen bg-black text-white">
-<header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur">
-  <div className="mx-auto w-full max-w-6xl px-4 py-3 sm:px-6 lg:px-8">
+{/* HEADER */}
+<header className="w-full border-b border-white/10">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
 
-    {/* TOP ROW (mobile + desktop logo/nav) */}
+    {/* TOP ROW */}
     <div className="flex items-center justify-between">
 
       {/* LOGO */}
@@ -16,26 +17,36 @@ export default function OmniEchelonSoundsWebsite() {
 
       {/* NAV */}
       <nav className="flex items-center gap-4 sm:gap-6 text-xs sm:text-sm text-white/75">
-        <a href="#about" className="hover:text-white">About</a>
-        <a href="#sound" className="hover:text-white">Sound</a>
-        <a href="#world" className="hover:text-white">World</a>
-        <a href="#contact" className="hover:text-white">Contact</a>
+        <a href="#about" className="hover:text-white transition">
+          About
+        </a>
+        <a href="#sound" className="hover:text-white transition">
+          Sound
+        </a>
+        <a href="#world" className="hover:text-white transition">
+          World
+        </a>
+        <a href="#contact" className="hover:text-white transition">
+          Contact
+        </a>
       </nav>
     </div>
 
-    {/* CENTER TITLE (STACKED BELOW ON MOBILE) */}
-    <div className="mt-3 text-center">
-      <h1 className="text-sm sm:text-lg font-black tracking-[0.35em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500">
+    {/* TITLE MOVED UP + SMALLER */}
+    <div className="-mt-1 text-center">
+
+      <h1 className="text-[10px] sm:text-sm font-black tracking-[0.25em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500">
         OMNI ECHELON SOUNDS
       </h1>
 
-      <p className="text-[9px] sm:text-xs uppercase tracking-[0.3em] text-white/80">
+      <p className="text-[8px] sm:text-[10px] uppercase tracking-[0.25em] text-white/80">
         SIGNAL FROM ALLWAYZintheMIXX
       </p>
 
-      <p className="text-[12px] sm:text-[10px] uppercase tracking-[0.25em] text-white/60">
+      <p className="text-[7px] sm:text-[9px] uppercase tracking-[0.2em] text-white/60">
         INDEPENDENT LABEL UNIVERSE
       </p>
+
     </div>
 
   </div>
