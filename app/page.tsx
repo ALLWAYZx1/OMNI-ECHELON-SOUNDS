@@ -188,7 +188,7 @@ export default function OmniEchelonSoundsWebsite() {
   <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
     <iframe
       className="absolute inset-0 h-full w-full"
-      src="https://youtu.be/rfip6Ix-SgA?si=mjj71yKWLnTa3rPd"
+      src="https://youtu.be/rfip6Ix-SgA"
       title="Transmission"
       allowFullScreen
     />
