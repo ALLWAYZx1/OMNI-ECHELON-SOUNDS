@@ -187,20 +187,15 @@ export default function OmniEchelonSoundsWebsite() {
   </div>
 </section>
         
-{/* 🔥 TRANSMISSION STRIP (SMALLER) */}
-<section className="relative w-full border-y border-white/10 bg-black py-16">
-  <div
-    className="relative mx-auto w-full max-w-4xl overflow-hidden rounded-2xl border border-white/10"
-    style={{ paddingBottom: "56.25%" }}
-  >
-    <iframe
-      className="absolute inset-0 h-full w-full"
-      src="https://www.youtube.com/embed/rfip6Ix-SgA?rel=0&modestbranding=1"
-      title="Transmission"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    />
-  </div>
+{/* 🔥 TRANSMISSION STRIP */}
+<section className="relative w-full border-y border-white/10 bg-black">
+  <iframe
+    className="block h-[220px] w-full md:h-[320px] lg:h-[380px]"
+    src="https://www.youtube.com/embed/rfip6Ix-SgA?rel=0&modestbranding=1"
+    title="Transmission"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  />
 </section>
 
 {/* Bigger Than Life */}
