@@ -203,11 +203,8 @@ export default function OmniEchelonSoundsWebsite() {
   </div>
 </section>
 
-  {/* pulse line */}
-  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
-</section>
 {/* Bigger Than Life */}
-<section className="relative w-full border-b border-white/10 bg-black overflow-hidden">
+<section className="relative w-full overflow-hidden border-b border-white/10 bg-black">
 
   {/* subtle glow */}
   <div className="pointer-events-none absolute inset-0">
@@ -224,7 +221,10 @@ export default function OmniEchelonSoundsWebsite() {
 
   {/* smaller video frame */}
   <div className="relative mx-auto max-w-4xl px-4 py-8">
-    <div className="relative w-full" style={{ paddingBottom: "42%" }}>
+    <div
+      className="relative w-full"
+      style={{ paddingBottom: "42%" }}
+    >
       <iframe
         className="absolute inset-0 h-full w-full rounded-xl"
         src="https://www.youtube.com/embed/5Bb81O1u2o0"
@@ -233,9 +233,9 @@ export default function OmniEchelonSoundsWebsite() {
       />
     </div>
   </div>
-</section>
-{/* pulse line */}
-<div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+
+  {/* pulse line */}
+  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent" />
 </section>
         <section id="about" className="border-b border-white/10">
           <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
