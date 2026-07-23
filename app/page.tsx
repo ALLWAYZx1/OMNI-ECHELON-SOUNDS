@@ -190,7 +190,7 @@ export default function OmniEchelonSoundsWebsite() {
 {/* 🔥 TRANSMISSION STRIP */}
 <section className="relative w-full border-y border-white/10 bg-black">
   <iframe
-    className="block h-[220px] w-full md:h-[320px] lg:h-[380px]"
+    className="block h-[220px] w-full md:h-[700px] lg:h-[380px]"
     src="https://www.youtube.com/embed/rfip6Ix-SgA?rel=0&modestbranding=1"
     title="Transmission"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
