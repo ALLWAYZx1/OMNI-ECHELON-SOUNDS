@@ -187,16 +187,21 @@ export default function OmniEchelonSoundsWebsite() {
   </div>
 </section>
         
-{/* 🔥 TRANSMISSION STRIP (FULL WIDTH) */}
-<section className="relative w-full border-y border-white/10 bg-black">
-  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+{/* 🔥 TRANSMISSION STRIP (SMALLER) */}
+<section className="relative w-full border-y border-white/10 bg-black py-16">
+  <div
+    className="relative mx-auto w-full max-w-4xl overflow-hidden rounded-2xl border border-white/10"
+    style={{ paddingBottom: "56.25%" }}
+  >
     <iframe
       className="absolute inset-0 h-full w-full"
-      src="https://www.youtube.com/embed/rfip6Ix-SgA?si=Mg04y0tQzNZevXUQ"
+      src="https://www.youtube.com/embed/rfip6Ix-SgA?rel=0&modestbranding=1"
       title="Transmission"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
     />
   </div>
+</section>
 
   {/* pulse line */}
   <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
@@ -348,29 +353,33 @@ export default function OmniEchelonSoundsWebsite() {
     <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
       {[
         {
+          name: "Golden Sunrise Portal Hoodie",
+          price: "From $56.80",
+          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/Golden_SUnrise.jpg?v=1784711087",
+          href: "https://weriseabove.life/products/golden-sunrise-portal-hoodie",
+        },
+        {
           name: "Through the Darkest Nights",
-          price: "$60.00",
-          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/5E40C849-6FF6-46DF-9665-C7ECA8D6C0412.jpg?v=1781590273",
+          price: "From $59.99",
+          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/darkest_nights.png?v=1784674067",
+          href: "https://weriseabove.life/products/through-the-darkest-nights",
         },
         {
-          name: "Rise Light Purpose",
-          price: "$60.00",
-          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/5F285EFB-CBD2-4956-90B0-3792FD9BDFB4_d0b56f13-76a5-4a34-a9e6-71a01ba1f1b8.jpg?v=1781514725",
+          name: "Still Rising No Final Form",
+          price: "From $59.99",
+          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/C6376E47-18F7-42EA-9C3B-A85918D3D1B2.png?v=1784674595",
+          href: "https://weriseabove.life/products/still-rising-no-final-form",
         },
         {
-          name: "Still Rising",
-          price: "$60.00",
-          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/5F285EFB-CBD2-4956-90B0-3792FD9BDFB4.jpg?v=1781514360",
-        },
-        {
-          name: "Still Rising Tee",
-          price: "$35.00",
-          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/154E675D-8BCE-4202-96B0-EB1E4722DB533.jpg?v=1781514802",
+          name: "Darkest Nights Classic Tee",
+          price: "$29.99",
+          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/unisex-classic-tee-black-front-6a538910c4949.png?v=1784673607",
+          href: "https://weriseabove.life/products/darkest-nights-classic-tee",
         },
       ].map((item) => (
         <a
           key={item.name}
-          href="https://weriseabove.life/collections/still-rising"
+          href={item.href}
           target="_blank"
           rel="noopener noreferrer"
           className="group"
@@ -382,17 +391,14 @@ export default function OmniEchelonSoundsWebsite() {
               className="w-full object-cover transition group-hover:scale-105"
             />
           </div>
-
           <p className="mt-2 text-sm text-white/70">{item.name}</p>
-          <p className="text-sm font-semibold text-yellow-400">
-            {item.price}
-          </p>
+          <p className="text-sm font-semibold text-yellow-400">{item.price}</p>
         </a>
       ))}
     </div>
 
     <a
-      href="https://weriseabove.life"
+      href="https://weriseabove.life/collections/all"
       target="_blank"
       rel="noopener noreferrer"
       className="mt-10 inline-block rounded-full border border-yellow-400 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
@@ -401,6 +407,7 @@ export default function OmniEchelonSoundsWebsite() {
     </a>
   </div>
 </section>
+
 
 
 
