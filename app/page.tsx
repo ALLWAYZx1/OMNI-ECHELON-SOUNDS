@@ -233,7 +233,7 @@ export default function OmniEchelonSoundsWebsite() {
       />
     </div>
   </div>
-
+</section>
   {/* subtle pulse line */}
   <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse" />
 </section>
