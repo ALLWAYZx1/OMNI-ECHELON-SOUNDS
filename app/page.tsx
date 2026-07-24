@@ -239,60 +239,33 @@ export default function OmniEchelonSoundsWebsite() {
 <div className="w-full max-w-[520px] justify-self-end">
 
   {/* HEADER */}
-  <div className="mb-6">
-    <p className="text-[10px] uppercase tracking-[0.45em] text-emerald-300">
-      ● LIVE TRANSMISSION
-    </p>
-
-    <h3 className="mt-2 text-xl font-bold uppercase tracking-[0.22em]">
-      ARTIST DEVELOPMENT
-    </h3>
-
-    <p className="mt-4 text-sm leading-7 text-white/65">
-      We don't just develop artists. We develop presence. Every session is
-      focused on refining your sound, defining your identity, and building a
-      catalog that connects long after the music stops. Because the goal isn't
-      simply to be heard. It's to be remembered.
-    </p>
-
-    <p className="mt-4 text-xs uppercase tracking-[0.3em] text-yellow-400">
-      SIGNAL // ALLWAYZ
-    </p>
-  </div>
+  ...
 
   {/* YOUTUBE */}
   <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-    <div
-      className="relative w-full"
-      style={{ paddingBottom: "56.25%" }}
-    >
-      <iframe
-        className="absolute inset-0 h-full w-full"
-        src="https://www.youtube.com/embed/MLIAyB5Efq8"
-        title="ARTIST DEVELOPMENT SIGNAL"
-        allowFullScreen
-      />
+    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+      <iframe ... />
     </div>
   </div>
-</div>
-          {/* SOUNDCLOUD */}
-<iframe
-  width="100%"
-  height="230"
-  scrolling="no"
-  frameBorder="no"
-  allow="autoplay"
-  className="rounded-2xl"
-  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-></iframe>
-        </div>
 
-      </div>
+  {/* SOUNDCLOUD */}
+  <div className="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+    <iframe
+      width="100%"
+      height="230"
+      scrolling="no"
+      frameBorder="no"
+      allow="autoplay"
+      className="rounded-2xl"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+    />
+  </div>
 
-    </div>
+</div> {/* ✅ END RIGHT SIDE */}
+
+</div> {/* grid */}
+</div> {/* container */}
 </section>
-      
-      
   <section id="merch" className="bg-black">
   <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
     <div className="text-xs uppercase tracking-[0.35em] text-yellow-400">
