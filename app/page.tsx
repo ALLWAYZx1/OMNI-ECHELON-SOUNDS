@@ -110,61 +110,130 @@ export default function OmniEchelonSoundsWebsite() {
     <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[1fr_520px]">
 
       {/* LEFT SIDE */}
-      <div className="max-w-2xl">
+{/* LEFT SIDE */}
+<div className="relative max-w-2xl">
 
-        <div className="mb-6 inline-flex rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.32em] text-white/70">
-          Emotions in Motion
-        </div>
+  {/* Watermark */}
+  <div className="pointer-events-none absolute -left-8 -top-10 -z-10 text-[180px] font-black uppercase tracking-tight text-white/[0.03]">
+    OMNI
+  </div>
 
-        <h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl lg:text-5xl">
-<span className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-500 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(250,204,21,0.35)] normal-case">
-  ALL LEVELS of SOUNDS</span>       
-        </h1>
+  {/* Live Signal */}
+  <div className="mb-5 flex items-center gap-3">
+    <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_12px_rgba(74,222,128,.9)]"></span>
 
-        <div className="mt-8 space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-transparent bg-gradient-to-r from-white via-indigo-300 to-purple-300 bg-clip-text">
-            CINEMATIC PRESSURE
-          </p>
+    <span className="text-[10px] uppercase tracking-[0.45em] text-emerald-300">
+      SIGNAL LIVE
+    </span>
+  </div>
 
-          <p className="max-w-xl text-sm italic tracking-[0.25em] text-white/60 sm:text-base">
-            ENTER TO EXPERIENCE WHAT THIS ATMOSPHERE HAS IN VISION, SOUND AND MOTION ACROSS ALL SPECTRUMS
-          </p>
-        </div>
+  {/* Transmission Badge */}
+  <div className="inline-flex items-center rounded-full border border-white/10 bg-white/[0.03] px-5 py-2 backdrop-blur-xl shadow-[0_0_40px_rgba(255,255,255,.03)]">
+    <span className="text-[10px] uppercase tracking-[0.42em] text-yellow-300">
+      TRANSMISSION 001
+    </span>
+  </div>
 
-        <div className="mt-10 flex flex-wrap gap-4">
-          <a href="#about" className="rounded-2xl border border-white/30 px-6 py-3 text-sm uppercase tracking-[0.22em]">
-            Enter
-          </a>
+  <p className="mt-3 text-[10px] uppercase tracking-[0.38em] text-white/45">
+    EMOTIONS IN MOTION
+  </p>
 
-          <a
-            href="https://www.instagram.com/allwayzinthemixx"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-2xl border border-white/20 px-6 py-3 text-sm uppercase tracking-[0.22em]"
-          >
-            Instagram
-          </a>
-        </div>
+  {/* Headline */}
+  <h1 className="mt-8 max-w-xl text-5xl font-black uppercase leading-[0.92] tracking-tight sm:text-6xl lg:text-7xl">
+    <span className="block text-white">
+      ALL LEVELS
+    </span>
 
-        {/* 🍎 APPLE MUSIC (LEFT SIDE) */}
-        <div className="mt-10">
-          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-pink-400">
-            APPLE MUSIC
-          </p>
+    <span className="block bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-500 bg-clip-text text-transparent drop-shadow-[0_0_35px_rgba(250,204,21,.4)]">
+      OF SOUND.
+    </span>
+  </h1>
 
-          <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/5">
-            <iframe
-              src="https://embed.music.apple.com/us/album/emotions-in-motion/1895465650"
-              width="100%"
-              height="300"
-              style={{ borderRadius: "12px" }}
-              allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
-              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-            ></iframe>
-          </div>
-        </div>
+  {/* Artist Roles */}
+  <div className="mt-8 flex flex-wrap gap-8 text-xs uppercase tracking-[0.32em] text-white/40">
 
-      </div>
+    <div>
+      <p className="text-yellow-400">01</p>
+      <p>Artist</p>
+    </div>
+
+    <div>
+      <p className="text-cyan-400">02</p>
+      <p>Producer</p>
+    </div>
+
+    <div>
+      <p className="text-purple-400">03</p>
+      <p>Engineer</p>
+    </div>
+
+  </div>
+
+  {/* Subtitle */}
+  <div className="mt-10 space-y-4">
+
+    <p className="text-xs font-semibold uppercase tracking-[0.35em] text-transparent bg-gradient-to-r from-white via-indigo-300 to-purple-300 bg-clip-text">
+      CINEMATIC PRESSURE
+    </p>
+
+    <p className="max-w-xl text-base leading-8 text-white/65">
+      Enter a world where cinematic production, visual storytelling,
+      and modern sound move together across every frequency.
+    </p>
+
+    <p className="text-[11px] uppercase tracking-[0.42em] text-white/35">
+      EMOTION • FREQUENCY • MOTION • CINEMA
+    </p>
+
+  </div>
+
+  {/* Buttons */}
+  <div className="mt-10 flex flex-wrap gap-4">
+
+    <a
+      href="#about"
+      className="rounded-2xl bg-gradient-to-r from-yellow-400 to-orange-500 px-8 py-3 text-sm font-bold uppercase tracking-[0.28em] text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(250,204,21,.45)]"
+    >
+      ENTER
+    </a>
+
+    <a
+      href="https://www.instagram.com/allwayzinthemixx"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-2xl border border-white/10 bg-white/[0.03] px-8 py-3 text-sm uppercase tracking-[0.28em] text-white transition-all duration-300 hover:border-yellow-400/40 hover:bg-white/[0.05]"
+    >
+      INSTAGRAM
+    </a>
+
+  </div>
+
+  {/* Divider */}
+  <div className="my-10 h-px w-40 bg-gradient-to-r from-yellow-400 via-white/40 to-transparent" />
+
+  {/* Apple Music */}
+  <div>
+
+    <p className="mb-4 text-xs uppercase tracking-[0.35em] text-pink-400">
+      LISTEN
+    </p>
+
+    <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-3 backdrop-blur-xl shadow-[0_0_50px_rgba(255,255,255,.03)]">
+
+      <iframe
+        src="https://embed.music.apple.com/us/album/emotions-in-motion/1895465650"
+        width="100%"
+        height="300"
+        style={{ borderRadius: "16px" }}
+        allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+      ></iframe>
+
+    </div>
+
+  </div>
+
+</div>
 
       {/* RIGHT SIDE */}
       <div className="w-full max-w-[520px] justify-self-end">
