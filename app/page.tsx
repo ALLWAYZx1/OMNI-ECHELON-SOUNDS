@@ -275,7 +275,7 @@ export default function OmniEchelonSoundsWebsite() {
           {/* SOUNDCLOUD */}
 <iframe
   width="100%"
-  height="166"
+  height="230"
   scrolling="no"
   frameBorder="no"
   allow="autoplay"
