@@ -673,8 +673,8 @@ export default function OmniEchelonSoundsWebsite() {
         </h2>
 
         <p className="mt-5 text-base leading-7 text-white/70">
-          Add your email, Instagram, artist links, or one clean contact form
-          here. Keep it direct. Keep it personal.
+          Add your email, Instagram, artist links, or one clean contact form here.
+          Keep it direct. Keep it personal.
         </p>
       </div>
 
@@ -714,10 +714,12 @@ export default function OmniEchelonSoundsWebsite() {
           YouTube
         </a>
 
-      </div>
+      </div> {/* button row */}
 
-    </div>
-  </div>
+    </div> {/* contact card */}
+
+  </div> {/* container */}
+
 </section>
 
 </main>
