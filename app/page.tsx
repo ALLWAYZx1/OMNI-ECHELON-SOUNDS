@@ -2,7 +2,7 @@ export default function OmniEchelonSoundsWebsite() {
   return (
     <div className="min-h-screen bg-black text-white">
 {/* HEADER */}
-<header className="w-full border-b border-white/10">
+<header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl supports-[backdrop-filter]:bg-black/45">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
 
     {/* TOP ROW */}
@@ -12,7 +12,7 @@ export default function OmniEchelonSoundsWebsite() {
       <img
         src="/logo.png"
         alt="OMNI ECHELON SOUNDS"
-        className="h-10 sm:h-12 w-auto"
+        className="h-11 sm:h-14 w-auto transition duration-500 hover:scale-105"
       />
 
       {/* NAV */}
