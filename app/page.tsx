@@ -236,53 +236,86 @@ export default function OmniEchelonSoundsWebsite() {
 </div>
 
 {/* RIGHT SIDE */}
-<div className="w-full max-w-[540px] justify-self-end">
+<div className="relative w-full max-w-[560px] justify-self-end">
 
-  {/* TRANSMISSION HEADER */}
-  <div className="mb-5 flex items-center justify-between">
+  {/* Ambient Glow */}
+  <div className="pointer-events-none absolute -left-24 top-24 h-72 w-72 rounded-full bg-yellow-400/10 blur-[130px]" />
+  <div className="pointer-events-none absolute -right-20 bottom-10 h-72 w-72 rounded-full bg-indigo-500/10 blur-[150px]" />
+
+  {/* HEADER */}
+  <div className="mb-6 flex items-center justify-between">
 
     <div>
-      <p className="text-[10px] uppercase tracking-[0.45em] text-emerald-300">
-        ● LIVE TRANSMISSION
+
+      <p className="flex items-center gap-2 text-[10px] uppercase tracking-[0.45em] text-emerald-300">
+
+        <span className="relative flex h-2 w-2">
+
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-70"></span>
+
+          <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-300"></span>
+
+        </span>
+
+        SIGNAL ACTIVE
+
       </p>
 
-      <h3 className="mt-2 text-lg font-bold uppercase tracking-[0.22em]">
+      <h3 className="mt-3 text-2xl font-black uppercase tracking-[0.18em]">
         ARTIST DEVELOPMENT
       </h3>
 
-      <p className="mt-1 text-xs uppercase tracking-[0.28em] text-white/45">
-        SIGNAL // ALLWAYZ
+      <p className="mt-2 text-xs uppercase tracking-[0.35em] text-white/45">
+        OMNI SIGNAL // ALLWAYZ
       </p>
+
     </div>
 
-    <div className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-2 text-[10px] uppercase tracking-[0.3em] text-yellow-400 backdrop-blur-xl">
-      HD
+    <div className="rounded-full border border-yellow-400/20 bg-yellow-400/10 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.35em] text-yellow-300 backdrop-blur-xl">
+      4K LIVE
     </div>
 
   </div>
 
-  {/* VIDEO CARD */}
-  <div className="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.04] to-black/40 backdrop-blur-xl shadow-[0_0_60px_rgba(255,255,255,.03)]">
+  {/* VIDEO */}
+  <div className="overflow-hidden rounded-[30px] border border-white/10 bg-gradient-to-br from-white/[0.08] via-black/60 to-black backdrop-blur-2xl shadow-[0_25px_80px_rgba(0,0,0,.55)] transition-all duration-500 hover:border-yellow-400/20">
 
-    <div className="border-b border-white/10 px-5 py-3 flex items-center justify-between">
+    {/* HUD */}
+    <div className="flex items-center justify-between border-b border-white/10 px-6 py-4">
 
       <div>
 
-        <p className="text-[10px] uppercase tracking-[0.35em] text-yellow-300">
-          CURRENT SIGNAL
+        <p className="text-[10px] uppercase tracking-[0.4em] text-yellow-300">
+          CURRENT TRANSMISSION
         </p>
 
-        <h4 className="mt-1 font-semibold uppercase">
+        <h4 className="mt-1 text-lg font-bold uppercase">
           ARTIST DEVELOPMENT
         </h4>
 
       </div>
 
-      <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_10px_rgba(74,222,128,.8)]"></span>
+      <div className="flex items-center gap-2">
+
+        <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+
+        <span className="text-[10px] uppercase tracking-[0.3em] text-emerald-300">
+          LIVE
+        </span>
+
+      </div>
 
     </div>
 
     <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+
+      <div className="absolute left-4 top-4 z-20 rounded-full border border-white/10 bg-black/60 px-3 py-2 backdrop-blur-xl">
+
+        <span className="text-[10px] uppercase tracking-[0.35em] text-white">
+          OES SIGNAL
+        </span>
+
+      </div>
 
       <iframe
         className="absolute inset-0 h-full w-full"
@@ -295,39 +328,55 @@ export default function OmniEchelonSoundsWebsite() {
 
   </div>
 
-  {/* VIDEO LINKS */}
+  {/* ACTION BUTTONS */}
 
-  <div className="mt-4 flex items-center gap-6 text-xs uppercase tracking-[0.28em] text-white/55">
+  <div className="mt-5 grid grid-cols-2 gap-3">
 
     <a
       href="https://youtube.com/shorts/5Bb81O1u2o0"
       target="_blank"
       rel="noopener noreferrer"
-      className="transition hover:text-yellow-300"
+      className="rounded-2xl border border-white/10 bg-white/[0.03] p-4 text-center backdrop-blur-xl transition-all duration-300 hover:border-yellow-400/30 hover:bg-yellow-400/5"
     >
-      WATCH →
+
+      <p className="text-[10px] uppercase tracking-[0.4em] text-yellow-300">
+        WATCH
+      </p>
+
     </a>
 
     <a
       href="https://www.youtube.com/@ALLWAYZWORLD"
       target="_blank"
       rel="noopener noreferrer"
-      className="transition hover:text-yellow-300"
+      className="rounded-2xl border border-white/10 bg-white/[0.03] p-4 text-center backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/30 hover:bg-cyan-400/5"
     >
-      CHANNEL →
+
+      <p className="text-[10px] uppercase tracking-[0.4em] text-cyan-300">
+        CHANNEL
+      </p>
+
     </a>
 
   </div>
 
-  {/* LISTEN */}
+  {/* LIBRARY */}
 
   <div className="mt-10">
 
-    <div className="mb-5 flex items-center justify-between">
+    <div className="mb-6 flex items-center justify-between">
 
-      <p className="text-xs uppercase tracking-[0.4em] text-yellow-400">
-        LISTEN
-      </p>
+      <div>
+
+        <p className="text-[10px] uppercase tracking-[0.45em] text-transparent bg-gradient-to-r from-yellow-300 via-orange-400 to-pink-400 bg-clip-text">
+          SIGNAL LIBRARY
+        </p>
+
+        <p className="mt-2 text-[10px] uppercase tracking-[0.35em] text-white/35">
+          STREAM EVERY FREQUENCY
+        </p>
+
+      </div>
 
       <span className="text-[10px] uppercase tracking-[0.35em] text-white/35">
         MULTI PLATFORM
@@ -337,7 +386,7 @@ export default function OmniEchelonSoundsWebsite() {
 
     {/* Spotify */}
 
-    <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl shadow-[0_0_40px_rgba(255,255,255,.02)]">
+    <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03] backdrop-blur-xl transition hover:border-green-400/20 hover:shadow-[0_0_40px_rgba(34,197,94,.08)]">
 
       <iframe
         src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb?utm_source=generator&theme=0"
@@ -348,13 +397,11 @@ export default function OmniEchelonSoundsWebsite() {
 
     </div>
 
-    {/* divider */}
-
-    <div className="my-5 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+    <div className="my-6 h-px bg-gradient-to-r from-transparent via-yellow-400/25 to-transparent" />
 
     {/* SoundCloud */}
 
-    <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl shadow-[0_0_40px_rgba(255,255,255,.02)]">
+    <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03] backdrop-blur-xl transition hover:border-orange-400/20 hover:shadow-[0_0_40px_rgba(251,146,60,.08)]">
 
       <iframe
         width="100%"
@@ -367,10 +414,29 @@ export default function OmniEchelonSoundsWebsite() {
 
     </div>
 
+    {/* Status */}
+
+    <div className="mt-8 rounded-[28px] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-xl">
+
+      <div className="flex justify-between text-xs uppercase tracking-[0.3em]">
+        <span className="text-white/45">SIGNAL</span>
+        <span className="text-emerald-300">ONLINE</span>
+      </div>
+
+      <div className="mt-4 flex justify-between text-xs uppercase tracking-[0.3em]">
+        <span className="text-white/45">LOCATION</span>
+        <span>CALIFORNIA</span>
+      </div>
+
+      <div className="mt-4 flex justify-between text-xs uppercase tracking-[0.3em]">
+        <span className="text-white/45">VERSION</span>
+        <span>OES 2.0</span>
+      </div>
+
+    </div>
+
   </div>
 
-</div>
-        
 {/* 🔥 TRANSMISSION STRIP */}
 <section className="relative w-full overflow-hidden border-y border-white/10 bg-black">
   <div className="relative h-[320px] w-full overflow-hidden md:h-[380px] lg:h-[420px]">
