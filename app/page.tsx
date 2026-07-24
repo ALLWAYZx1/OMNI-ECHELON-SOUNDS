@@ -235,210 +235,62 @@ export default function OmniEchelonSoundsWebsite() {
 
 </div>
 
-{/* RIGHT SIDE */}
-<div className="relative w-full max-w-[560px] justify-self-end">
+    {/* RIGHT SIDE */}
+      <div className="w-full max-w-[520px] justify-self-end">
 
-  {/* Ambient Glow */}
-  <div className="pointer-events-none absolute -left-24 top-24 h-72 w-72 rounded-full bg-yellow-400/10 blur-[130px]" />
-  <div className="pointer-events-none absolute -right-20 bottom-10 h-72 w-72 rounded-full bg-indigo-500/10 blur-[150px]" />
-
-  {/* HEADER */}
-  <div className="mb-6 flex items-center justify-between">
-
-    <div>
-
-      <p className="flex items-center gap-2 text-[10px] uppercase tracking-[0.45em] text-emerald-300">
-
-        <span className="relative flex h-2 w-2">
-
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-70"></span>
-
-          <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-300"></span>
-
-        </span>
-
-        SIGNAL ACTIVE
-
-      </p>
-
-      <h3 className="mt-3 text-2xl font-black uppercase tracking-[0.18em]">
-        ARTIST DEVELOPMENT
-      </h3>
-
-      <p className="mt-2 text-xs uppercase tracking-[0.35em] text-white/45">
-        OMNI SIGNAL // ALLWAYZ
-      </p>
-
-    </div>
-
-    <div className="rounded-full border border-yellow-400/20 bg-yellow-400/10 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.35em] text-yellow-300 backdrop-blur-xl">
-      4K LIVE
-    </div>
-
+        
+ {/* YOUTUBE */}
+<div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+    <iframe
+      className="absolute left-0 top-0 h-full w-full"
+      src="https://www.youtube.com/embed/MLIAyB5Efq8"
+      title="ARTIST DEVELOPMENT SIGNAL"
+      allowFullScreen
+    />
   </div>
-
-  {/* VIDEO */}
-  <div className="overflow-hidden rounded-[30px] border border-white/10 bg-gradient-to-br from-white/[0.08] via-black/60 to-black backdrop-blur-2xl shadow-[0_25px_80px_rgba(0,0,0,.55)] transition-all duration-500 hover:border-yellow-400/20">
-
-    {/* HUD */}
-    <div className="flex items-center justify-between border-b border-white/10 px-6 py-4">
-
-      <div>
-
-        <p className="text-[10px] uppercase tracking-[0.4em] text-yellow-300">
-          CURRENT TRANSMISSION
-        </p>
-
-        <h4 className="mt-1 text-lg font-bold uppercase">
-          ARTIST DEVELOPMENT
-        </h4>
-
-      </div>
-
-      <div className="flex items-center gap-2">
-
-        <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
-
-        <span className="text-[10px] uppercase tracking-[0.3em] text-emerald-300">
-          LIVE
-        </span>
-
-      </div>
-
-    </div>
-
-    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-
-      <div className="absolute left-4 top-4 z-20 rounded-full border border-white/10 bg-black/60 px-3 py-2 backdrop-blur-xl">
-
-        <span className="text-[10px] uppercase tracking-[0.35em] text-white">
-          OES SIGNAL
-        </span>
-
-      </div>
-
-      <iframe
-        className="absolute inset-0 h-full w-full"
-        src="https://www.youtube.com/embed/MLIAyB5Efq8"
-        title="ARTIST DEVELOPMENT SIGNAL"
-        allowFullScreen
-      />
-
-    </div>
-
-  </div>
-
-  {/* ACTION BUTTONS */}
-
-  <div className="mt-5 grid grid-cols-2 gap-3">
-
-    <a
-      href="https://youtube.com/shorts/5Bb81O1u2o0"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="rounded-2xl border border-white/10 bg-white/[0.03] p-4 text-center backdrop-blur-xl transition-all duration-300 hover:border-yellow-400/30 hover:bg-yellow-400/5"
-    >
-
-      <p className="text-[10px] uppercase tracking-[0.4em] text-yellow-300">
-        WATCH
-      </p>
-
-    </a>
-
-    <a
-      href="https://www.youtube.com/@ALLWAYZWORLD"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="rounded-2xl border border-white/10 bg-white/[0.03] p-4 text-center backdrop-blur-xl transition-all duration-300 hover:border-cyan-400/30 hover:bg-cyan-400/5"
-    >
-
-      <p className="text-[10px] uppercase tracking-[0.4em] text-cyan-300">
-        CHANNEL
-      </p>
-
-    </a>
-
-  </div>
-
-  {/* LIBRARY */}
-
-  <div className="mt-10">
-
-    <div className="mb-6 flex items-center justify-between">
-
-      <div>
-
-        <p className="text-[10px] uppercase tracking-[0.45em] text-transparent bg-gradient-to-r from-yellow-300 via-orange-400 to-pink-400 bg-clip-text">
-          SIGNAL LIBRARY
-        </p>
-
-        <p className="mt-2 text-[10px] uppercase tracking-[0.35em] text-white/35">
-          STREAM EVERY FREQUENCY
-        </p>
-
-      </div>
-
-      <span className="text-[10px] uppercase tracking-[0.35em] text-white/35">
-        MULTI PLATFORM
-      </span>
-
-    </div>
-
-    {/* Spotify */}
-
-    <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03] backdrop-blur-xl transition hover:border-green-400/20 hover:shadow-[0_0_40px_rgba(34,197,94,.08)]">
-
-      <iframe
-        src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb?utm_source=generator&theme=0"
-        width="100%"
-        height="152"
-        allow="autoplay; clipboard-write; encrypted-media"
-      />
-
-    </div>
-
-    <div className="my-6 h-px bg-gradient-to-r from-transparent via-yellow-400/25 to-transparent" />
-
-    {/* SoundCloud */}
-
-    <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03] backdrop-blur-xl transition hover:border-orange-400/20 hover:shadow-[0_0_40px_rgba(251,146,60,.08)]">
-
-      <iframe
-        width="100%"
-        height="166"
-        scrolling="no"
-        frameBorder="no"
-        allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-      />
-
-    </div>
-
-    {/* Status */}
-
-    <div className="mt-8 rounded-[28px] border border-white/10 bg-white/[0.03] p-6 backdrop-blur-xl">
-
-      <div className="flex justify-between text-xs uppercase tracking-[0.3em]">
-        <span className="text-white/45">SIGNAL</span>
-        <span className="text-emerald-300">ONLINE</span>
-      </div>
-
-      <div className="mt-4 flex justify-between text-xs uppercase tracking-[0.3em]">
-        <span className="text-white/45">LOCATION</span>
-        <span>CALIFORNIA</span>
-      </div>
-
-      <div className="mt-4 flex justify-between text-xs uppercase tracking-[0.3em]">
-        <span className="text-white/45">VERSION</span>
-        <span>OES 2.0</span>
-      </div>
-
-    </div>
-
-  </div>
-
 </div>
 
+        {/* LINKS */}
+        <div className="mt-3 flex gap-4 text-xs uppercase text-white/60">
+          <a href="https://youtube.com/shorts/5Bb81O1u2o0" target="_blank">Watch →</a>
+          <a href="https://www.youtube.com/@ALLWAYZWORLD" target="_blank">Channel →</a>
+        </div>
+
+        {/* SOUND */}
+        <div className="mt-6">
+          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+            SOUND
+          </p>
+
+          {/* SPOTIFY */}
+          <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <iframe
+              src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              allow="autoplay; clipboard-write; encrypted-media"
+            ></iframe>
+          </div>
+
+          {/* SOUNDCLOUD */}
+<iframe
+  width="100%"
+  height="166"
+  scrolling="no"
+  frameBorder="no"
+  allow="autoplay"
+  className="rounded-2xl"
+  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+></iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+        
 {/* 🔥 TRANSMISSION STRIP */}
 <section className="relative w-full overflow-hidden border-y border-white/10 bg-black">
   <div className="relative h-[320px] w-full overflow-hidden md:h-[380px] lg:h-[420px]">
@@ -659,69 +511,59 @@ export default function OmniEchelonSoundsWebsite() {
 
 
 
- <section id="contact" className="bg-white/[0.02]">
-  <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-    <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 sm:p-10 lg:p-12">
 
-      <div className="max-w-3xl">
-        <div className="text-xs uppercase tracking-[0.35em] text-white/45">
-          Contact
-        </div>
+        <section id="contact" className="bg-white/[0.02]">
+          <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 sm:p-10 lg:p-12">
+              <div className="max-w-3xl">
+                <div className="text-xs uppercase tracking-[0.35em] text-white/45">Contact</div>
+                <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
+                  Connect to the vision.
+                </h2>
+                <p className="mt-5 text-base leading-7 text-white/70">
+                  Add your email, Instagram, artist links, or one clean contact form here. Keep it direct. Keep it personal.
+                </p>
+              </div>
 
-        <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
-          Connect to the vision.
-        </h2>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href="mailto:Omniechelonsounds@gmail.com?subject=OMNI%20ECHELON%20INQUIRY&body=Name:%0AProject:%0ABudget:%0AMessage:"
+                  className="rounded-2xl border border-white bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-black transition hover:scale-105 active:scale-95"
+                >
+                  Email
+                </a>
 
-        <p className="mt-5 text-base leading-7 text-white/70">
-          Add your email, Instagram, artist links, or one clean contact form here.
-          Keep it direct. Keep it personal.
-        </p>
-      </div>
+                <a
+                  href="https://www.instagram.com/allwayzinthemixx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
+                >
+                  Instagram
+                </a>
 
-      <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href="https://soundcloud.com/allwayzinthemixx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
+                >
+                  SoundCloud
+                </a>
 
-        <a
-          href="mailto:Omniechelonsounds@gmail.com?subject=OMNI%20ECHELON%20INQUIRY&body=Name:%0AProject:%0ABudget:%0AMessage:"
-          className="rounded-2xl border border-white bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-black transition hover:scale-105 active:scale-95"
-        >
-          Email
-        </a>
-
-        <a
-          href="https://www.instagram.com/allwayzinthemixx"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
-        >
-          Instagram
-        </a>
-
-        <a
-          href="https://soundcloud.com/allwayzinthemixx"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
-        >
-          SoundCloud
-        </a>
-
-        <a
-          href="https://www.youtube.com/@ALLWAYZWORLD"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
-        >
-          YouTube
-        </a>
-
-      </div> {/* button row */}
-
-    </div> {/* contact card */}
-
-  </div> {/* container */}
-
-</section>
-
-
-</div>
+                <a
+                  href="https://www.youtube.com/@ALLWAYZWORLD"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
+                >
+                  YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   );
+}
