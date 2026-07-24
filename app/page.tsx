@@ -291,20 +291,6 @@ export default function OmniEchelonSoundsWebsite() {
   </div>
 </section>
         
-{/* 🔥 TRANSMISSION STRIP (FULL WIDTH) */}
-<section className="relative w-full border-y border-white/10 bg-black">
-  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-    <iframe
-      className="absolute inset-0 h-full w-full"
-      src="https://www.youtube.com/embed/rfip6Ix-SgA"
-      title="Transmission"
-      allowFullScreen
-    />
-  </div>
-
-  {/* pulse line */}
-  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
-</section>
 {/* Bigger Than Life */}
 <section className="relative w-full overflow-hidden border-b border-white/10 bg-black">
 
@@ -508,6 +494,21 @@ export default function OmniEchelonSoundsWebsite() {
       Shop We Rise Above →
     </a>
   </div>
+</section>
+      
+      {/* 🔥 TRANSMISSION STRIP (FULL WIDTH) */}
+<section className="relative w-full border-y border-white/10 bg-black">
+  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+    <iframe
+      className="absolute inset-0 h-full w-full"
+      src="https://www.youtube.com/embed/rfip6Ix-SgA"
+      title="Transmission"
+      allowFullScreen
+    />
+  </div>
+
+  {/* pulse line */}
+  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
 </section>
 
 
