@@ -290,7 +290,6 @@ export default function OmniEchelonSoundsWebsite() {
       </div>
 
     </div>
-  </div>
 </section>
       
       
