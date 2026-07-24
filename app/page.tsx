@@ -292,7 +292,6 @@ export default function OmniEchelonSoundsWebsite() {
 </div> {/* END RIGHT SIDE */}
 
 </div> {/* END GRID */}
-</div> {/* END CONTAINER */}
 </section>
 
   <section id="merch" className="bg-black">
