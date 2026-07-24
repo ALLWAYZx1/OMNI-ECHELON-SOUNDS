@@ -437,6 +437,8 @@ export default function OmniEchelonSoundsWebsite() {
 
   </div>
 
+</div>
+
 {/* 🔥 TRANSMISSION STRIP */}
 <section className="relative w-full overflow-hidden border-y border-white/10 bg-black">
   <div className="relative h-[320px] w-full overflow-hidden md:h-[380px] lg:h-[420px]">
