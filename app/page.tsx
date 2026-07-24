@@ -235,7 +235,7 @@ export default function OmniEchelonSoundsWebsite() {
 
 </div>
 
- {/* RIGHT SIDE */}
+{/* RIGHT SIDE */}
 <div className="w-full max-w-[540px] justify-self-end">
 
   {/* TRANSMISSION HEADER */}
@@ -592,58 +592,129 @@ export default function OmniEchelonSoundsWebsite() {
 
 
 
-        <section id="contact" className="bg-white/[0.02]">
-          <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 sm:p-10 lg:p-12">
-              <div className="max-w-3xl">
-                <div className="text-xs uppercase tracking-[0.35em] text-white/45">Contact</div>
-                <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
-                  Connect to the vision.
-                </h2>
-                <p className="mt-5 text-base leading-7 text-white/70">
-                  Add your email, Instagram, artist links, or one clean contact form here. Keep it direct. Keep it personal.
-                </p>
-              </div>
+        <section
+  id="contact"
+  className="relative overflow-hidden border-t border-white/10 bg-black"
+>
+  {/* Background */}
+  <div className="pointer-events-none absolute inset-0">
 
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                  href="mailto:Omniechelonsounds@gmail.com?subject=OMNI%20ECHELON%20INQUIRY&body=Name:%0AProject:%0ABudget:%0AMessage:"
-                  className="rounded-2xl border border-white bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-black transition hover:scale-105 active:scale-95"
-                >
-                  Email
-                </a>
+    <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-yellow-400/10 blur-[170px]" />
 
-                <a
-                  href="https://www.instagram.com/allwayzinthemixx"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
-                >
-                  Instagram
-                </a>
+    <div className="absolute right-0 top-0 h-80 w-80 rounded-full bg-violet-500/10 blur-[140px]" />
 
-                <a
-                  href="https://soundcloud.com/allwayzinthemixx"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
-                >
-                  SoundCloud
-                </a>
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,.85)_80%)]" />
 
-                <a
-                  href="https://www.youtube.com/@ALLWAYZWORLD"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
-                >
-                  YouTube
-                </a>
-              </div>
+  </div>
+
+  <div className="relative mx-auto max-w-6xl px-4 py-24">
+
+    <div className="rounded-[36px] border border-white/10 bg-white/[0.03] backdrop-blur-2xl p-10 lg:p-14 shadow-[0_30px_80px_rgba(0,0,0,.55)]">
+
+      <div className="grid gap-12 lg:grid-cols-[1.2fr_.8fr]">
+
+        {/* LEFT */}
+
+        <div>
+
+          <p className="text-[11px] uppercase tracking-[0.45em] text-yellow-400">
+            FINAL TRANSMISSION
+          </p>
+
+          <h2 className="mt-5 text-4xl font-black uppercase leading-none sm:text-6xl">
+
+            LET'S BUILD
+            <br />
+            SOMETHING
+            <span className="bg-gradient-to-r from-yellow-300 via-orange-400 to-pink-500 bg-clip-text text-transparent">
+              {" "}BIGGER.
+            </span>
+
+          </h2>
+
+          <p className="mt-8 max-w-xl text-lg leading-8 text-white/65">
+
+            Music.
+            Visual identity.
+            Artist development.
+            Brand worlds.
+
+            If your vision deserves cinematic execution,
+            this is where the signal starts.
+
+          </p>
+
+        </div>
+
+        {/* RIGHT */}
+
+        <div className="rounded-3xl border border-white/10 bg-black/40 p-8 backdrop-blur-xl">
+
+          <p className="text-xs uppercase tracking-[0.4em] text-emerald-300">
+            SIGNAL STATUS
+          </p>
+
+          <div className="mt-8 space-y-5">
+
+            <div className="flex justify-between text-sm uppercase tracking-[0.22em]">
+              <span className="text-white/45">Studio</span>
+              <span className="text-emerald-300">ONLINE</span>
             </div>
+
+            <div className="flex justify-between text-sm uppercase tracking-[0.22em]">
+              <span className="text-white/45">Response</span>
+              <span>24-48 Hours</span>
+            </div>
+
+            <div className="flex justify-between text-sm uppercase tracking-[0.22em]">
+              <span className="text-white/45">Projects</span>
+              <span>Worldwide</span>
+            </div>
+
           </div>
-        </section>
-      </main>
+
+          <div className="mt-10 flex flex-wrap gap-3">
+
+            <a
+              href="mailto:Omniechelonsounds@gmail.com?subject=OMNI%20ECHELON%20INQUIRY"
+              className="rounded-2xl bg-gradient-to-r from-yellow-400 to-orange-500 px-6 py-3 text-xs font-bold uppercase tracking-[0.28em] text-black transition hover:scale-105"
+            >
+              EMAIL
+            </a>
+
+            <a
+              href="https://www.instagram.com/allwayzinthemixx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-2xl border border-white/15 px-6 py-3 text-xs uppercase tracking-[0.28em] hover:bg-white/5"
+            >
+              INSTAGRAM
+            </a>
+
+            <a
+              href="https://soundcloud.com/allwayzinthemixx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-2xl border border-white/15 px-6 py-3 text-xs uppercase tracking-[0.28em] hover:bg-white/5"
+            >
+              SOUNDCLOUD
+            </a>
+
+            <a
+              href="https://www.youtube.com/@ALLWAYZWORLD"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-2xl border border-white/15 px-6 py-3 text-xs uppercase tracking-[0.28em] hover:bg-white/5"
+            >
+              YOUTUBE
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
-  );
-}
+
+  </div>
