@@ -51,24 +51,31 @@ export default function OmniEchelonSoundsWebsite() {
 </nav>
     </div>
 
-   {/* CENTER TITLE */}
-<div className="-mt-1 text-center">
+{/* CENTER TITLE */}
+<div className="relative -mt-1 flex flex-col items-center text-center">
 
-  <h1 className="text-[10px] sm:text-sm font-black tracking-[0.25em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500">
+  {/* Main Brand */}
+  <h1 className="bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-blue-500 to-purple-500 bg-clip-text text-[11px] font-black uppercase tracking-[0.4em] text-transparent sm:text-sm">
     OMNI ECHELON SOUNDS
   </h1>
 
-  <p className="text-[8px] sm:text-[10px] uppercase tracking-[0.25em] text-white/80">
-    SIGNAL FROM ALLWAYZintheMIXX
+  {/* Signal Status */}
+  <div className="mt-2 flex items-center gap-2">
+    <span className="h-2 w-2 rounded-full bg-green-400 shadow-[0_0_10px_rgba(74,222,128,0.8)] animate-pulse"></span>
+
+    <p className="text-[8px] uppercase tracking-[0.35em] text-green-300">
+      SIGNAL ACTIVE
+    </p>
+  </div>
+
+  {/* Artist */}
+  <p className="mt-2 text-[8px] uppercase tracking-[0.35em] text-white/80">
+    TRANSMISSION • ALLWAYZintheMIXX
   </p>
 
-  <p className="text-[7px] sm:text-[9px] uppercase tracking-[0.2em] text-white/60">
-    INDEPENDENT LABEL UNIVERSE
-  </p>
-
-  {/* BUILDING DREAMS (NEW LAYER) */}
-  <p className="text-[7px] sm:text-[9px] uppercase tracking-[0.35em] text-white/40 mt-1">
-    SIGNAL LAYER: BUILDING DREAMS ACTIVE
+  {/* Building Dreams */}
+  <p className="mt-1 text-[7px] uppercase tracking-[0.4em] text-yellow-400/80">
+    BUILDING DREAMS • ONLINE
   </p>
 
 </div>
