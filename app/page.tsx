@@ -83,20 +83,29 @@ export default function OmniEchelonSoundsWebsite() {
 </header>
   
     <main className="pt-28 sm:pt-24">
-<section className="relative overflow-hidden border-b border-white/10">
+<section className="relative overflow-hidden border-b border-white/10 bg-gradient-to-b from-black via-[#040507] to-black">
   <div className="pointer-events-none absolute inset-0">
   <div className="absolute left-[18%] top-[48%] h-[420px] w-[420px] rounded-full bg-yellow-400/20 blur-[120px]" />
   <div className="absolute right-[18%] top-[35%] h-[380px] w-[380px] rounded-full bg-blue-500/15 blur-[120px]" />
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.75)_75%)]" />
 </div>
 
-  {/* COSMIC BACKGROUND */}
-  <div className="pointer-events-none absolute inset-0 opacity-80">
-    <div className="absolute left-[20%] top-[55%] h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.9)_0%,_rgba(250,204,21,0.7)_25%,_rgba(168,85,247,0.5)_45%,_rgba(59,130,246,0.25)_65%,_transparent_80%)] blur-[35px] animate-pulse" />
-    <div className="absolute inset-0 bg-[radial-gradient(1px_1px_at_20%_30%,rgba(255,255,255,0.6),transparent),radial-gradient(1px_1px_at_70%_60%,rgba(255,255,255,0.4),transparent)]" />
-    <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.7))]" />
-  </div>
+ {/* CINEMATIC COSMOS */}
+<div className="pointer-events-none absolute inset-0">
 
+  <div className="absolute left-[18%] top-[45%] h-[500px] w-[500px] rounded-full bg-yellow-400/10 blur-[180px]" />
+
+  <div className="absolute right-[15%] top-[30%] h-[450px] w-[450px] rounded-full bg-indigo-500/10 blur-[180px]" />
+
+  <div className="absolute bottom-[-180px] left-1/2 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-purple-500/5 blur-[220px]" />
+
+  {/* Stars */}
+  <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_20%_25%,rgba(255,255,255,.7)_1px,transparent_1px),radial-gradient(circle_at_75%_60%,rgba(255,255,255,.5)_1px,transparent_1px),radial-gradient(circle_at_45%_80%,rgba(255,255,255,.35)_1px,transparent_1px)] bg-[length:260px_260px]" />
+
+  {/* Vignette */}
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,rgba(0,0,0,.85)_95%)]" />
+
+</div>
   <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
     <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[1fr_520px]">
 
