@@ -291,18 +291,19 @@ export default function OmniEchelonSoundsWebsite() {
   </div>
 </section>
         
-{/* 🔥 TRANSMISSION STRIP */}
-<section className="relative w-full overflow-hidden border-y border-white/10 bg-black">
-  <div className="relative h-[320px] w-full overflow-hidden md:h-[380px] lg:h-[420px]">
+{/* 🔥 TRANSMISSION STRIP (FULL WIDTH) */}
+<section className="relative w-full border-y border-white/10 bg-black">
+  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
     <iframe
-      className="absolute left-1/2 top-1/2 h-[180%] w-[180%] -translate-x-1/2 -translate-y-1/2"
-      src="https://www.youtube.com/embed/rfip6Ix-SgA?rel=0&modestbranding=1&playsinline=1"
+      className="absolute inset-0 h-full w-full"
+      src="https://www.youtube.com/embed/rfip6Ix-SgA"
       title="Transmission"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
     />
   </div>
 
+  {/* pulse line */}
+  <div className="pointer-events-none absolute bottom-0 left-0 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse" />
 </section>
 {/* Bigger Than Life */}
 <section className="relative w-full overflow-hidden border-b border-white/10 bg-black">
