@@ -289,6 +289,80 @@ export default function OmniEchelonSoundsWebsite() {
     </div>
   </div>
 </section>
+      
+      
+  <section id="merch" className="bg-black">
+  <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <div className="text-xs uppercase tracking-[0.35em] text-yellow-400">
+      Merch
+    </div>
+
+    <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
+      We Rise Above Collection
+    </h2>
+
+    <p className="mt-5 text-base leading-7 text-white/70">
+      Premium streetwear inspired by resilience, creativity, and rising above.
+      Shop the latest collection and wear the movement.
+    </p>
+
+    <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
+      {[
+        {
+          name: "Golden Sunrise Portal Hoodie",
+          price: "From $56.80",
+          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/Golden_SUnrise.jpg?v=1784711087",
+          href: "https://weriseabove.life/products/golden-sunrise-portal-hoodie",
+        },
+        {
+          name: "Through the Darkest Nights",
+          price: "From $59.99",
+          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/darkest_nights.png?v=1784674067",
+          href: "https://weriseabove.life/products/through-the-darkest-nights",
+        },
+        {
+          name: "Still Rising No Final Form",
+          price: "From $59.99",
+          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/C6376E47-18F7-42EA-9C3B-A85918D3D1B2.png?v=1784674595",
+          href: "https://weriseabove.life/products/still-rising-no-final-form",
+        },
+        {
+          name: "Darkest Nights Classic Tee",
+          price: "$29.99",
+          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/unisex-classic-tee-black-front-6a538910c4949.png?v=1784673607",
+          href: "https://weriseabove.life/products/darkest-nights-classic-tee",
+        },
+      ].map((item) => (
+        <a
+          key={item.name}
+          href={item.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group"
+        >
+          <div className="overflow-hidden rounded-xl border border-white/10">
+            <img
+              src={item.img}
+              alt={item.name}
+              className="w-full object-cover transition group-hover:scale-105"
+            />
+          </div>
+          <p className="mt-2 text-sm text-white/70">{item.name}</p>
+          <p className="text-sm font-semibold text-yellow-400">{item.price}</p>
+        </a>
+      ))}
+    </div>
+
+    <a
+      href="https://weriseabove.life/collections/all"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mt-10 inline-block rounded-full border border-yellow-400 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
+    >
+      Shop We Rise Above →
+    </a>
+  </div>
+</section>
         
 {/* Bigger Than Life */}
 <section className="relative w-full overflow-hidden border-b border-white/10 bg-black">
@@ -421,79 +495,6 @@ export default function OmniEchelonSoundsWebsite() {
             </div>
           </div>
         </section>
-
-<section id="merch" className="bg-black">
-  <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-    <div className="text-xs uppercase tracking-[0.35em] text-yellow-400">
-      Merch
-    </div>
-
-    <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
-      We Rise Above Collection
-    </h2>
-
-    <p className="mt-5 text-base leading-7 text-white/70">
-      Premium streetwear inspired by resilience, creativity, and rising above.
-      Shop the latest collection and wear the movement.
-    </p>
-
-    <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
-      {[
-        {
-          name: "Golden Sunrise Portal Hoodie",
-          price: "From $56.80",
-          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/Golden_SUnrise.jpg?v=1784711087",
-          href: "https://weriseabove.life/products/golden-sunrise-portal-hoodie",
-        },
-        {
-          name: "Through the Darkest Nights",
-          price: "From $59.99",
-          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/darkest_nights.png?v=1784674067",
-          href: "https://weriseabove.life/products/through-the-darkest-nights",
-        },
-        {
-          name: "Still Rising No Final Form",
-          price: "From $59.99",
-          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/C6376E47-18F7-42EA-9C3B-A85918D3D1B2.png?v=1784674595",
-          href: "https://weriseabove.life/products/still-rising-no-final-form",
-        },
-        {
-          name: "Darkest Nights Classic Tee",
-          price: "$29.99",
-          img: "https://cdn.shopify.com/s/files/1/0760/8280/6829/files/unisex-classic-tee-black-front-6a538910c4949.png?v=1784673607",
-          href: "https://weriseabove.life/products/darkest-nights-classic-tee",
-        },
-      ].map((item) => (
-        <a
-          key={item.name}
-          href={item.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group"
-        >
-          <div className="overflow-hidden rounded-xl border border-white/10">
-            <img
-              src={item.img}
-              alt={item.name}
-              className="w-full object-cover transition group-hover:scale-105"
-            />
-          </div>
-          <p className="mt-2 text-sm text-white/70">{item.name}</p>
-          <p className="text-sm font-semibold text-yellow-400">{item.price}</p>
-        </a>
-      ))}
-    </div>
-
-    <a
-      href="https://weriseabove.life/collections/all"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="mt-10 inline-block rounded-full border border-yellow-400 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
-    >
-      Shop We Rise Above →
-    </a>
-  </div>
-</section>
       
       {/* 🔥 TRANSMISSION STRIP (FULL WIDTH) */}
 <section className="relative w-full border-y border-white/10 bg-black">
