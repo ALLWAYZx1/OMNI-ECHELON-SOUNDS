@@ -235,37 +235,37 @@ export default function OmniEchelonSoundsWebsite() {
 
 </div>
 
-{/* RIGHT SIDE */}
-<div className="w-full max-w-[520px] justify-self-end">
-
-  {/* HEADER */}
-  ...
-
-  {/* YOUTUBE */}
-  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-      <iframe ... />
-    </div>
-  </div>
-
-  {/* SOUNDCLOUD */}
-  <div className="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+{/* YOUTUBE */}
+<div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+  <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
     <iframe
-      width="100%"
-      height="230"
-      scrolling="no"
-      frameBorder="no"
-      allow="autoplay"
-      className="rounded-2xl"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+      className="absolute inset-0 h-full w-full"
+      src="https://www.youtube.com/embed/MLIAyB5Efq8"
+      title="ARTIST DEVELOPMENT SIGNAL"
+      allowFullScreen
     />
   </div>
+</div>
 
-</div> {/* ✅ END RIGHT SIDE */}
+{/* SOUNDCLOUD */}
+<div className="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+  <iframe
+    width="100%"
+    height="230"
+    scrolling="no"
+    frameBorder="no"
+    allow="autoplay"
+    className="rounded-2xl"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+  />
+</div>
 
-</div> {/* grid */}
-</div> {/* container */}
+</div> {/* END RIGHT SIDE */}
+
+</div> {/* END GRID */}
+</div> {/* END CONTAINER */}
 </section>
+
   <section id="merch" className="bg-black">
   <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
     <div className="text-xs uppercase tracking-[0.35em] text-yellow-400">
