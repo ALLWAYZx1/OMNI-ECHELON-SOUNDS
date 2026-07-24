@@ -659,60 +659,69 @@ export default function OmniEchelonSoundsWebsite() {
 
 
 
-  <section id="contact" className="bg-white/[0.02]">
-          <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 sm:p-10 lg:p-12">
-              <div className="max-w-3xl">
-                <div className="text-xs uppercase tracking-[0.35em] text-white/45">Contact</div>
-                <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
-                  Connect to the vision.
-                </h2>
-                <p className="mt-5 text-base leading-7 text-white/70">
-                  Add your email, Instagram, artist links, or one clean contact form here. Keep it direct. Keep it personal.
-                </p>
-              </div>
+ <section id="contact" className="bg-white/[0.02]">
+  <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+    <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 sm:p-10 lg:p-12">
 
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                  href="mailto:Omniechelonsounds@gmail.com?subject=OMNI%20ECHELON%20INQUIRY&body=Name:%0AProject:%0ABudget:%0AMessage:"
-                  className="rounded-2xl border border-white bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-black transition hover:scale-105 active:scale-95"
-                >
-                  Email
-                </a>
+      <div className="max-w-3xl">
+        <div className="text-xs uppercase tracking-[0.35em] text-white/45">
+          Contact
+        </div>
 
-                <a
-                  href="https://www.instagram.com/allwayzinthemixx"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
-                >
-                  Instagram
-                </a>
+        <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
+          Connect to the vision.
+        </h2>
 
-                <a
-                  href="https://soundcloud.com/allwayzinthemixx"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
-                >
-                  SoundCloud
-                </a>
+        <p className="mt-5 text-base leading-7 text-white/70">
+          Add your email, Instagram, artist links, or one clean contact form
+          here. Keep it direct. Keep it personal.
+        </p>
+      </div>
 
-                <a
-                  href="https://www.youtube.com/@ALLWAYZWORLD"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
-                >
-                  YouTube
-                </a>
-             </div>      {/* right column */}
-      </div>        {/* grid */}
-    </div>          {/* container */}
-  </section>        {/* contact section */}
+      <div className="mt-8 flex flex-wrap gap-4">
+
+        <a
+          href="mailto:Omniechelonsounds@gmail.com?subject=OMNI%20ECHELON%20INQUIRY&body=Name:%0AProject:%0ABudget:%0AMessage:"
+          className="rounded-2xl border border-white bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-black transition hover:scale-105 active:scale-95"
+        >
+          Email
+        </a>
+
+        <a
+          href="https://www.instagram.com/allwayzinthemixx"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
+        >
+          Instagram
+        </a>
+
+        <a
+          href="https://soundcloud.com/allwayzinthemixx"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
+        >
+          SoundCloud
+        </a>
+
+        <a
+          href="https://www.youtube.com/@ALLWAYZWORLD"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-2xl border border-white/15 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition hover:border-white/40 hover:bg-white/5"
+        >
+          YouTube
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
 
 </main>
 
 </div>
-);
+  );
 }
