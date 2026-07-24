@@ -706,11 +706,13 @@ export default function OmniEchelonSoundsWebsite() {
                 >
                   YouTube
                 </a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
-  );
+             </div>      {/* right column */}
+      </div>        {/* grid */}
+    </div>          {/* container */}
+  </section>        {/* contact section */}
+
+</main>
+
+</div>
+);
 }
