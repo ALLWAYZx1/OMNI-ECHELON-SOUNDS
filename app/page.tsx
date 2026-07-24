@@ -16,20 +16,39 @@ export default function OmniEchelonSoundsWebsite() {
       />
 
       {/* NAV */}
-      <nav className="flex items-center gap-4 sm:gap-6 text-xs sm:text-sm text-white/75">
-        <a href="#about" className="hover:text-white transition">
-          About
-        </a>
-        <a href="#sound" className="hover:text-white transition">
-          Sound
-        </a>
-        <a href="#world" className="hover:text-white transition">
-          World
-        </a>
-        <a href="#contact" className="hover:text-white transition">
-          Contact
-        </a>
-      </nav>
+<nav className="flex items-center gap-8 text-[11px] uppercase tracking-[0.28em] text-white/55">
+  <a
+    href="#about"
+    className="group relative transition-colors duration-300 hover:text-yellow-300"
+  >
+    About
+    <span className="absolute -bottom-1 left-0 h-px w-0 bg-yellow-400 transition-all duration-300 group-hover:w-full" />
+  </a>
+
+  <a
+    href="#sound"
+    className="group relative transition-colors duration-300 hover:text-yellow-300"
+  >
+    Sound
+    <span className="absolute -bottom-1 left-0 h-px w-0 bg-yellow-400 transition-all duration-300 group-hover:w-full" />
+  </a>
+
+  <a
+    href="#world"
+    className="group relative transition-colors duration-300 hover:text-yellow-300"
+  >
+    World
+    <span className="absolute -bottom-1 left-0 h-px w-0 bg-yellow-400 transition-all duration-300 group-hover:w-full" />
+  </a>
+
+  <a
+    href="#contact"
+    className="group relative transition-colors duration-300 hover:text-yellow-300"
+  >
+    Contact
+    <span className="absolute -bottom-1 left-0 h-px w-0 bg-yellow-400 transition-all duration-300 group-hover:w-full" />
+  </a>
+</nav>
     </div>
 
    {/* CENTER TITLE */}
