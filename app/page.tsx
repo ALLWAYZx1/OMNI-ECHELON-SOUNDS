@@ -302,6 +302,7 @@ export default function OmniEchelonSoundsWebsite() {
       allowFullScreen
     />
   </div>
+
 </section>
 {/* Bigger Than Life */}
 <section className="relative w-full overflow-hidden border-b border-white/10 bg-black">
