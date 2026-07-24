@@ -722,7 +722,6 @@ export default function OmniEchelonSoundsWebsite() {
 
 </section>
 
-</main>
 
 </div>
   );
