@@ -262,10 +262,14 @@ export default function OmniEchelonSoundsWebsite() {
           <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
             SOUND
           </p>
-
-          {/* SPOTIFY */}
+   {/* SPOTIFY */}
           <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe
+              src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb?utm_source=generator&theme=0"
+              width="100%"
+              height="352"
+              allow="autoplay; clipboard-write; encrypted-media"
+            ></iframe>
           </div>
 
           {/* SOUNDCLOUD */}
