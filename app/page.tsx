@@ -235,7 +235,7 @@ export default function OmniEchelonSoundsWebsite() {
 
 </div>
 
- {/* RIGHT SIDE */}
+{/* RIGHT SIDE */}
 <div className="w-full max-w-[520px] justify-self-end">
 
   {/* HEADER */}
@@ -275,27 +275,6 @@ export default function OmniEchelonSoundsWebsite() {
     </div>
   </div>
 </div>
-        {/* LINKS */}
-        <div className="mt-3 flex gap-4 text-xs uppercase text-white/60">
-          <a href="https://youtube.com/shorts/5Bb81O1u2o0" target="_blank">Watch →</a>
-          <a href="https://www.youtube.com/@ALLWAYZWORLD" target="_blank">Channel →</a>
-        </div>
-
-        {/* SOUND */}
-        <div className="mt-6">
-          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
-            SOUND
-          </p>
-   {/* SPOTIFY */}
-          <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-            <iframe
-              src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb?utm_source=generator&theme=0"
-              width="100%"
-              height="352"
-              allow="autoplay; clipboard-write; encrypted-media"
-            ></iframe>
-          </div>
-
           {/* SOUNDCLOUD */}
 <iframe
   width="100%"
