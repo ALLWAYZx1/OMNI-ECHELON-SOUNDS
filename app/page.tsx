@@ -376,7 +376,7 @@ export default function OmniEchelonSoundsWebsite() {
     </div>
 
     <a
-      href="https://weriseabove.life/collections/all"
+      href="https://weriseabove.life"
       target="_blank"
       rel="noopener noreferrer"
       className="mt-10 inline-block rounded-full border border-yellow-400 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
