@@ -2,124 +2,113 @@ export default function OmniEchelonSoundsWebsite() {
   return (
     <div className="min-h-screen bg-black text-white">
 
-      {/* HEADER */}
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/75 backdrop-blur-xl">
+   {/* HEADER */}
+<header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl supports-[backdrop-filter]:bg-black/45">
 
-        <div className="max-w-7xl mx-auto px-5 sm:px-6 py-4">
+  <div className="max-w-7xl mx-auto px-5 sm:px-6 py-4">
 
-          {/* TOP ROW */}
-          <div className="flex items-center justify-between">
+    {/* TOP ROW */}
+    <div className="flex items-center justify-between">
 
-            {/* LOGO */}
-            <img
-              src="/logo.png"
-              alt="OMNI ECHELON SOUNDS"
-              className="h-14 sm:h-16 w-auto transition duration-500 hover:scale-105"
-            />
+      {/* LOGO */}
+      <img
+        src="/logo.png"
+        alt="OMNI ECHELON SOUNDS"
+        className="h-14 sm:h-16 w-auto transition duration-500 hover:scale-105"
+      />
 
-            {/* MOBILE MENU */}
-            <button
-              className="md:hidden text-white/80 hover:text-yellow-400 transition"
-              aria-label="Menu"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-7 w-7"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={1.6}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
+      {/* MOBILE MENU */}
+      <button
+        className="md:hidden text-white/70 hover:text-yellow-400 transition"
+        aria-label="Open Menu"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-7 w-7"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={1.6}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
 
-            {/* DESKTOP NAV */}
-            <nav className="hidden md:flex items-center gap-8 text-[11px] uppercase tracking-[0.28em] text-white/60">
+      {/* DESKTOP NAV */}
+      <nav className="hidden md:flex items-center gap-8 text-[11px] uppercase tracking-[0.28em] text-white/55">
 
-              <a
-                href="#about"
-                className="group relative transition duration-300 hover:text-yellow-300"
-              >
-                About
-                <span className="absolute -bottom-1 left-0 h-px w-0 bg-yellow-400 transition-all duration-300 group-hover:w-full" />
-              </a>
+        <a
+          href="#about"
+          className="group relative transition-colors duration-300 hover:text-yellow-300"
+        >
+          About
+          <span className="absolute -bottom-1 left-0 h-px w-0 bg-yellow-400 transition-all duration-300 group-hover:w-full" />
+        </a>
 
-              <a
-                href="#sound"
-                className="group relative transition duration-300 hover:text-yellow-300"
-              >
-                Sound
-                <span className="absolute -bottom-1 left-0 h-px w-0 bg-yellow-400 transition-all duration-300 group-hover:w-full" />
-              </a>
+        <a
+          href="#sound"
+          className="group relative transition-colors duration-300 hover:text-yellow-300"
+        >
+          Sound
+          <span className="absolute -bottom-1 left-0 h-px w-0 bg-yellow-400 transition-all duration-300 group-hover:w-full" />
+        </a>
 
-              <a
-                href="#world"
-                className="group relative transition duration-300 hover:text-yellow-300"
-              >
-                World
-                <span className="absolute -bottom-1 left-0 h-px w-0 bg-yellow-400 transition-all duration-300 group-hover:w-full" />
-              </a>
+        <a
+          href="#world"
+          className="group relative transition-colors duration-300 hover:text-yellow-300"
+        >
+          World
+          <span className="absolute -bottom-1 left-0 h-px w-0 bg-yellow-400 transition-all duration-300 group-hover:w-full" />
+        </a>
 
-              <a
-                href="#contact"
-                className="group relative transition duration-300 hover:text-yellow-300"
-              >
-                Contact
-                <span className="absolute -bottom-1 left-0 h-px w-0 bg-yellow-400 transition-all duration-300 group-hover:w-full" />
-              </a>
+        <a
+          href="#contact"
+          className="group relative transition-colors duration-300 hover:text-yellow-300"
+        >
+          Contact
+          <span className="absolute -bottom-1 left-0 h-px w-0 bg-yellow-400 transition-all duration-300 group-hover:w-full" />
+        </a>
 
-            </nav>
-
-          </div>
-
-          {/* BRAND SECTION */}
-
-          <div className="mt-4 flex flex-col items-center text-center">
-
-            {/* BRAND NAME */}
-
-            <h1 className="bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-cyan-400 to-purple-500 bg-clip-text text-transparent font-black uppercase tracking-[0.42em] text-xs sm:text-sm">
-              OMNI ECHELON SOUNDS
-            </h1>
-
-            {/* STATUS */}
-
-            <div className="mt-3 flex items-center gap-3">
-
-              <span className="h-3 w-3 rounded-full bg-green-400 shadow-[0_0_14px_rgba(74,222,128,0.9)] animate-pulse"></span>
-
-              <span className="text-[9px] uppercase tracking-[0.35em] text-green-300">
-                SIGNAL ACTIVE
-              </span>
-
-            </div>
-
-            {/* TRANSMISSION */}
-
-            <p className="mt-3 text-[9px] uppercase tracking-[0.34em] text-white/80">
-              TRANSMISSION • ALLWAYZintheMIXX
-            </p>
-
-            {/* BUILDING DREAMS */}
-
-            <p className="mt-2 text-[8px] uppercase tracking-[0.40em] text-yellow-400/80">
-              BUILDING DREAMS • ONLINE
-            </p>
-
-          </div>
-
-        </div>
-
-      </header>
+      </nav>
 
     </div>
-  );
-}
+
+    {/* CENTER TITLE */}
+    <div className="mt-4 flex flex-col items-center text-center">
+
+      {/* Main Brand */}
+      <h1 className="bg-gradient-to-r from-pink-500 via-yellow-400 via-green-400 via-cyan-400 to-purple-500 bg-clip-text text-transparent text-xs sm:text-sm font-black uppercase tracking-[0.42em]">
+        OMNI ECHELON SOUNDS
+      </h1>
+
+      {/* Signal */}
+      <div className="mt-3 flex items-center gap-3">
+        <span className="h-3 w-3 rounded-full bg-green-400 shadow-[0_0_14px_rgba(74,222,128,0.9)] animate-pulse" />
+
+        <p className="text-[9px] uppercase tracking-[0.35em] text-green-300">
+          SIGNAL ACTIVE
+        </p>
+      </div>
+
+      {/* Artist */}
+      <p className="mt-3 text-[9px] uppercase tracking-[0.35em] text-white/80">
+        TRANSMISSION • ALLWAYZintheMIXX
+      </p>
+
+      {/* Building Dreams */}
+      <p className="mt-2 text-[8px] uppercase tracking-[0.4em] text-yellow-400/80">
+        BUILDING DREAMS • ONLINE
+      </p>
+
+    </div>
+
+  </div>
+
+</header>
   
     <main className="pt-28 sm:pt-24">
 <section className="relative overflow-hidden border-b border-white/10 bg-gradient-to-b from-black via-[#040507] to-black">
