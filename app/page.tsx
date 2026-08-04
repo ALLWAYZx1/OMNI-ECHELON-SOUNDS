@@ -341,7 +341,7 @@ export default function OmniEchelonSoundsWebsite() {
   </div>
 </section>
 
- <section id="merch" className="bg-black">
+<section id="merch" className="bg-black">
   <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
     <div className="text-xs uppercase tracking-[0.35em] text-yellow-400">
       New Arrivals
@@ -402,6 +402,19 @@ export default function OmniEchelonSoundsWebsite() {
         </a>
       ))}
     </div>
+
+    <div className="mt-10">
+      <a
+        href="https://weriseabove.life/collections/new-arrivals"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-white transition hover:bg-white hover:text-black"
+      >
+        Shop We Rise Above →
+      </a>
+    </div>
+  </div>
+</section>
 
     <a
       href="https://prezzurebuilt.myshopify.com/collections/we-rise-above"
