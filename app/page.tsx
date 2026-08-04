@@ -359,27 +359,27 @@ export default function OmniEchelonSoundsWebsite() {
     <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
       {[
         {
-          name: "Rising Sun Hoodie",
+          name: "Rising Above Hoodie",
           price: "$109.99",
-          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-premium-pullover-hoodie-black-front-6a6d5fdb5eb71.jpg",
-          href: "https://weriseabove.life/products/rising-sun-hoodie",
+          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-premium-pullover-hoodie-black-front-6a6e774e86e2c.jpg?v=1785624408",
+          href: "https://weriseabove.life/products/rising-above-hoodie",
         },
         {
-          name: "Darkest Nights Premium Hoodie",
+          name: "Darkest Nights Hoodie",
           price: "$119.99",
-          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-premium-pullover-hoodie-black-front-6a6d5fdb5eb71.jpg",
+          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-premium-pullover-hoodie-black-back-6a6c07d7cc767.jpg?v=1785464853",
           href: "https://weriseabove.life/products/wra-darkest-nights-premium-hoodie",
         },
         {
           name: "No Final Form Hoodie",
           price: "$119.99",
-          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-premium-pullover-hoodie-black-front-6a6d5fdb5eb71.jpg",
+          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-premium-pullover-hoodie-black-back-6a6c980c98789.jpg?v=1785501762",
           href: "https://weriseabove.life/products/no-final-form-hoodie",
         },
         {
           name: "We Rise Above Beanie",
           price: "$34.99",
-          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-premium-pullover-hoodie-black-front-6a6d5fdb5eb71.jpg",
+          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/knit-beanie-black-front-6a6d5d30edad5.jpg?v=1785552359",
           href: "https://weriseabove.life/products/we-rise-above-beanie",
         },
       ].map((item) => (
