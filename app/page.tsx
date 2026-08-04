@@ -362,25 +362,25 @@ export default function OmniEchelonSoundsWebsite() {
           name: "Rising Sun Hoodie",
           price: "$109.99",
           img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-premium-pullover-hoodie-black-front-6a6d5fdb5eb71.jpg",
-          href: "https://prezzurebuilt.myshopify.com/products/rising-sun-hoodie",
+          href: "https://weriseabove.life/products/rising-sun-hoodie",
         },
         {
           name: "Darkest Nights Premium Hoodie",
           price: "$119.99",
           img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-premium-pullover-hoodie-black-front-6a6d5fdb5eb71.jpg",
-          href: "https://prezzurebuilt.myshopify.com/products/wra-darkest-nights-premium-hoodie",
+          href: "https://weriseabove.life/products/wra-darkest-nights-premium-hoodie",
         },
         {
           name: "No Final Form Hoodie",
           price: "$119.99",
           img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-premium-pullover-hoodie-black-front-6a6d5fdb5eb71.jpg",
-          href: "https://prezzurebuilt.myshopify.com/products/no-final-form-hoodie",
+          href: "https://weriseabove.life/products/no-final-form-hoodie",
         },
         {
           name: "We Rise Above Beanie",
           price: "$34.99",
           img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-premium-pullover-hoodie-black-front-6a6d5fdb5eb71.jpg",
-          href: "https://prezzurebuilt.myshopify.com/products/we-rise-above-beanie",
+          href: "https://weriseabove.life/products/we-rise-above-beanie",
         },
       ].map((item) => (
         <a
@@ -408,22 +408,11 @@ export default function OmniEchelonSoundsWebsite() {
         href="https://weriseabove.life/collections/new-arrivals"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold uppercase tracking-widest text-white transition hover:bg-white hover:text-black"
+        className="inline-flex items-center gap-2 rounded-full border border-yellow-400 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
       >
         Shop We Rise Above →
       </a>
     </div>
-  </div>
-</section>
-
-    <a
-      href="https://prezzurebuilt.myshopify.com/collections/we-rise-above"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="mt-10 inline-block rounded-full border border-yellow-400 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
-    >
-      Shop We Rise Above →
-    </a>
   </div>
 </section>
 
