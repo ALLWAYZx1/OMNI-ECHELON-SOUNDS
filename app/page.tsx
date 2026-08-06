@@ -1,4 +1,3 @@
-import Image from "next/image";
 export default function OmniEchelonSoundsWebsite() {
   return (
     <div className="min-h-screen bg-black text-white">
@@ -136,7 +135,7 @@ export default function OmniEchelonSoundsWebsite() {
 
 </div>
   <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-    <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[42%_58%]">
+    <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[1fr_520px]">
 
       {/* LEFT SIDE */}
 {/* LEFT SIDE */}
@@ -237,25 +236,111 @@ export default function OmniEchelonSoundsWebsite() {
 
   </div>
 
-<div className="relative flex min-h-[850px] items-end justify-center overflow-visible">
+  {/* Divider */}
+  <div className="my-10 h-px w-40 bg-gradient-to-r from-yellow-400 via-white/40 to-transparent" />
 
-  {/* Ambient glow */}
-  <div className="absolute inset-0">
-    <div className="absolute bottom-24 left-1/2 h-[650px] w-[650px] -translate-x-1/2 rounded-full bg-yellow-400/20 blur-[180px]" />
-    <div className="absolute top-20 right-10 h-[300px] w-[300px] rounded-full bg-orange-500/15 blur-[120px]" />
+  {/* Apple Music */}
+  <div>
+
+    <p className="mb-4 text-xs uppercase tracking-[0.35em] text-pink-400">
+      LISTEN
+    </p>
+
+    <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-3 backdrop-blur-xl shadow-[0_0_50px_rgba(255,255,255,.03)]">
+
+      <iframe
+        src="https://embed.music.apple.com/us/album/emotions-in-motion/1895465650"
+        width="100%"
+        height="300"
+        style={{ borderRadius: "16px" }}
+        allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+      ></iframe>
+
+    </div>
+
   </div>
 
-  <Image
-    src="/OESHERO.webp"
-    alt="Omni Echelon Sounds Hero"
-    width={1200}
-    height={1600}
-    priority
-    className="relative z-10 w-full max-w-[900px] object-contain drop-shadow-[0_0_120px_rgba(250,204,21,.35)]"
-  />
-
 </div>
-    
+
+{/* RIGHT SIDE */}
+<div className="w-full max-w-[520px] justify-self-end">
+
+  {/* HEADER */}
+  <div className="mb-6">
+    <p className="text-[10px] uppercase tracking-[0.45em] text-emerald-300">
+      ● LIVE TRANSMISSION
+    </p>
+
+    <h3 className="mt-2 text-xl font-bold uppercase tracking-[0.22em]">
+      ARTIST DEVELOPMENT
+    </h3>
+
+    <p className="mt-4 text-sm leading-7 text-white/65">
+      We don't just develop artists. We develop presence. Every session is
+      focused on refining your sound, defining your identity, and building a
+      catalog that connects long after the music stops. Because the goal isn't
+      simply to be heard. It's to be remembered.
+    </p>
+
+    <p className="mt-4 text-xs uppercase tracking-[0.3em] text-yellow-400">
+      SIGNAL // ALLWAYZ
+    </p>
+  </div>
+
+  {/* YOUTUBE */}
+  <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+    <div
+      className="relative w-full"
+      style={{ paddingBottom: "56.25%" }}
+    >
+      <iframe
+        className="absolute inset-0 h-full w-full"
+        src="https://www.youtube.com/embed/MLIAyB5Efq8"
+        title="ARTIST DEVELOPMENT SIGNAL"
+        allowFullScreen
+      />
+    </div>
+  </div>
+     {/* LINKS */}
+        <div className="mt-3 flex gap-4 text-xs uppercase text-white/60">
+          <a href="https://youtube.com/shorts/5Bb81O1u2o0" target="_blank">Watch →</a>
+          <a href="https://www.youtube.com/@ALLWAYZWORLD" target="_blank">Channel →</a>
+        </div>
+
+        {/* SOUND */}
+        <div className="mt-6">
+          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-yellow-400">
+            SOUND
+          </p>
+   {/* SPOTIFY */}
+          <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <iframe
+              src="https://open.spotify.com/embed/artist/7lu8CK1gQztFv3rlB0hqsb?utm_source=generator&theme=0"
+              width="100%"
+              height="352"
+              allow="autoplay; clipboard-write; encrypted-media"
+            ></iframe>
+          </div>
+
+          {/* SOUNDCLOUD */}
+<iframe
+  width="100%"
+  height="166"
+  scrolling="no"
+  frameBorder="no"
+  allow="autoplay"
+  className="rounded-2xl"
+  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2329824383&color=%232a1a26&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+></iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section id="merch" className="bg-black">
   <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
     <div className="text-xs uppercase tracking-[0.35em] text-yellow-400">
