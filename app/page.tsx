@@ -405,7 +405,7 @@ export default function OmniEchelonSoundsWebsite() {
 
     <div className="mt-10">
       <a
-        href="https://weriseabove.life/collections/new-arrivals"
+        href="https://www.weriseabove.life/collections/asset-pack-96022462466-example-products"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 rounded-full border border-yellow-400 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
