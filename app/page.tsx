@@ -345,39 +345,39 @@ export default function OmniEchelonSoundsWebsite() {
     </div>
 
     <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
-      We Rise Above Collection
+      PREZZURE BUILT Collection
     </h2>
 
     <p className="mt-5 text-base leading-7 text-white/70">
-      Premium streetwear built for those who rise. Every piece designed with
-      purpose — wear the movement, carry the mindset.
+      Dark luxury streetwear forged under pressure. Every piece carries weight —
+      built for those who move in silence and speak through what they wear.
     </p>
 
     <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
       {[
         {
-          name: "Rising Above Hoodie",
+          name: "Skull Graphic Oversized Hoodie",
           price: "$109.99",
-          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-premium-pullover-hoodie-black-front-6a6e774e86e2c.jpg?v=1785624408",
-          href: "https://weriseabove.life/products/rising-above-hoodie",
+          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-relax-hoodie-black-front-6a6fdfd940b58.jpg?v=1785723377",
+          href: "https://www.weriseabove.life/products/prezzure-skull",
         },
         {
-          name: "Darkest Nights Hoodie",
-          price: "$119.99",
-          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-premium-pullover-hoodie-black-back-6a6c07d7cc767.jpg?v=1785464853",
-          href: "https://weriseabove.life/products/wra-darkest-nights-premium-hoodie",
+          name: "SKULLZ Champion Sweatshirt",
+          price: "$109.99",
+          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/mens-champion-crewneck-sweatshirt-black-back-6a750b32cffa5.jpg?v=1786055479",
+          href: "https://www.weriseabove.life/products/skullz-champion-sweatshirt",
         },
         {
-          name: "No Final Form Hoodie",
-          price: "$119.99",
-          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-premium-pullover-hoodie-black-back-6a6c980c98789.jpg?v=1785501762",
-          href: "https://weriseabove.life/products/no-final-form-hoodie",
+          name: "Chain Gang Crewneck",
+          price: "$109.99",
+          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-crew-neck-sweatshirt-black-front-6a747b90b730e.jpg?v=1786018722",
+          href: "https://www.weriseabove.life/products/chain-gang-crewneck",
         },
         {
-          name: "We Rise Above Beanie",
-          price: "$34.99",
-          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/knit-beanie-black-front-6a6d5d30edad5.jpg?v=1785552359",
-          href: "https://weriseabove.life/products/we-rise-above-beanie",
+          name: "SKULLZ Oversized Faded Tee",
+          price: "$79.99",
+          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/mens-oversized-faded-t-shirt-faded-black-front-6a735c5ec6c9d.jpg?v=1785945319",
+          href: "https://www.weriseabove.life/products/skullz-oversized-faded-t-shirt-prezzure-built",
         },
       ].map((item) => (
         <a
@@ -402,12 +402,12 @@ export default function OmniEchelonSoundsWebsite() {
 
     <div className="mt-10">
       <a
-        href="https://www.weriseabove.life/collections/asset-pack-96022462466-example-products"
+        href="https://www.weriseabove.life/collections/prezzure-built"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 rounded-full border border-yellow-400 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
       >
-        Shop We Rise Above →
+        Shop New Arrivals →
       </a>
     </div>
   </div>
