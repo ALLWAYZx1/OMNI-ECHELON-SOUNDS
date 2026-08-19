@@ -262,7 +262,19 @@ export default function OmniEchelonSoundsWebsite() {
 
   </div>
 
-  {/* Roles */}
+
+</div>
+
+{/* RIGHT SIDE */}
+<div className="w-full max-w-[520px] justify-self-end">
+
+  {/* HEADER */}
+  <div className="mb-6">
+    <p className="text-[10px] uppercase tracking-[0.45em] text-emerald-300">
+      ● LIVE TRANSMISSION
+    </p>
+
+      {/* Roles */}
   <div className="mt-10 grid grid-cols-3 gap-6 border-t border-white/10 pt-8">
 
     <div>
@@ -287,17 +299,6 @@ export default function OmniEchelonSoundsWebsite() {
     </div>
 
   </div>
-</div>
-
-{/* RIGHT SIDE */}
-<div className="w-full max-w-[520px] justify-self-end">
-
-  {/* HEADER */}
-  <div className="mb-6">
-    <p className="text-[10px] uppercase tracking-[0.45em] text-emerald-300">
-      ● LIVE TRANSMISSION
-    </p>
-
     <h3 className="mt-2 text-xl font-bold uppercase tracking-[0.22em]">
       ARTIST DEVELOPMENT
     </h3>
