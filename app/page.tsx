@@ -202,7 +202,7 @@ export default function OmniEchelonSoundsWebsite() {
 
   </div>
 
-  {/* Apple Music */}
+   {/* Apple Music */}
   <div className="mt-16">
 
     <div className="mb-4 flex items-center justify-between">
@@ -227,6 +227,36 @@ export default function OmniEchelonSoundsWebsite() {
         allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
         sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
       ></iframe>
+
+    </div>
+
+  </div>
+
+  {/* PODCAST */}
+  <div className="mt-8">
+
+    <div className="mb-4 flex items-center justify-between">
+      <p className="text-xs uppercase tracking-[0.35em] text-yellow-400">
+        PODCAST
+      </p>
+
+      <p className="text-[10px] uppercase tracking-[0.35em] text-white/35">
+        OMNI ECHELON
+      </p>
+    </div>
+
+    <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-3 backdrop-blur-xl shadow-[0_0_50px_rgba(255,255,255,.03)]">
+
+      <iframe
+        style={{ borderRadius: "12px" }}
+        src="https://open.spotify.com/embed/show/033qOrQMBPcl0YymleZYNE?utm_source=generator"
+        width="100%"
+        height="352"
+        frameBorder="0"
+        allowFullScreen
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      />
 
     </div>
 
@@ -257,7 +287,6 @@ export default function OmniEchelonSoundsWebsite() {
     </div>
 
   </div>
-
 </div>
 
 {/* RIGHT SIDE */}
