@@ -356,28 +356,28 @@ export default function OmniEchelonSoundsWebsite() {
     <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
       {[
         {
+          name: "Rise Light Purpose Hoodie",
+          price: "$99.99",
+          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/rise-light-purpose-hoodie-heavyweight-premium-streetwear-pullover-we-rise-above-3529358.jpg?v=1786201754",
+          href: "https://www.weriseabove.life/products/rise-light-purpose",
+        },
+        {
           name: "Skull Graphic Oversized Hoodie",
-          price: "$109.99",
-          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-relax-hoodie-black-front-6a6fdfd940b58.jpg?v=1785723377",
+          price: "$99.99",
+          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/skull-graphic-oversized-hoodie-premium-luxury-streetwear-pullover-prezzure-built-5827773.jpg?v=1786201699",
           href: "https://www.weriseabove.life/products/prezzure-skull",
         },
         {
-          name: "SKULLZ Champion Sweatshirt",
-          price: "$109.99",
-          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/mens-champion-crewneck-sweatshirt-black-back-6a750b32cffa5.jpg?v=1786055479",
-          href: "https://www.weriseabove.life/products/skullz-champion-sweatshirt",
+          name: "Lucky Energy World Domination",
+          price: "$49.99",
+          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/lucky-energy-world-domination-4256493.png?v=1786986794",
+          href: "https://www.weriseabove.life/products/lucky-energy-x-wra-world-domination",
         },
         {
-          name: "Chain Gang Crewneck",
-          price: "$109.99",
-          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/unisex-crew-neck-sweatshirt-black-front-6a747b90b730e.jpg?v=1786018722",
-          href: "https://www.weriseabove.life/products/chain-gang-crewneck",
-        },
-        {
-          name: "SKULLZ Oversized Faded Tee",
-          price: "$79.99",
-          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/mens-oversized-faded-t-shirt-faded-black-front-6a735c5ec6c9d.jpg?v=1785945319",
-          href: "https://www.weriseabove.life/products/skullz-oversized-faded-t-shirt-prezzure-built",
+          name: "WRA × $t@Y Fr3$cO Sweatshirt",
+          price: "$74.99",
+          img: "https://cdn.shopify.com/s/files/1/1017/7223/0937/files/we-rise-above-t-at-y-fr3co-oversized-heavyweight-sweatshirt-3953062.jpg?v=1786602267",
+          href: "https://www.weriseabove.life/products/we-rise-above-t-y-fr3-co-oversized-heavyweight-sweatshirt",
         },
       ].map((item) => (
         <a
