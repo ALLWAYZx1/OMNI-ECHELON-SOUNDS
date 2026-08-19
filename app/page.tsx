@@ -340,17 +340,17 @@ export default function OmniEchelonSoundsWebsite() {
 
 <section id="merch" className="bg-black">
   <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-    <div className="text-xs uppercase tracking-[0.35em] text-yellow-400">
+    <div className="text-xs uppercase tracking-[0.35em] text-zinc-400">
       New Arrivals
     </div>
 
     <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
-      PREZZURE BUILT Collection
+      WE RISE ABOVE Collection
     </h2>
 
     <p className="mt-5 text-base leading-7 text-white/70">
-      Dark luxury streetwear forged under pressure. Every piece carries weight —
-      built for those who move in silence and speak through what they wear.
+      Forged under pressure, built to endure. Each piece embodies resilience —
+      for those who rise above the noise and move with quiet intention.
     </p>
 
     <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
@@ -395,17 +395,17 @@ export default function OmniEchelonSoundsWebsite() {
             />
           </div>
           <p className="mt-2 text-sm text-white/70">{item.name}</p>
-          <p className="text-sm font-semibold text-yellow-400">{item.price}</p>
+          <p className="text-sm font-semibold text-zinc-300">{item.price}</p>
         </a>
       ))}
     </div>
 
     <div className="mt-10">
       <a
-        href="https://www.weriseabove.life/collections/prezzure-built"
+        href="https://www.weriseabove.life/collections/all"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 rounded-full border border-yellow-400 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-yellow-400 transition hover:bg-yellow-400 hover:text-black"
+        className="inline-flex items-center gap-2 rounded-full border border-zinc-400 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-zinc-400 transition hover:bg-zinc-400 hover:text-black"
       >
         Shop New Arrivals →
       </a>
