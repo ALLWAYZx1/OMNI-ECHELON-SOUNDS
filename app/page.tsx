@@ -387,11 +387,11 @@ export default function OmniEchelonSoundsWebsite() {
           rel="noopener noreferrer"
           className="group"
         >
-          <div className="overflow-hidden rounded-xl border border-white/10">
+          <div className="overflow-hidden rounded-xl border border-white/10 bg-zinc-900 aspect-[3/4]">
             <img
               src={item.img}
               alt={item.name}
-              className="w-full object-cover transition group-hover:scale-105"
+              className="w-full h-full object-cover transition group-hover:scale-105"
             />
           </div>
           <p className="mt-2 text-sm text-white/70">{item.name}</p>
