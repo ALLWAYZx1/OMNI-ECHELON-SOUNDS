@@ -5,7 +5,7 @@ export default function OmniEchelonSoundsWebsite() {
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl supports-[backdrop-filter]:bg-black/45">
         <div className="max-w-7xl mx-auto px-5 sm:px-6 py-4">
           <div className="flex items-center justify-between">
-            <img src="/logo.png" alt="OMNI ECHELON SOUNDS" className="h-14 sm:h-16 w-auto transition duration-500 hover:scale-105" />
+            <img src="/oes-logo.webp" alt="OMNI ECHELON SOUNDS" className="h-14 sm:h-16 w-auto transition duration-500 hover:scale-105" />
             <button className="md:hidden text-white/70 hover:text-yellow-400 transition" aria-label="Open Menu">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
